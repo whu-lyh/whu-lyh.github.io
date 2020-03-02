@@ -10,17 +10,18 @@
 <title>视频加速小技巧 - AmazingHao&#39;s Free Space</title>
 
 
-    <meta name="description" content="UsageThis repository is used to sequeeze a normal video to a n times faster.But, i found that there are many ways to relize this, such as ffmpeg and adjust the speed while roamming, etc.OpenCV require">
+    <meta name="description" content="Usage&amp;emsp;&amp;emsp;Here, i’m tring to sequeeze a normal video to a n times faster.But, i found that there are many ways to relize this, such as ffmpeg and adjust the speed while roamming, etc.OpenCV req">
 <meta property="og:type" content="article">
 <meta property="og:title" content="视频加速小技巧">
 <meta property="og:url" content="http://yoursite.com/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
-<meta property="og:description" content="UsageThis repository is used to sequeeze a normal video to a n times faster.But, i found that there are many ways to relize this, such as ffmpeg and adjust the speed while roamming, etc.OpenCV require">
+<meta property="og:description" content="Usage&amp;emsp;&amp;emsp;Here, i’m tring to sequeeze a normal video to a n times faster.But, i found that there are many ways to relize this, such as ffmpeg and adjust the speed while roamming, etc.OpenCV req">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-29T04:38:33.000Z">
-<meta property="article:modified_time" content="2020-03-02T08:32:03.224Z">
+<meta property="article:modified_time" content="2020-03-02T14:30:33.022Z">
 <meta property="article:author" content="Yuhao Li">
+<meta property="article:tag" content="OpenCV FFMPEG">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
@@ -117,7 +118,7 @@
                 
                 
                 
-                <a class="navbar-item search" title="Search" href="javascript:;">
+                <a class="navbar-item search" title="搜索" href="javascript:;">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -142,7 +143,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 read (About 151 words)
+                    1 分钟 读完 (大约 154 个字)
                 </span>
                 
                 
@@ -155,13 +156,14 @@
             
         </h1>
         <div class="content">
-            <h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>This repository is used to sequeeze a normal video to a n times faster.<br><strong>But</strong>, i found that there are many ways to relize this, such as ffmpeg and adjust the speed while roamming, etc.<br>OpenCV requires being complied with <strong>ffmepg</strong>, which i didn’t have the condition and many video format(.mp4) is not well supported.<br>Under Linux   </p>
+            <h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>&emsp;&emsp;Here, i’m tring to sequeeze a normal video to a n times faster.<br><strong>But</strong>, i found that there are many ways to relize this, such as ffmpeg and adjust the speed while roamming, etc.<br>OpenCV requires being complied with <strong>ffmpeg</strong>, which i didn’t have the condition and many video format(.mp4) is not well supported.<br>Under Linux </p>
+<a id="more"></a>  
 <ol>
-<li>Install ffmepg<br>sudo apt install ffmpeg   </li>
+<li>Install ffmpeg<br>sudo apt install ffmpeg   </li>
 <li>Speed or slow down the video</li>
 </ol>
 <hr>
-<p>4 times faster<br>ffmpeg -i origin.mp4 -vf  “setpts=0.25<em>PTS” UpTheOrigin.mp4<br>4 times slower<br>ffmpeg -i origin.mp4 -vf “setpts=4</em>PTS” DownTheOrigin.mp4  </p>
+<p>4 times faster<br>ffmpeg -i origin.mp4 -vf  “setpts=0.25*PTS” UpTheOrigin.mp4<br>4 times slower<br>ffmpeg -i origin.mp4 -vf “setpts=4*PTS” DownTheOrigin.mp4  </p>
 <hr>
 <ol start="3">
 <li>Change the video format  </li>
@@ -170,9 +172,18 @@
 <p>ffmpeg -i origin.ogv -vcodec h264 output.mp4<br>ffmpeg -i origin.ogv -vcodec mpeg4 output.mp4<br>ffmpeg -i origin.ogv -vcodec libxvid output.mp4<br>ffmpeg -i origin.mp4 -vcodec wmv1 output.wmv<br>ffmpeg -i origin.mp4 -vcodec wmv2 output.wmv  </p>
 <hr>
 <ol start="4">
-<li>More resources<br>Please dive the <a href="https://blog.csdn.net/WuLex/article/details/101513018">Blog</a>.</li>
+<li>More resources<br>Please dive the <a href="https://blog.csdn.net/WuLex/article/details/101513018"><strong>Blog</strong></a>.</li>
 </ol>
 
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/OpenCV-FFMPEG/" rel="tag">OpenCV FFMPEG</a>
+                </div>
+            </div>
         </div>
         
         
@@ -184,7 +195,7 @@
 
 <div class="card">
     <div class="card-content">
-        <h3 class="menu-label has-text-centered">Like this article? Support the author with</h3>
+        <h3 class="menu-label has-text-centered">喜欢这篇文章？打赏一下作者吧</h3>
         <div class="buttons is-centered">
             
                 
@@ -220,6 +231,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/02/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">Markdown初体验</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -274,11 +292,11 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Posts
+                        文章
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            3
+                            4
                         </p>
                     </a>
                 </div>
@@ -286,7 +304,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Categories
+                        分类
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
@@ -298,11 +316,11 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tag
+                        标签
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            1
+                            2
                         </p>
                     </a>
                 </div>
@@ -311,7 +329,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">
-                Follow</a>
+                关注我</a>
         </div>
         
         
@@ -364,7 +382,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Links
+            链接
         </h3>
         <ul class="menu-list">
         
@@ -401,7 +419,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Categories
+                分类
             </h3>
             <ul class="menu-list">
             
@@ -413,9 +431,9 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Tag Cloud
+            标签云
         </h3>
-        <a href="/tags/%E7%BB%93%E5%90%88%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%EF%BC%8C%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%9F%A5%E8%AF%86%E3%80%82/" style="font-size: 10px;">结合亲身经历，整理一下常用的MarkDown语法小知识。</a>
+        <a href="/tags/OpenCV-FFMPEG/" style="font-size: 10px;">OpenCV FFMPEG</a> <a href="/tags/%E7%BB%93%E5%90%88%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%EF%BC%8C%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%9F%A5%E8%AF%86%E3%80%82/" style="font-size: 10px;">结合亲身经历，整理一下常用的MarkDown语法小知识。</a>
     </div>
 </div>
     
@@ -425,8 +443,27 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/02/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Markdown初体验">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-02T14:43:24.084Z">2020-03-02</time></div>
+                    <a href="/2020/03/02/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Markdown初体验</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -492,9 +529,20 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/02/">
@@ -516,9 +564,16 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                标签
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OpenCV-FFMPEG/">
+                        <span class="tag">OpenCV FFMPEG</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E7%BB%93%E5%90%88%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%EF%BC%8C%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%9F%A5%E8%AF%86%E3%80%82/">
@@ -546,8 +601,27 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Recent
+            最新文章
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/02/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Markdown初体验">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-02T14:43:24.084Z">2020-03-02</time></div>
+                    <a href="/2020/03/02/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Markdown初体验</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -613,9 +687,20 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archives
+            归档
         </h3>
         <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">1</span>
+                </span>
+            </a>
+        </li>
         
         <li>
             <a class="level is-marginless" href="/archives/2020/02/">
@@ -637,9 +722,16 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Tags
+                标签
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OpenCV-FFMPEG/">
+                        <span class="tag">OpenCV FFMPEG</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/%E7%BB%93%E5%90%88%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%EF%BC%8C%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%9F%A5%E8%AF%86%E3%80%82/">
@@ -711,7 +803,7 @@
 </footer>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
-<script>moment.locale("zh-cn");</script>
+<script>moment.locale("zh-CN");</script>
 
 
 <script>
@@ -788,7 +880,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-<a id="back-to-top" title="Back to Top" href="javascript:;">
+<a id="back-to-top" title="回到顶端" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -812,7 +904,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -824,11 +916,11 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Pages',
-                CATEGORIES: 'Categories',
-                TAGS: 'Tags',
-                UNTITLED: '(Untitled)',
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
             },
             CONTENT_URL: '/content.json',
         };
