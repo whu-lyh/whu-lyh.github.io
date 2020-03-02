@@ -10,16 +10,16 @@
 <title>Docker初体验 - AmazingHao&#39;s Free Space</title>
 
 
-    <meta name="description" content="title: docker初体验date: 2020-02-28 23:38:32tags:categories: 实用工具description： 主要记录在使用docker时候的一些小问题和小心得">
+    <meta name="description" content="title: docker初体验date: 2020-02-28 23:38:32tags:categories: 实用工具description： 主要记录在使用docker时候的一些小问题和小心得   docker简介Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker初体验">
 <meta property="og:url" content="http://yoursite.com/2020/02/28/Docker%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
-<meta property="og:description" content="title: docker初体验date: 2020-02-28 23:38:32tags:categories: 实用工具description： 主要记录在使用docker时候的一些小问题和小心得">
+<meta property="og:description" content="title: docker初体验date: 2020-02-28 23:38:32tags:categories: 实用工具description： 主要记录在使用docker时候的一些小问题和小心得   docker简介Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-28T15:38:32.917Z">
-<meta property="article:modified_time" content="2020-02-28T16:36:01.392Z">
+<meta property="article:modified_time" content="2020-02-29T09:59:22.296Z">
 <meta property="article:author" content="Yuhao Li">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
@@ -117,7 +117,7 @@
                 
                 
                 
-                <a class="navbar-item search" title="Suche" href="javascript:;">
+                <a class="navbar-item search" title="Search" href="javascript:;">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -142,7 +142,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 lesen (Über 34 Worte)
+                    10 分钟 read (About 1573 words)
                 </span>
                 
                 
@@ -158,6 +158,21 @@
             <hr>
 <p>title: docker初体验<br>date: 2020-02-28 23:38:32<br>tags:<br>categories: 实用工具<br>description： 主要记录在使用docker时候的一些小问题和小心得 </p>
 <hr>
+<h3 id="docker简介"><a href="#docker简介" class="headerlink" title="docker简介"></a>docker简介</h3><p>Docker 是一个开源的应用容器引擎，基于 Go 语言 并遵从 Apache2.0 协议开源。<br>Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。<br>容器是完全使用沙箱机制，相互之间不会有任何接口（类似 iPhone 的 app）,更重要的是容器性能开销极低。<br>(我认为是一种管理虚拟环境的引擎，方便快速构建任何虚拟环境，而各个环境之间不会相互影响，并且支持快速移植和部署。)</p>
+<h3 id="和其他虚拟机软件之间的不同"><a href="#和其他虚拟机软件之间的不同" class="headerlink" title="和其他虚拟机软件之间的不同"></a>和其他虚拟机软件之间的不同</h3><p>Docker 是一个用于开发，交付和运行应用程序的开放平台。Docker 使您能够将应用程序与基础架构分开，从而可以快速交付软件。<br>借助 Docker，您可以与管理应用程序相同的方式来管理基础架构。通过利用 Docker 的方法来快速交付，测试和部署代码，您可以大大减少编写代码和在生产环境中运行代码之间的延迟。<br><strong>VirtualBox虚拟化硬件，Docker虚拟化操作系统。</strong>  </p>
+<blockquote>
+<p>1、VirtualBox，是创建硬件虚拟化的软件。<br>通常情况下，一个操作系统运行在硬件上，其中硬件和操作系统之间的通信是通过移动数据到内存地址，然后发出指令来通知可使用该数据的硬件（或者是数据在被读取时）。<br>在VirtualBox（或其它虚拟机）设置的环境中，那些内存地址实际上是虚拟机软件自身的内存区域，并且那些指令是由虚拟机而不是直接由底层的CPU解释的。<br>实际结果是，你在VirtualBox中运行一个操作系统，对于这个操作系统来说，VirtualBox程序看起来像一台完整计算机，硬件以及所有配件都有。实际上它不知道自己是在另一个程序中运行的。<br>2、Docker，则是不进行硬件的虚拟化。相反，它的作用是创建一个文件系统，使其看起来像一个普通的Linux文件系统，并且运行应用程序在一个所有文件和资源都在文件系统内的锁定环境中。<br>事实上，该应用程序的容器并不模仿任何硬件，应用程序仍然在硬件上运行，它只是隔离了应用程序并允许您可以运行该应用程序跟特定的并且完全不是主机操作系统的软件和第三方库合作。<br>这意味着，在启动或停止Docker应用程序时几乎没有开销，因为它们不需要预先分配的内存和磁盘空间等等。因此Docker容器很容易设置或者拆除。<br>此外，容器在假装需要系统中各种硬件组件上运行软件的时候并不浪费任何开销 - 它是直接使用硬件的。<br>以上内容源于：<a href="http://dockone.io/article/258">http://dockone.io/article/258</a></p>
+</blockquote>
+<h5 id="1、快速，一致地交付您的应用程序"><a href="#1、快速，一致地交付您的应用程序" class="headerlink" title="1、快速，一致地交付您的应用程序"></a>1、快速，一致地交付您的应用程序</h5><p>Docker 允许开发人员使用您提供的应用程序或服务的本地容器在标准化环境中工作，从而简化了开发的生命周期。<br>容器非常适合持续集成和持续交付（CI / CD）工作流程，请考虑以下示例方案：</p>
+<blockquote>
+<p>您的开发人员在本地编写代码，并使用 Docker 容器与同事共享他们的工作。<br>他们使用 Docker 将其应用程序推送到测试环境中，并执行自动或手动测试。<br>当开发人员发现错误时，他们可以在开发环境中对其进行修复，然后将其重新部署到测试环境中，以进行测试和验证。<br>测试完成后，将修补程序推送给生产环境，就像将更新的镜像推送到生产环境一样简单。</p>
+</blockquote>
+<h5 id="2、响应式部署和扩展"><a href="#2、响应式部署和扩展" class="headerlink" title="2、响应式部署和扩展"></a>2、响应式部署和扩展</h5><p>Docker 是基于容器的平台，允许高度可移植的工作负载。Docker 容器可以在开发人员的本机上，数据中心的物理或虚拟机上，云服务上或混合环境中运行。<br>Docker 的可移植性和轻量级的特性，还可以使您轻松地完成动态管理的工作负担，并根据业务需求指示，实时扩展或拆除应用程序和服务。</p>
+<h5 id="3、在同一硬件上运行更多工作负载"><a href="#3、在同一硬件上运行更多工作负载" class="headerlink" title="3、在同一硬件上运行更多工作负载"></a>3、在同一硬件上运行更多工作负载</h5><p>Docker 轻巧快速。它为基于虚拟机管理程序的虚拟机提供了可行、经济、高效的替代方案，因此您可以利用更多的计算能力来实现业务目标。Docker 非常适合于高密度环境以及中小型部署，而您可以用更少的资源做更多的事情。</p>
+<h3 id="docker安装，以Windows安装为例"><a href="#docker安装，以Windows安装为例" class="headerlink" title="docker安装，以Windows安装为例"></a>docker安装，以Windows安装为例</h3><p>docker <a href="https://www.docker.com">官网</a>：<a href="https://www.docker.com">https://www.docker.com</a><br>Github Docker <a href="https://github.com/docker/docker-ce">源码</a>：<a href="https://github.com/docker/docker-ce">https://github.com/docker/docker-ce</a><br>在Windows的安装直接下载<a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">docker-desktop</a>安装包即可，linux同理。若打开速度比较慢，可访问国内镜像地址</p>
+<p>docker exec<br>docker run<br>docker attach<br>docker stop<br>docker iamges<br>docker ps -a<br>docker -version</p>
+<p>docker rm<br>docker rmi<br>docker cp</p>
+<h3 id="环境测试："><a href="#环境测试：" class="headerlink" title="环境测试："></a>环境测试：</h3><p>安装git，cmake，eigen<br>安装软件时最好提前将docker的软件源换为国内镜像，不然速度慢到你难以想象<br>apt-get update<br>apt-get install git,cmake,libeigen3-dev<br>即可，编写一个简单的CMakeList.txt进行测试即可。   </p>
 
         </div>
         
@@ -260,11 +275,11 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Posts
+                        Articles
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
-                            2
+                            3
                         </p>
                     </a>
                 </div>
@@ -272,7 +287,7 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Kategorien
+                        Catégories
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
@@ -284,11 +299,11 @@
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Tags
+                        Tag
                     </p>
                     <a href="/tags">
                         <p class="title has-text-weight-normal">
-                            0
+                            1
                         </p>
                     </a>
                 </div>
@@ -297,7 +312,7 @@
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">
-                Folgen</a>
+                SUIVRE</a>
         </div>
         
         
@@ -350,7 +365,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Links
+            Liens
         </h3>
         <ul class="menu-list">
         
@@ -387,7 +402,7 @@
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Kategorien
+                Catégories
             </h3>
             <ul class="menu-list">
             
@@ -396,7 +411,14 @@
     </div>
 </div>
     
-        
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            Nuage de tags
+        </h3>
+        <a href="/tags/%E7%BB%93%E5%90%88%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%EF%BC%8C%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%9F%A5%E8%AF%86%E3%80%82/" style="font-size: 10px;">结合亲身经历，整理一下常用的MarkDown语法小知识。</a>
+    </div>
+</div>
     
     
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
@@ -404,8 +426,27 @@
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Letzte Einträge
+            Récents
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="视频加速小技巧">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-29T04:38:33.000Z">2020-02-29</time></div>
+                    <a href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="title has-link-black-ter is-size-6 has-text-weight-normal">视频加速小技巧</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -452,7 +493,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archive
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -462,7 +503,7 @@
                     <span class="level-item">二月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -479,6 +520,13 @@
                 Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E7%BB%93%E5%90%88%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%EF%BC%8C%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%9F%A5%E8%AF%86%E3%80%82/">
+                        <span class="tag">结合亲身经历，整理一下常用的MarkDown语法小知识。</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -499,8 +547,27 @@
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Letzte Einträge
+            Récents
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="视频加速小技巧">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-29T04:38:33.000Z">2020-02-29</time></div>
+                    <a href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="title has-link-black-ter is-size-6 has-text-weight-normal">视频加速小技巧</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -547,7 +614,7 @@
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Archive
+            Archives
         </h3>
         <ul class="menu-list">
         
@@ -557,7 +624,7 @@
                     <span class="level-item">二月 2020</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">3</span>
                 </span>
             </a>
         </li>
@@ -574,6 +641,13 @@
                 Tags
             </h3>
             <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/%E7%BB%93%E5%90%88%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%EF%BC%8C%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%9F%A5%E8%AF%86%E3%80%82/">
+                        <span class="tag">结合亲身经历，整理一下常用的MarkDown语法小知识。</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
                 
             </div>
         </div>
@@ -739,7 +813,7 @@ document.addEventListener('DOMContentLoaded', function () {
     <div class="searchbox ins-search">
     <div class="searchbox-container ins-search-container">
         <div class="searchbox-input-wrapper">
-            <input type="text" class="searchbox-input ins-search-input" placeholder="Tippen Sie etwas..." />
+            <input type="text" class="searchbox-input ins-search-input" placeholder="Type something..." />
             <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="searchbox-result-wrapper ins-section-wrapper">
@@ -751,11 +825,11 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Posts',
-                PAGES: 'Seiten',
-                CATEGORIES: 'Kategorien',
+                POSTS: 'Articles',
+                PAGES: 'Pages',
+                CATEGORIES: 'Catégories',
                 TAGS: 'Tags',
-                UNTITLED: '(Unbenannt)',
+                UNTITLED: '(Untitled)',
             },
             CONTENT_URL: '/content.json',
         };
