@@ -20,7 +20,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-22T07:38:32.000Z">
-<meta property="article:modified_time" content="2020-03-02T15:32:55.641Z">
+<meta property="article:modified_time" content="2020-03-02T16:14:50.775Z">
 <meta property="article:author" content="AmazingHao">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -148,7 +148,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    10 分钟 读完 (大约 1506 个字)
+                    10 分钟 读完 (大约 1520 个字)
                 </span>
                 
                 
@@ -171,34 +171,31 @@
 <p><font color="red"><strong>Hexo</strong></font><br>本身是一个静态博客生成工具，具备编译 Markdown、拼接主题模板、生成 HTML、上传 Git 或 FTP 等基本功能。</p>
 <a id="more"></a>
 <hr>
-<h3 id="1、Node-js-安装"><a href="#1、Node-js-安装" class="headerlink" title="1、Node.js 安装"></a>1、Node.js 安装</h3><p>&emsp;&emsp;首先搭建hexo个人博客网站需要电脑中有Node.js环境，而Node.js即使是一个没有写过前端界面的人也可以完全傻瓜式安装完成的。参照官网下载对应版本<a href="https://nodejs.org/en/download/" target="_blank" rel="noopener"><strong>Node.js</strong></a>。   </p>
+<h3 id="1、Node-js-安装"><a href="#1、Node-js-安装" class="headerlink" title="1、Node.js 安装"></a>1、Node.js 安装</h3><p>&emsp;&emsp;首先搭建hexo个人博客网站需要电脑中有Node.js环境，而Node.js即使是一个没有写过前端界面的人也可以完全傻瓜式安装完成的。参照官网下载对应版本<a href="https://nodejs.org/en/download/"><strong>Node.js</strong></a>。   </p>
 <div align="center"><img src="/.com//Nodejs.png" width="50%" height="50%"></div>     
 
-<p>&emsp;&emsp;另外如果你想要进一步学习Node.js这个强大的服务器端的JavaScript绚丽技术以及体验高性能服务配置技术，请移步<a href="https://www.runoob.com/nodejs/nodejs-tutorial.html" target="_blank" rel="noopener"><strong>这里</strong></a> ,一路Next安装即可。<br>最后在控制台或bash命令行上输入：<br><code>node --version(或node -v)</code><br>以查看Node.js版本来验证否配置完成。<br><img src="/.com//Nodejs2.png" alt="nodejsTestVersion">   </p>
+<p>&emsp;&emsp;另外如果你想要进一步学习Node.js这个强大的服务器端的JavaScript绚丽技术以及体验高性能服务配置技术，请移步<a href="https://www.runoob.com/nodejs/nodejs-tutorial.html"><strong>这里</strong></a> ,一路Next安装即可。<br>最后在控制台或bash命令行上输入：<br><code>node --version(或node -v)</code><br>以查看Node.js版本来验证否配置完成。<br><img src="/.com//Nodejs2.png" alt="nodejsTestVersion">   </p>
 <h3 id="2、Hexo安装"><a href="#2、Hexo安装" class="headerlink" title="2、Hexo安装"></a>2、Hexo安装</h3><p>&emsp;&emsp;在安装Node.js的时候一般来说会自动安装一个叫做npm的软件安装程序，功能类似于python中的pip以及linux下的apt-get。<br>然后通过在本地路径打开命令行或git bash命令行，并输入：<br><code>npm install hexo-cli -g。</code><br>CLI = Command Line Interface为命令行界面。 </p>
-<h4 id="2-1-Hexo初始化"><a href="#2-1-Hexo初始化" class="headerlink" title="2.1 Hexo初始化"></a>2.1 Hexo初始化</h4><p>&emsp;&emsp;在本地找个合适的位置新建一个文件夹，作为Hexo博客存放的位置，这里名为NotesRecording<br>并在此文件夹下打开控制台或bash命令行，并输入:<br><code>hexo init NotesRecording</code><br>然后输入:<br><code>hexo --version</code><br>即可查看Hexo版本，如下:<img src="/.com//hexo-v.jpg" alt="hexo-v"><br>这里采用了 <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener"><strong>icarus</strong></a> 主题，因此和你现在能看到的可能有所出入。<br>在控制台或bash命令行输入：<br><code>npm install</code><br>新建完成后，指定文件夹目录下有：<br><img src="/.com//notesrecording.jpg" alt="notesrecording"><br>node_modules: Hexo的依赖包<br>public：存放生成的页面,这些index.html都是要上传到服务器端的<br>scaffolds：生成文章的一些模板<br>source：用来存放编辑好的文章<br>themes：存放喜欢的主题，比如本文的 <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener"><strong>icarus</strong></a><br>_config.yml: Hexo博客的配置文件<br>接着再运行：<br><code>hexo server</code><br>&emsp;&emsp;等待几秒之后，通过按照提示打开本地浏览器 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> 网址即可预览初始化好的Hexo博客界面。</p>
+<h4 id="2-1-Hexo初始化"><a href="#2-1-Hexo初始化" class="headerlink" title="2.1 Hexo初始化"></a>2.1 Hexo初始化</h4><p>&emsp;&emsp;在本地找个合适的位置新建一个文件夹，作为Hexo博客存放的位置，这里名为NotesRecording<br>并在此文件夹下打开控制台或bash命令行，并输入:<br><code>hexo init NotesRecording</code><br>然后输入:<br><code>hexo --version</code><br>即可查看Hexo版本，如下:<img src="/.com//hexo-v.jpg" alt="hexo-v"><br>这里采用了 <a href="https://github.com/ppoffice/hexo-theme-icarus"><strong>icarus</strong></a> 主题，因此和你现在能看到的可能有所出入。<br>在控制台或bash命令行输入：<br><code>npm install</code><br>新建完成后，指定文件夹目录下有：<br><img src="/.com//notesrecording.jpg" alt="notesrecording"><br>node_modules: Hexo的依赖包<br>public：存放生成的页面,这些index.html都是要上传到服务器端的<br>scaffolds：生成文章的一些模板<br>source：用来存放编辑好的文章<br>themes：存放喜欢的主题，比如本文的 <a href="https://github.com/ppoffice/hexo-theme-icarus"><strong>icarus</strong></a><br>_config.yml: Hexo博客的配置文件<br>接着再运行：<br><code>hexo server</code><br>&emsp;&emsp;等待几秒之后，通过按照提示打开本地浏览器 <a href="http://localhost:4000/">http://localhost:4000/</a> 网址即可预览初始化好的Hexo博客界面。</p>
 <h4 id="2-2-Hexo配置以及主题修改"><a href="#2-2-Hexo配置以及主题修改" class="headerlink" title="2.2 Hexo配置以及主题修改"></a>2.2 Hexo配置以及主题修改</h4><ul>
 <li>修改为中文：如 → language: zh-CN</li>
-<li>修改Hexo的主题，可以从 <a href="https://hexo.io/themes/" target="_blank" rel="noopener"><strong>官方主题</strong></a> 处寻找并下载。<br>然后放置在themes路径下并在_config.yml配置文件中设置：   <figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-variable">theme</span>: <span class="hljs-function"><span class="hljs-title">icarus</span>(这里以<span class="hljs-variable">icarus</span>为例)</span><br></code></pre></td></tr></table></figure></li>
+<li>修改Hexo的主题，可以从 <a href="https://hexo.io/themes/"><strong>官方主题</strong></a> 处寻找并下载。<br>然后放置在themes路径下并在_config.yml配置文件中设置：   <figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-variable">theme</span>: <span class="hljs-function"><span class="hljs-title">icarus</span>(这里以<span class="hljs-variable">icarus</span>为例)</span><br></code></pre></td></tr></table></figure></li>
 <li>设置Hexo关联git 仓库<br>&emsp;&emsp;设置好关联的Git账号之后，就可以将每次写好的博客以及对Hexo的配置进行保存，方便后续进行回顾和修改。<br>需要先安装hexo关联的git，命令如下：<br>npm install hexo-deployer-git –save<br>在_config.yml文件中找到如下对应的地方，并修改   <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs less"><span class="hljs-attribute">deploy</span>:<br>  <span class="hljs-attribute">type</span>: git    <br>  <span class="hljs-attribute">repo</span>: <span class="hljs-attribute">https</span>:<span class="hljs-comment">//github.com/yourGitName/yourGitName.github.io.git    </span><br>  <span class="hljs-attribute">branch</span>: master<br></code></pre></td></tr></table></figure>
 配置好之后在控制台或者bash命令行中输入：<br><code>Hexo -g -d</code><br>按照新的修改生成博客   </li>
-<li>修改icarus配置文件   </li>
-</ul>
-<h2 id="环境配置好后就可以开始写博客记录工作生活啦"><a href="#环境配置好后就可以开始写博客记录工作生活啦" class="headerlink" title="环境配置好后就可以开始写博客记录工作生活啦"></a>环境配置好后就可以开始写博客记录工作生活啦</h2><h3 id="首先创建一个新的博客"><a href="#首先创建一个新的博客" class="headerlink" title="首先创建一个新的博客"></a>首先创建一个新的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-<p>&emsp;&emsp; 本地文件夹中会出现一个名为“My New Post.md”的文档，如果在上述Hexo配置过程中开启了本地图片加载功能,z则还会生成一个同名的文件夹，用来存放在.md文档中要上传的照片<br>另外使用命令还会自动在md文档中生成一些头文件，如下，可以更好地帮助构建Hexo界面上的文档显示。   </p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">postName</span> <span class="hljs-comment">#文章页面上的显示名称，一般是中文</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-28</span> <span class="hljs-number">23</span><span class="hljs-string">:38:32</span> <span class="hljs-comment">#文章生成时间</span><br><span class="hljs-attr">categories:</span> <span class="hljs-string">默认分类</span> <span class="hljs-comment">#分类</span><br><span class="hljs-attr">tags:</span> <span class="hljs-string">[tag1,tag2,tag3]</span> <span class="hljs-comment">#文章标签，可空，多标签请用格式=</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<li>修改icarus配置文件<br>详见<a href="https://blog.csdn.net/marvine/article/details/89816846">飞鱼的博客</a>   <h2 id="环境配置好后就可以开始写博客记录工作生活啦"><a href="#环境配置好后就可以开始写博客记录工作生活啦" class="headerlink" title="环境配置好后就可以开始写博客记录工作生活啦"></a>环境配置好后就可以开始写博客记录工作生活啦</h2><h3 id="首先创建一个新的博客"><a href="#首先创建一个新的博客" class="headerlink" title="首先创建一个新的博客"></a>首先创建一个新的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
+&emsp;&emsp; 本地文件夹中会出现一个名为“My New Post.md”的文档，如果在上述Hexo配置过程中开启了本地图片加载功能,z则还会生成一个同名的文件夹，用来存放在.md文档中要上传的照片<br>另外使用命令还会自动在md文档中生成一些头文件，如下，可以更好地帮助构建Hexo界面上的文档显示。   <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">postName</span> <span class="hljs-comment">#文章页面上的显示名称，一般是中文</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-28</span> <span class="hljs-number">23</span><span class="hljs-string">:38:32</span> <span class="hljs-comment">#文章生成时间</span><br><span class="hljs-attr">categories:</span> <span class="hljs-string">默认分类</span> <span class="hljs-comment">#分类</span><br><span class="hljs-attr">tags:</span> <span class="hljs-string">[tag1,tag2,tag3]</span> <span class="hljs-comment">#文章标签，可空，多标签请用格式=</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
 <h3 id="博客预览"><a href="#博客预览" class="headerlink" title="博客预览"></a>博客预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server (hexo -s)<br></code></pre></td></tr></table></figure>
-<p>通过在浏览器中打开 <a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> , 即可预览到刚刚创建好的博客内容，如有问题，可立马修改。   </p>
-<h3 id="生成Hexo文档"><a href="#生成Hexo文档" class="headerlink" title="生成Hexo文档"></a>生成Hexo文档</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate (hexo -g)<br></code></pre></td></tr></table></figure>
+通过在浏览器中打开 <a href="http://localhost:4000/">http://localhost:4000/</a> , 即可预览到刚刚创建好的博客内容，如有问题，可立马修改。   <h3 id="生成Hexo文档"><a href="#生成Hexo文档" class="headerlink" title="生成Hexo文档"></a>生成Hexo文档</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate (hexo -g)<br></code></pre></td></tr></table></figure>
 <h3 id="部署到远程服务器上"><a href="#部署到远程服务器上" class="headerlink" title="部署到远程服务器上"></a>部署到远程服务器上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy (hexo -d)<br></code></pre></td></tr></table></figure>
-<p>打开对应的gitname.github.io即可查看博客啦。</p>
-<h2 id="最后注意"><a href="#最后注意" class="headerlink" title="最后注意"></a>最后注意</h2><ul>
+打开对应的gitname.github.io即可查看博客啦。<h2 id="最后注意"><a href="#最后注意" class="headerlink" title="最后注意"></a>最后注意</h2></li>
+</ul>
+<ul>
 <li>Hexo每次deploy，generate之后会加换来的文档资料全部覆盖掉，因此为了便于找回之前的内容，方便进行版本管理<br>建议使用github进行文档和操作同步，即在本地博客目录下同时初始化一个git仓库，每次更新完博客之后，随手进行仓库的同步更新，这样的话，将会极大地方便后续博客管理。   </li>
 <li>当你将写好的MarkDown文章推送到Hexo的时候，会发现Hexo默认显示了全部的文档内容，这对于博客内容比较多的人来说，显然是不合适的，因此有一个解决方案是：<br>采用Html的语法，在合适的地方添加<br><code>&lt;!--more--&gt;</code>   <h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2></li>
 </ul>
 <ol>
-<li><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html" target="_blank" rel="noopener">小茗同学</a>   </li>
-<li><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029" target="_blank" rel="noopener">fangzh的个人博客</a></li>
+<li><a href="https://www.cnblogs.com/liuxianan/p/build-blog-website-by-hexo-github.html">小茗同学</a>   </li>
+<li><a href="https://blog.csdn.net/sinat_37781304/article/details/82729029">fangzh的个人博客</a></li>
 </ol>
 
         </div>
@@ -833,14 +830,14 @@
                 </div>
             
             </div>
-			<span id="busuanzi_container_site_pv" class="theme-info">
-			|  本站总访问量<span id="busuanzi_value_site_pv">span>次
-			span>
-			<span id="busuanzi_container_site_uv" class="theme-info">
-			|  本站访客数<span id="busuanzi_value_site_uv">span>人次
-			span>
+			<id="busuanzi_container_site_pv" class="theme-info">
+			|  本站总访问量<id="busuanzi_value_site_pv">>次
+			>
+			<id="busuanzi_container_site_uv" class="theme-info">
+			|  本站访客数<id="busuanzi_value_site_uv">>人次
+			>
 			<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">script>
-			<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+			<id="timeDate">载入天数...</><id="times">载入时分秒...</>
             <script>
                 var now = new Date(); 
                 function createtime() { 
@@ -857,7 +854,6 @@
                 } 
             setInterval("createtime()",250);
             </script>
-
 		</div>
     </div>
 </footer>
