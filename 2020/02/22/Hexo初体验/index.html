@@ -19,7 +19,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-22T07:38:32.000Z">
-<meta property="article:modified_time" content="2020-03-02T15:15:41.644Z">
+<meta property="article:modified_time" content="2020-03-02T15:18:15.654Z">
 <meta property="article:author" content="Yuhao Li">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -147,7 +147,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    10 分钟 读完 (大约 1498 个字)
+                    10 分钟 读完 (大约 1499 个字)
                 </span>
                 
                 
@@ -169,11 +169,9 @@
 <div align="center"><img src="/.com//Nodejs.png" width="50%" height="50%"></div>     
 
 <p>&emsp;&emsp;另外如果你想要进一步学习Node.js这个强大的服务器端的JavaScript绚丽技术以及体验高性能服务配置技术，请移步<a href="https://www.runoob.com/nodejs/nodejs-tutorial.html"><strong>这里</strong></a> ,一路Next安装即可。<br>最后在控制台或bash命令行上输入：<br><code>node --version(或node -v)</code><br>以查看Node.js版本来验证否配置完成。<br><img src="/.com//Nodejs2.png" alt="nodejsTestVersion">   </p>
-<h3 id="2、Hexo安装"><a href="#2、Hexo安装" class="headerlink" title="2、Hexo安装"></a>2、Hexo安装</h3><p>&emsp;&emsp;在安装Node.js的时候一般来说会自动安装一个叫做npm的软件安装程序，功能类似于python中的pip以及linux下的apt-get。<br>然后通过在本地路径打开命令行或git bash命令行，并输入：<br><code>npm install hexo-cli -g。</code><br>CLI = Command Line Interface 命令行界面。 </p>
-<blockquote>
+<h3 id="2、Hexo安装"><a href="#2、Hexo安装" class="headerlink" title="2、Hexo安装"></a>2、Hexo安装</h3><p>&emsp;&emsp;在安装Node.js的时候一般来说会自动安装一个叫做npm的软件安装程序，功能类似于python中的pip以及linux下的apt-get。<br>然后通过在本地路径打开命令行或git bash命令行，并输入：<br><code>npm install hexo-cli -g。</code><br>CLI = Command Line Interface为命令行界面。 </p>
 <h4 id="2-1-Hexo初始化"><a href="#2-1-Hexo初始化" class="headerlink" title="2.1 Hexo初始化"></a>2.1 Hexo初始化</h4><p>&emsp;&emsp;在本地找个合适的位置新建一个文件夹，作为Hexo博客存放的位置，这里名为NotesRecording<br>并在此文件夹下打开控制台或bash命令行，并输入:<br><code>hexo init NotesRecording</code><br>然后输入:<br><code>hexo --version</code><br>即可查看Hexo版本，如下:<img src="/.com//hexo-v.jpg" alt="hexo-v"><br>这里采用了 <a href="https://github.com/ppoffice/hexo-theme-icarus"><strong>icarus</strong></a> 主题，因此和你现在能看到的可能有所出入。<br>在控制台或bash命令行输入：<br><code>npm install</code><br>新建完成后，指定文件夹目录下有：<br><img src="/.com//notesrecording.jpg" alt="notesrecording"><br>node_modules: Hexo的依赖包<br>public：存放生成的页面,这些index.html都是要上传到服务器端的<br>scaffolds：生成文章的一些模板<br>source：用来存放编辑好的文章<br>themes：存放喜欢的主题，比如本文的 <a href="https://github.com/ppoffice/hexo-theme-icarus"><strong>icarus</strong></a><br>_config.yml: Hexo博客的配置文件<br>接着再运行：<br><code>hexo server</code><br>&emsp;&emsp;等待几秒之后，通过按照提示打开本地浏览器 <a href="http://localhost:4000/">http://localhost:4000/</a> 网址即可预览初始化好的Hexo博客界面。</p>
-<h4 id="2-2-Hexo配置以及主题修改"><a href="#2-2-Hexo配置以及主题修改" class="headerlink" title="2.2 Hexo配置以及主题修改"></a>2.2 Hexo配置以及主题修改</h4></blockquote>
-<ul>
+<h4 id="2-2-Hexo配置以及主题修改"><a href="#2-2-Hexo配置以及主题修改" class="headerlink" title="2.2 Hexo配置以及主题修改"></a>2.2 Hexo配置以及主题修改</h4><ul>
 <li>修改为中文：如 → language: zh-CN</li>
 <li>修改Hexo的主题，可以从 <a href="https://hexo.io/themes/"><strong>官方主题</strong></a> 处寻找并下载。<br>然后放置在themes路径下并在_config.yml配置文件中设置：   <figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-variable">theme</span>: <span class="hljs-function"><span class="hljs-title">icarus</span>(这里以<span class="hljs-variable">icarus</span>为例)</span><br></code></pre></td></tr></table></figure></li>
 <li>设置Hexo关联git 仓库<br>&emsp;&emsp;设置好关联的Git账号之后，就可以将每次写好的博客以及对Hexo的配置进行保存，方便后续进行回顾和修改。<br>需要先安装hexo关联的git，命令如下：<br>npm install hexo-deployer-git –save<br>在_config.yml文件中找到如下对应的地方，并修改   <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs less"><span class="hljs-attribute">deploy</span>:<br>  <span class="hljs-attribute">type</span>: git    <br>  <span class="hljs-attribute">repo</span>: <span class="hljs-attribute">https</span>:<span class="hljs-comment">//github.com/yourGitName/yourGitName.github.io.git    </span><br>  <span class="hljs-attribute">branch</span>: master<br></code></pre></td></tr></table></figure>
