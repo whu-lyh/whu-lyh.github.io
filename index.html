@@ -141,7 +141,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    几秒 read (About 0 words)
+                    1 分钟 read (About 151 words)
                 </span>
                 
                 
@@ -154,7 +154,24 @@
             
         </h1>
         <div class="content">
-            
+            <h3 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h3><p>This repository is used to sequeeze a normal video to a n times faster.<br><strong>But</strong>, i found that there are many ways to relize this, such as ffmpeg and adjust the speed while roamming, etc.<br>OpenCV requires being complied with <strong>ffmepg</strong>, which i didn’t have the condition and many video format(.mp4) is not well supported.<br>Under Linux   </p>
+<ol>
+<li>Install ffmepg<br>sudo apt install ffmpeg   </li>
+<li>Speed or slow down the video</li>
+</ol>
+<hr>
+<p>4 times faster<br>ffmpeg -i origin.mp4 -vf  “setpts=0.25<em>PTS” UpTheOrigin.mp4<br>4 times slower<br>ffmpeg -i origin.mp4 -vf “setpts=4</em>PTS” DownTheOrigin.mp4  </p>
+<hr>
+<ol start="3">
+<li>Change the video format  </li>
+</ol>
+<hr>
+<p>ffmpeg -i origin.ogv -vcodec h264 output.mp4<br>ffmpeg -i origin.ogv -vcodec mpeg4 output.mp4<br>ffmpeg -i origin.ogv -vcodec libxvid output.mp4<br>ffmpeg -i origin.mp4 -vcodec wmv1 output.wmv<br>ffmpeg -i origin.mp4 -vcodec wmv2 output.wmv  </p>
+<hr>
+<ol start="4">
+<li>More resources<br>Please dive the <a href="https://blog.csdn.net/WuLex/article/details/101513018">Blog</a>.</li>
+</ol>
+
         </div>
         
         
@@ -227,7 +244,7 @@
 </li>
 </ol>
 <ul>
-<li>目前Markdown只能添加图片，若想调整图片大小，只能通过Html中标签的方式进行修改<br><code>&lt;img src=http://img0.dili360.com/ga/M01/01/FA/wKgBy1Q2wYGADMaxAAg9yYHclXE843.jpg@!rw17 width=&quot;50%&quot;&gt;</code>  <img src="http://img0.dili360.com/ga/M01/01/FA/wKgBy1Q2wYGADMaxAAg9yYHclXE843.jpg@!rw17" width="50%">  
+<li>目前Markdown只能添加图片，若想调整图片大小，只能通过Html中标签的方式进行修改<br><code>&lt;img src=http://img0.dili360.com/ga/M01/01/FA/wKgBy1Q2wYGADMaxAAg9yYHclXE843.jpg@!rw17 width=&quot;50%&quot;&gt;</code>   <img src="http://img0.dili360.com/ga/M01/01/FA/wKgBy1Q2wYGADMaxAAg9yYHclXE843.jpg@!rw17" width="50%">   
 
 </li>
 </ul>
@@ -397,7 +414,7 @@ ___粗斜体文本___</code></pre><p>6、添加短划线<br>~~删除文字~~<br>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Articles
+                        Posts
                     </p>
                     <a href="/archives">
                         <p class="title has-text-weight-normal">
@@ -409,7 +426,7 @@ ___粗斜体文本___</code></pre><p>6、添加短划线<br>~~删除文字~~<br>
             <div class="level-item has-text-centered is-marginless">
                 <div>
                     <p class="heading">
-                        Catégories
+                        Categories
                     </p>
                     <a href="/categories">
                         <p class="title has-text-weight-normal">
@@ -434,7 +451,7 @@ ___粗斜体文本___</code></pre><p>6、添加短划线<br>~~删除文字~~<br>
         
         <div class="level">
             <a class="level-item button is-link is-rounded" href="https://github.com/ppoffice" target="_blank" rel="noopener">
-                SUIVRE</a>
+                Follow</a>
         </div>
         
         
@@ -487,7 +504,7 @@ ___粗斜体文本___</code></pre><p>6、添加短划线<br>~~删除文字~~<br>
     <div class="card-content">
         <div class="menu">
         <h3 class="menu-label">
-            Liens
+            Links
         </h3>
         <ul class="menu-list">
         
@@ -524,7 +541,7 @@ ___粗斜体文本___</code></pre><p>6、添加短划线<br>~~删除文字~~<br>
     <div class="card-content">
         <div class="menu">
             <h3 class="menu-label">
-                Catégories
+                Categories
             </h3>
             <ul class="menu-list">
             
@@ -536,7 +553,7 @@ ___粗斜体文本___</code></pre><p>6、添加短划线<br>~~删除文字~~<br>
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Nuage de tags
+            Tag Cloud
         </h3>
         <a href="/tags/%E7%BB%93%E5%90%88%E4%BA%B2%E8%BA%AB%E7%BB%8F%E5%8E%86%EF%BC%8C%E6%95%B4%E7%90%86%E4%B8%80%E4%B8%8B%E5%B8%B8%E7%94%A8%E7%9A%84MarkDown%E8%AF%AD%E6%B3%95%E5%B0%8F%E7%9F%A5%E8%AF%86%E3%80%82/" style="font-size: 10px;">结合亲身经历，整理一下常用的MarkDown语法小知识。</a>
     </div>
@@ -548,7 +565,7 @@ ___粗斜体文本___</code></pre><p>6、添加短划线<br>~~删除文字~~<br>
             <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Récents
+            Recent
         </h3>
         
         <article class="media">
@@ -669,7 +686,7 @@ ___粗斜体文本___</code></pre><p>6、添加短划线<br>~~删除文字~~<br>
         <div class="card widget">
     <div class="card-content">
         <h3 class="menu-label">
-            Récents
+            Recent
         </h3>
         
         <article class="media">
@@ -911,7 +928,7 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 
 
-<a id="back-to-top" title="Zurück nach oben" href="javascript:;">
+<a id="back-to-top" title="Back to Top" href="javascript:;">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
@@ -947,9 +964,9 @@ document.addEventListener('DOMContentLoaded', function () {
     (function (window) {
         var INSIGHT_CONFIG = {
             TRANSLATION: {
-                POSTS: 'Articles',
+                POSTS: 'Posts',
                 PAGES: 'Pages',
-                CATEGORIES: 'Catégories',
+                CATEGORIES: 'Categories',
                 TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
