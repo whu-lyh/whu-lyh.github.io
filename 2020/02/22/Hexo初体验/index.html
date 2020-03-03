@@ -20,7 +20,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-22T07:38:32.000Z">
-<meta property="article:modified_time" content="2020-03-03T08:43:38.121Z">
+<meta property="article:modified_time" content="2020-03-03T14:21:40.067Z">
 <meta property="article:author" content="AmazingHao">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
@@ -148,7 +148,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    10 分钟 读完 (大约 1554 个字)
+                    11 分钟 读完 (大约 1630 个字)
                 </span>
                 
                 
@@ -182,13 +182,18 @@
 <li>修改Hexo的主题，可以从 <a href="https://hexo.io/themes/"><strong>官方主题</strong></a> 处寻找并下载。<br>然后放置在themes路径下并在_config.yml配置文件中设置：   <figure class="highlight isbl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs isbl"><span class="hljs-variable">theme</span>: <span class="hljs-function"><span class="hljs-title">icarus</span>(这里以<span class="hljs-variable">icarus</span>为例)</span><br></code></pre></td></tr></table></figure></li>
 <li>设置Hexo关联git 仓库<br>&emsp;&emsp;设置好关联的Git账号之后，就可以将每次写好的博客以及对Hexo的配置进行保存，方便后续进行回顾和修改。<br>需要先安装hexo关联的git，命令如下：<br>npm install hexo-deployer-git –save<br>在_config.yml文件中找到如下对应的地方，并修改   <figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs less"><span class="hljs-attribute">deploy</span>:<br>  <span class="hljs-attribute">type</span>: git    <br>  <span class="hljs-attribute">repo</span>: <span class="hljs-attribute">https</span>:<span class="hljs-comment">//github.com/yourGitName/yourGitName.github.io.git    </span><br>  <span class="hljs-attribute">branch</span>: master<br></code></pre></td></tr></table></figure>
 配置好之后在控制台或者bash命令行中输入：<br><code>Hexo -g -d</code><br>按照新的修改生成博客   </li>
-<li>修改icarus配置文件<br>详见<a href="https://blog.csdn.net/marvine/article/details/89816846">飞鱼的博客</a>   <h2 id="环境配置好后就可以开始写博客记录工作生活啦"><a href="#环境配置好后就可以开始写博客记录工作生活啦" class="headerlink" title="环境配置好后就可以开始写博客记录工作生活啦"></a>环境配置好后就可以开始写博客记录工作生活啦</h2><h3 id="首先创建一个新的博客"><a href="#首先创建一个新的博客" class="headerlink" title="首先创建一个新的博客"></a>首先创建一个新的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
-&emsp;&emsp; 本地文件夹中会出现一个名为“My New Post.md”的文档，如果在上述Hexo配置过程中开启了本地图片加载功能,z则还会生成一个同名的文件夹，用来存放在.md文档中要上传的照片<br>另外使用命令还会自动在md文档中生成一些头文件，如下，可以更好地帮助构建Hexo界面上的文档显示。   <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">postName</span> <span class="hljs-comment">#文章页面上的显示名称，一般是中文</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-28</span> <span class="hljs-number">23</span><span class="hljs-string">:38:32</span> <span class="hljs-comment">#文章生成时间</span><br><span class="hljs-attr">categories:</span> <span class="hljs-string">默认分类</span> <span class="hljs-comment">#分类</span><br><span class="hljs-attr">tags:</span> <span class="hljs-string">[tag1,tag2,tag3]</span> <span class="hljs-comment">#文章标签，可空，多标签请用格式=</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
+<li>修改icarus配置文件<br>详见<a href="https://blog.csdn.net/marvine/article/details/89816846">飞鱼的博客</a>   </li>
+<li>在写博客时难免会有一些图片需要添加，Hexo在添加本地图片时需要修改两个地方：   </li>
+</ul>
+<ol>
+<li>找到Hexo下的_config.yml里的post_asset_folder，把这个选项从false改成true。   </li>
+<li>安装一个Hexo的插件<code>npm install hexo-asset-image --save</code> 即可。      <h2 id="环境配置好后就可以开始写博客记录工作生活啦"><a href="#环境配置好后就可以开始写博客记录工作生活啦" class="headerlink" title="环境配置好后就可以开始写博客记录工作生活啦"></a>环境配置好后就可以开始写博客记录工作生活啦</h2><h3 id="首先创建一个新的博客"><a href="#首先创建一个新的博客" class="headerlink" title="首先创建一个新的博客"></a>首先创建一个新的博客</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo new <span class="hljs-string">"My New Post"</span><br></code></pre></td></tr></table></figure>
+&emsp;&emsp; 本地文件夹中会出现一个名为“My New Post.md”的文档，如果在上述Hexo配置过程中开启了本地图片加载功能,则还会生成一个同名的文件夹，用来存放在.md文档中要上传的照片<br>另外使用命令还会自动在md文档中生成一些头文件，如下，可以更好地帮助构建Hexo界面上的文档显示。   <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">postName</span> <span class="hljs-comment">#文章页面上的显示名称，一般是中文</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2020</span><span class="hljs-number">-02</span><span class="hljs-number">-28</span> <span class="hljs-number">23</span><span class="hljs-string">:38:32</span> <span class="hljs-comment">#文章生成时间</span><br><span class="hljs-attr">categories:</span> <span class="hljs-string">默认分类</span> <span class="hljs-comment">#分类</span><br><span class="hljs-attr">tags:</span> <span class="hljs-string">[tag1,tag2,tag3]</span> <span class="hljs-comment">#文章标签，可空，多标签请用格式=</span><br><span class="hljs-attr">description:</span> <span class="hljs-string">附加一段文章摘要，字数最好在140字以内，会出现在meta的description里面</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
 <h3 id="博客预览"><a href="#博客预览" class="headerlink" title="博客预览"></a>博客预览</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo server (hexo -s)<br></code></pre></td></tr></table></figure>
 通过在浏览器中打开 <a href="http://localhost:4000/">http://localhost:4000/</a> , 即可预览到刚刚创建好的博客内容，如有问题，可立马修改。   <h3 id="生成Hexo文档"><a href="#生成Hexo文档" class="headerlink" title="生成Hexo文档"></a>生成Hexo文档</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo generate (hexo -g)<br></code></pre></td></tr></table></figure>
 <h3 id="部署到远程服务器上"><a href="#部署到远程服务器上" class="headerlink" title="部署到远程服务器上"></a>部署到远程服务器上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo deploy (hexo -d)<br></code></pre></td></tr></table></figure>
 打开对应的gitname.github.io即可查看博客啦。<h2 id="最后注意"><a href="#最后注意" class="headerlink" title="最后注意"></a>最后注意</h2></li>
-</ul>
+</ol>
 <ul>
 <li>Hexo每次deploy，generate之后会加换来的文档资料全部覆盖掉，因此为了便于找回之前的内容，方便进行版本管理<br>建议使用github进行文档和操作同步，即在本地博客目录下同时初始化一个git仓库，每次更新完博客之后，随手进行仓库的同步更新，这样的话，将会极大地方便后续博客管理。   </li>
 <li>当你将写好的MarkDown文章推送到Hexo的时候，会发现Hexo默认显示了全部的文档内容，这对于博客内容比较多的人来说，显然是不合适的，因此有一个解决方案是：<br>采用Html的语法，在合适的地方添加<br><code>&lt;!--more--&gt;</code>   </li>
