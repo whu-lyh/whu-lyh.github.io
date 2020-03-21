@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<script src="/js/click.js"></script>
+<html  lang="zh">
+<head>
+    <meta charset="utf-8" />
+
+<meta name="generator" content="Hexo 4.2.0" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+<title>WindowBat - AmazingHao&#39;s Free Space</title>
+
+
+    <meta name="description" content="主要记录在使用Windows脚本时的一些使用方法">
+<meta property="og:type" content="article">
+<meta property="og:title" content="WindowBat">
+<meta property="og:url" content="http://yoursite.com/2020/03/21/WindowBat/index.html">
+<meta property="og:site_name" content="AmazingHao&#39;s Free Space">
+<meta property="og:description" content="主要记录在使用Windows脚本时的一些使用方法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="article:published_time" content="2020-03-21T08:21:12.000Z">
+<meta property="article:modified_time" content="2020-03-21T08:59:00.828Z">
+<meta property="article:author" content="AmazingHao">
+<meta property="article:tag" content="WindowsScript">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+
+
+
+
+
+
+
+<link rel="icon" href="/images/favicon.svg">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-dark.css">
+
+
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
+
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
+
+    
+    
+    
+    
+<link rel="stylesheet" href="/css/back-to-top.css">
+
+    
+    
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/progressbar.css">
+<script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+    
+    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-3-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="/images/logo.svg" alt="WindowBat" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item"
+                href="/">Home</a>
+                
+                <a class="navbar-item"
+                href="/archives">Archives</a>
+                
+                <a class="navbar-item"
+                href="/categories">Categories</a>
+                
+                <a class="navbar-item"
+                href="/tags">Tags</a>
+                
+                <a class="navbar-item"
+                href="/about">About</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/whu-lyh">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2020-03-21T08:21:12.000Z">2020-03-21</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1 小时 读完 (大约 8617 个字)
+                </span>
+                
+                
+                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
+                    <i class="far fa-eye"></i>
+                    <span id="busuanzi_value_page_pv">0</span>次访问
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                WindowBat
+            
+        </h1>
+        <div class="content">
+            <p><strong><em>Bat Fromat</em></strong>   </p>
+<hr>
+<p><a href="https://blog.csdn.net/qq_36838191/article/details/83046599">bat</a>中的一些语法学习，用于MicroStation多人编译</p>
+<h2 id="Parameter-Setting"><a href="#Parameter-Setting" class="headerlink" title="Parameter Setting"></a>Parameter Setting</h2><h4 id="1、系统参数"><a href="#1、系统参数" class="headerlink" title="1、系统参数"></a><em>1、系统参数</em></h4><p>%SystemRoot% === C:\WINDOWS (%windir% 同样)<br>%ProgramFiles% === C:\Program Files<br>%USERPROFILE% === C:\Documents and Settings\Administrator (子目录有“桌面”,“开始菜单”,“收藏夹”等)<br>%APPDATA% === C:\Documents and Settings\Administrator\Application Data<br>%TEMP% === C:\DOCUME<del>1\ADMINI</del>1\LOCALS~1\Temp (%TEM% 同样)<br>%APPDATA% === C:\Documents and Settings\Administrator\Application Data<br>%OS% === Windows_NT (系统)<br>%Path% === %SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem (原本的设置)<br>%HOMEDRIVE% === C: (系统盘)<br>%HOMEPATH% === \Documents and Settings\Administrator<br>:: 枚举当前的环境变量   </p>
+<a id="more"></a>
+<h4 id="2、传递参数给批处理文件"><a href="#2、传递参数给批处理文件" class="headerlink" title="2、传递参数给批处理文件"></a><em>2、传递参数给批处理文件</em></h4><p>%[1-9]表示参数，参数是指在运行批处理文件时在文件名后加的以空格(或者Tab)分隔的字符串。变量可以从%0到%9，%0表示批处理命令本身，其它参数字符串用 %1 到 %9 顺序表示。</p>
+<h2 id="Basic-Command"><a href="#Basic-Command" class="headerlink" title="Basic Command"></a>Basic Command</h2><h4 id="0、help"><a href="#0、help" class="headerlink" title="0、help"></a><em>0、help</em></h4><p>可以在console 输入 help /？查看</p>
+<h4 id="1、echo"><a href="#1、echo" class="headerlink" title="1、echo"></a><em>1、echo</em></h4><p>语法: echo [{on|off}] [message]<br>ECHO [ON | OFF] 打开回显或关闭回显功能。<br>ECHO 显示当前回显设置。<br>ECHO [message] 显示信息。<br>echo off 表示在此语句后所有运行的命令都不显示命令行本身；默认是on，on时会显示如： C:\文件夹路径&gt;命令行。<br>在实际应用中我们会把这条命令和重定向符号( 也称为管道符号，一般用 &gt; &gt;&gt; ^ )结合来实现输入一些命令到特定格式的文件中。   </p>
+<h4 id="2、"><a href="#2、" class="headerlink" title="2、@"></a><em>2、@</em></h4><p>表示不显示@后面的命令，(在入侵过程中自然不能让对方看到你使用的命令啦)<br>@ 与 echo off 相象，但它是加在每个命令行的最前面，表示运行时不显示这一行的命令行(只能影响当前行)。<br>Sample： @echo off (此语句常用于开头，表示不显示所有的命令行信息，包括此句)   </p>
+<h4 id="3、Goto"><a href="#3、Goto" class="headerlink" title="3、Goto"></a><em>3、Goto</em></h4><p>语法：goto label (label是参数，指定所要转向的批处理程序中的行。)<br>指定跳转到标签行，找到标签行后，程序将处理从下一行开始的命令。<br>label标签的名字可以随便起，但是最好是有意义的，<strong>字母前必须加个冒号“:”来表示这个字母是标签。</strong><br>goto命令就是根据这个冒号来寻找下一步跳到到那里。经常与 if 配合使用，根据不同的条件来执行不同的命令组。   </p>
+<h4 id="4、Rem"><a href="#4、Rem" class="headerlink" title="4、Rem"></a><em>4、Rem</em></h4><p>rem 输出信息，可以用“::”代替</p>
+<h4 id="5、Pause"><a href="#5、Pause" class="headerlink" title="5、Pause"></a><em>5、Pause</em></h4><p>挂起，使console运行结束后不退出    </p>
+<h4 id="6、Call"><a href="#6、Call" class="headerlink" title="6、Call"></a><em>6、Call</em></h4><p>&emsp;&emsp;语法: <code>__call [[Drive:][Path] FileName [BatchParameters]] [:label [arguments]]__</code><br>&emsp;&emsp;参数: [Drive:][Path] FileName 指定要调用的批处理程序的位置和名称。<strong>filename 参数必须具有 .bat 或 .cmd 扩展名。</strong><br>&emsp;&emsp;调用另一个批处理程序，并且不终止父批处理程序。如果不用call而直接调用别的批处理文件，那么执行完那个批处理文件后将无法返回当前文件并执行当前文件的后续命令。<br>call 命令接受用作调用目标的标签。如果在脚本或批处理文件外使用 Call，它将不会在命令行起作用。<br><code>Sample：call=&quot;%cd%\test2.bat&quot; haha kkk aaa</code>(调用指定目录下的 test2.bat，且输入3个参数给他)<br><code>Sample：call test2.bat arg1 arg2</code>(调用同目录下的 test2.bat，且输入2个参数给他)<br>注：可以调用自身(死循环、递归)    </p>
+<h4 id="7、Start"><a href="#7、Start" class="headerlink" title="7、Start"></a><em>7、Start</em></h4><p>用的不多，调用外部程序，所有的 DOS命令 和 命令行程序 都可以由 start命令 来调用。<br>入侵常用参数：<br>MIN 开始时窗口最小化<br>SEPARATE 在分开的空间内开始 16 位 Windows 程序<br>HIGH 在 HIGH 优先级类别开始应用程序<br>REALTIME 在 REALTIME 优先级类别开始应用程序<br>WAIT 启动应用程序并等候它结束<br>parameters 这些为传送到命令/程序的参数<br><code>Sample：start /MIN test2.bat arg1 arg2</code>(调用同目录下的 test2.bat，且输入2个参数给他，且本窗口最小化)<br><code>Sample：e:\&quot;program files&quot;\极品列车时刻表\jpskb.exe</code>(文件路径名有空格时)   </p>
+<h4 id="8、If"><a href="#8、If" class="headerlink" title="8、If"></a><em>8、If</em></h4><p> if  表示将判断是否符合规定的条件，从而决定执行不同的命令。有三种格式:</p>
+<ol>
+<li>if<br>语法: if [not] “参数” == “字符串” 待执行的命令<br>参数如果等于(not表示不等，下同)指定的字符串，则条件成立，运行命令，否则运行下一句。(注意是两个等号)<br><code>Sample: if &quot;%1&quot; == &quot;a&quot; format a:</code>   {`Sample: if {%1} == {} goto noparms `}  </li>
+<li>if exist<br>语法: if [not] exist [路径]文件名 待执行的命令<br>如果有指定的文件，则条件成立，运行命令，否则运行下一句。<br><code>Sample: if exist config.sys edit config.sys</code>(表示如果存在这文件，则编辑它，用很难看的系统编辑器)<br><code>Sample: if exist config.sys type config.sys</code>(表示如果存在这文件，则显示它的内容)   </li>
+<li>if errorlevel number<br>语法: if [not] errorlevel &lt;数字&gt; 待执行的命令<br>如果程序返回值等于指定的数字，则条件成立，运行命令，否则运行下一句。(返回值必须按照从大到小的顺序排列)<br>Sample:<figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs dos">@<span class="hljs-built_in">echo</span> off<br><span class="hljs-built_in">XCOPY</span> F:\test.bat D:\<br><span class="hljs-keyword">IF</span> <span class="hljs-keyword">ERRORLEVEL</span> <span class="hljs-number">1</span> (<span class="hljs-built_in">ECHO</span> 文件拷贝失败) <br><span class="hljs-keyword">Else</span> <span class="hljs-keyword">IF</span> <span class="hljs-keyword">ERRORLEVEL</span> <span class="hljs-number">0</span> <span class="hljs-built_in">ECHO</span> 成功拷贝文件<br><span class="hljs-built_in">pause</span><br></code></pre></td></tr></table></figure>
+&emsp;&emsp;很多DOS程序在运行结束后会返回一个数字值用来表示程序运行的结果(或者状态)，称为错误码errorlevel或称返回码。<br>常见的返回码为0、1。通过if errorlevel命令可以判断程序的返回值，根据不同的返回值来决定执行不同的命令。   </li>
+</ol>
+<ul>
+<li><strong>4) else</strong><br>语法： if 条件 (成立时执行的命令) else (不成立时执行的命令)<br>如果是多个条件，建议适当使用括号把各条件包起来，以免出错。<br>Sample: if 1 == 0 ( echo comment1 ) else if 1==0 ( echo comment2 ) else (echo comment3 )<br><strong>注：如果 else 的语句需要换行，if 执行的行尾需用“^”连接，并且 if 执行的动作需用(括起来)，否则报错</strong><br>Sample: if 1 == 0 ( echo comment1 ) else if 1==0 ( echo comment2 ) ^<br>else (echo comment3 )</li>
+<li><strong>5) 比较运算符:</strong><figure class="highlight dos"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs dos"><span class="hljs-keyword">EQU</span> - 等于 (一般使用“==”)<br><span class="hljs-keyword">NEQ</span> - 不等于 (没有 “!=”,改用“ <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-number">1</span>==<span class="hljs-number">1</span> ”的写法)<br><span class="hljs-keyword">LSS</span> - 小于<br><span class="hljs-keyword">LEQ</span> - 小于或等于<br><span class="hljs-keyword">GTR</span> - 大于<br><span class="hljs-keyword">GEQ</span> - 大于或等于<br><span class="hljs-keyword">if</span> /i &#123;%<span class="hljs-number">1</span>&#125;==&#123;&#125; (<span class="hljs-built_in">set</span> _BUILDARGS=+a) <span class="hljs-keyword">else</span> (<span class="hljs-built_in">set</span> _BUILDARGS=+avilC)<br><span class="hljs-comment">rem /i 表示启动IF命令扩展，使得IF可以支持多种运算操作：&#123;%1&#125;==&#123;&#125;如果第一个参数为空，就设置buildargs为+a 就是bmake后面跟的参数，否则就设置为其他的</span><br></code></pre></td></tr></table></figure>
+<h4 id="9、Choice"><a href="#9、Choice" class="headerlink" title="9、Choice"></a><em>9、Choice</em></h4>choice 使用此命令可以让用户输入一个字符(用于选择)，从而根据用户的选择返回不同的 errorlevel，然后配合 if errorlevel 选择运行不同的命令。<br><strong>注意：choice命令为DOS或者Windows系统提供的外部命令，不同版本的choice命令语法会稍有不同，请用choice /?查看用法。</strong><br>使用时应该加/c:参数，c:后应写提示可输入的字符，之间无空格。它的返回码为1234<br>Sample: choice /c:dme defrag,mem,end<br>将显示: defrag,mem,end[D,M,E]?<br>Sample:   <figure class="highlight smali"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs smali">choice /c:dme defrag,mem,end<span class="hljs-built_in"><br>if </span>errorlevel 3<span class="hljs-built_in"> goto </span>defrag (应先判断数值最高的错误码)<span class="hljs-built_in"><br>if </span>errorlevel 2<span class="hljs-built_in"> goto </span>mem<span class="hljs-built_in"><br>if </span>errotlevel 1<span class="hljs-built_in"> goto </span>end<br></code></pre></td></tr></table></figure>
+<h4 id="10、For"><a href="#10、For" class="headerlink" title="10、For"></a><em>10、For</em></h4>for 对一组文件中的每一个文件执行某个特定命令。<strong><em>主要用于参数在指定的范围内循环执行命令。</em></strong></li>
+<li>1)<strong>for {%variable | %%variable} in (set) do command [command-parameters]</strong><br><strong>%variable</strong> 指定一个单一字母可替换的参数。变量名称是区分大小写的，所以 %i 不同于 %I<br>在批处理文件中使用 FOR 命令时，指定变量建议用 <strong>%%variable</strong>而不要用 %variable。<br>(set) 指定一个或一组文件。可以使用通配符。<br><strong>command</strong> 指定对每个文件执行的命令。<br><strong>command-parameters</strong> 为特定命令指定参数或命令行开关。   </li>
+<li>2)<strong>如果命令扩展名被启用，下列额外的 FOR 命令格式会受到支持:</strong>   </li>
+<li>a. FOR /D %variable IN (set) DO command [command-parameters]<br>如果集里面包含通配符，则指定与目录名匹配，而不与文件名匹配。   </li>
+<li>b. FOR /R [[drive:]path] %variable IN (set) DO command [command-parameters]<br>检查以 [drive:]path 为根的目录树，指向每个目录中的FOR 语句。<br>如果在 /R 后没有指定目录，则使用当前目录。<strong>如果集仅为一个单点(.)字符，则枚举该目录树。</strong></li>
+<li>c. FOR /L %variable IN (start,step,end) DO command [command-parameters]<br>该集表示以增量形式从开始到结束的一个数字序列。<br>如：(1,1,5) 将产生序列 1 2 3 4 5； 而(5,-1,1) 将产生序列 (5 4 3 2 1)。</li>
+<li>d. 有或者没有 usebackq 选项:<br>FOR /F [“options”] %variable IN (file-set) DO command<br>FOR /F [“options”] %variable IN (“string”) DO command<br>FOR /F [“options”] %variable IN (command) DO command<br>参数”options”为:<br>fileset 为一个或多个文件名。继续到 fileset 中的下一个文件之前，每份文件都被打开、读取并经过处理。处理包括读取文件，将其分成一行行的文字，<br>然后将每行解析成零或更多的符号。然后用已找到的符号字符串变量值调用 For 循环。以默认方式，/F 通过每个文件的每一行中分开的第一个空白符号。跳过空白行。<br>你可通过指定可选 “options” 参数替代默认解析操作。这个带引号的字符串包括一个或多个指定不同解析选项的关键字。<br>这些关键字为:   <figure class="highlight C++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs C++">eol=c - 指一个行注释字符的结尾(就一个字符),(如“;”)<br>skip=n - 指在文件开始时忽略的行数。<br>delims=xxx - 指分隔符集。这个替换了空格和跳格键的默认分隔符集。<br>tokens=x,y,m-n - 指每行的哪一个符号被传递到每个迭代的 <span class="hljs-keyword">for</span> 本身。这会导致额外变量名称的分配。<br>m-n格式为一个范围。通过 nth 符号指定 mth。<br>如果符号字符串中的最后一个字符星号，那么额外的变量将在最后一个符号解析之后分配并接受行的保留文本。<br>usebackq - 指定新语法已在下类情况中使用:<br>在作为命令执行一个后引号的字符串并且一个单引号字符为文字字符串命令并允许在 filenameset中使用双引号扩起文件名称。<br></code></pre></td></tr></table></figure></li>
+<li>3)<strong>Sample:</strong>    </li>
+<li>a. 如下命令行会显示当前目录下所有以bat或者txt为扩展名的文件名。<br>for %%c in (*.bat *.txt) do (echo %%c)   </li>
+<li>b. 如下命令行会显示当前目录下所有包含有 e 或者 i 的目录名。<br>for /D %%a in (<em>e</em> <em>i</em>) do echo %%a   </li>
+<li>c. 如下命令行会显示 E盘test目录 下所有以bat或者txt为扩展名的文件名。<br>for /R E:\test %%b in (<em>.txt *.bat) do echo %%b<br>for /r %%c in (</em>) do (echo %%c) :: 遍历当前目录下所有文件   </li>
+<li>d. 如下命令行将产生序列 1 2 3 4 5<br>for /L %%c in (1,1,5) do echo %%c   </li>
+<li>e. 以下两句，显示当前的年月日和时间<br><strong>For /f “tokens=1-3 delims=-/. “ %%j In (‘Date /T’) do echo %%j年%%k月%%l日</strong><br><strong>For /f “tokens=1,2 delims=: “ %%j In (‘TIME /T’) do echo %%j时%%k分</strong>   </li>
+<li>f. 把记事本中的内容每一行前面去掉8个字符<br>setlocal enabledelayedexpansion<br>for /f %%i in (zhidian.txt) do (<br>set atmp=%%i<br>set atmp=!atmp:~8!<br>if {!atmp!}=={} ( echo.) else echo !atmp!<br>)<br>:: 读取记事本里的内容(使用 delims 是为了把一行显示全,否则会以空格为分隔符)<br>for /f “delims=” %%a in (zhidian.txt) do echo.%%a</li>
+<li>g.<br><code>FOR /F &quot;eol=; tokens=2,3* delims=, &quot; %i in (myfile.txt) do @echo %i %j %k</code><br>该行会分析 myfile.txt 中的每一行，忽略以分号打头的那些行，将每行中的第二个和第三个符号传递给 for 函数体，用逗号和/或<br>空格分隔符号。请注意，此 for 函数体的语句引用 %i 来获得第二个符号，引用 %j 来获得第三个符号，引用 %k来获得第三个符号后的所有剩余符号。对于带有空格的文件名，你需要用双引号将文件名括起来。为了用这种方式来使用双引号，还需要使用 usebackq 选项，否则，双引号会被理解成是用作定义某个要分析的字符串的。</li>
+</ul>
+<p><strong>%i 在 for 语句中显式声明，%j 和 %k 是通过tokens= 选项隐式声明的。</strong><br>可以通过 tokens= 一行指定最多 26 个符号，只要不试图声明一个高于字母 “z” 或”Z” 的变量。请记住，FOR 变量是单一字母、分大小写和全局的变量；而且，不能同时使用超过 52 个。</p>
+<p>还可以在相邻字符串上使用 FOR /F 分析逻辑，方法是，用单引号将括号之间的 file-set 括起来。这样，该字符串会被当作一个文件中的一个单一输入行进行解析。</p>
+<p>最后，可以用 FOR /F 命令来分析命令的输出。方法是，将括号之间的 file-set 变成一个反括字符串。该字符串会被当作命令行，传递到一个子 CMD.EXE，其输出会被捕获到内存中，并被当作文件分析。如以下例子所示:<br><code>FOR /F &quot;usebackq delims==&quot; %i IN (</code>set<code>) DO @echo %i</code><br>会枚举当前环境中的环境变量名称。</p>
+<ul>
+<li>4)<strong>continue 和 break</strong><br>利用 goto 实现程序中常用的 continue 和 break 命令, 其实非常简单<br>continue: 在 for 循环的最后一行写上一个标签，跳转到这位置即可<br>break: 在 for 循环的外面的下一句写上一个标签，跳转到这位置即可<blockquote>
+<p>Sample: </p>
+</blockquote>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs vim"><span class="hljs-keyword">for</span> /F [<span class="hljs-string">"options"</span>] %variable IN (<span class="hljs-keyword">command</span>) DO (<br>... <span class="hljs-keyword">do</span> <span class="hljs-keyword">command</span> ...<br><span class="hljs-keyword">if</span> ... <span class="hljs-keyword">goto</span> <span class="hljs-keyword">continue</span><br><span class="hljs-keyword">if</span> ... <span class="hljs-keyword">goto</span> <span class="hljs-keyword">break</span><br>... <span class="hljs-keyword">do</span> <span class="hljs-keyword">command</span> ...<br>:<span class="hljs-keyword">continue</span><br>)<br>:<span class="hljs-keyword">break</span><br></code></pre></td></tr></table></figure>
+<h3 id="For循环补充"><a href="#For循环补充" class="headerlink" title="For循环补充"></a>For循环补充</h3><blockquote>
+<p>/D 参数只能显示当前目录下的目录名字<br>@echo off<br>for /d %%i in (window?) do @echo %%i<br>pause<br>/R 递归进入根目录树[Drive:]Path，在树的每个目录中执行for 语句。如果在 /R 后没有指定目录，则认为是<br>当前目录。如果 Set 只是一个句点 (.)，则只枚举目录树。<br>系统帮助的格式:<br>FOR /R[[drive:]path] %%variable IN (set) DO command<br>for /r %%i in (<em>.exe) do @echo %%i<br>列出所有exe的名字<br>for /r c:\ %%i in (</em>.exe) do @echo %%i<br>列出c盘的exe名字<br>对于FOR /F %%i IN (file) DO command<br>file为文件名，按照官方的说法是，for会依次将file中的文件打开，并且在进行到下一个文件之前将每个文件读取到内存，<br>按照每一行分成一个一个的元素，忽略空白的行，看个例子。<br>for/f “delims= “ %%i in (a.txt) do echo %%i<br>输出a.txt文件中的每一行，用空格隔开？</p>
+</blockquote>
+<h4 id="11、Ping"><a href="#11、Ping" class="headerlink" title="11、Ping"></a><em>11、Ping</em></h4>测试网络联接状况以及信息包发送和接收状况。但是不能够测试端口。<br>语法：ping IP地址或主机名 [-t] [-a] [-n count] [-l size]<br>参数含义：   </li>
+</ul>
+<p>-t 不停地向目标主机发送数据；<br>-a 以IP地址格式来显示目标主机的网络地址；<br>-n count 指定要Ping多少次，具体次数由count来指定；<br>-l size 指定发送到目标主机的数据包的大小。<br>Sample: ping 192.168.0.1 -t (不停的测试192.168.0.1，按ctrl+c停止)<br>Sample: for /L %%a in (0,1,255) do ping 192.168.0.%%a -n 1 &gt;&gt; tmp.txt (ping一下所有的局域网电脑)   </p>
+<h4 id="12、Telnet"><a href="#12、Telnet" class="headerlink" title="12、Telnet"></a><em>12、Telnet</em></h4><p>测试端口使用 telnet IP地址或主机名 端口，使用tcp协议的<br>Sample: telnet 192.168.0.1 80 (测试192.168.0.1的80端口)</p>
+<h4 id="13、Color"><a href="#13、Color" class="headerlink" title="13、Color"></a><em>13、Color</em></h4><p>color [attr]<br>颜色属性由两个十六进制数字指定 – 第一个对应于背景，第二个对应于前景。每个数字<br>可以为以下任何值:      </p>
+<pre><code>0 = 黑色       8 = 灰色
+1 = 蓝色       9 = 淡蓝色
+2 = 绿色       A = 淡绿色
+3 = 浅绿色     B = 淡浅绿色
+4 = 红色       C = 淡红色
+5 = 紫色       D = 淡紫色
+6 = 黄色       E = 淡黄色
+7 = 白色       F = 亮白色   </code></pre><p>如果没有给定任何参数，此命令会将颜色还原到 CMD.EXE 启动时的颜色。这个值来自当前控制台<br>窗口、/T 命令行开关或 DefaultColor 注册表值。<br>如果尝试使用相同的前景和背景颜色来执行rem COLOR 命令，COLOR 命令会将 ERRORLEVEL 设置为 1。<br>只有一个参数时，设置字体。只有一个字母时默认时设置字体的颜色   </p>
+<h4 id="14、Exit"><a href="#14、Exit" class="headerlink" title="14、Exit"></a><em>14、Exit</em></h4><p>exit退出   </p>
+<h4 id="15、ShutDown"><a href="#15、ShutDown" class="headerlink" title="15、ShutDown"></a><em>15、ShutDown</em></h4><p>shutdown -s +秒数（xx秒之后自动关闭）  </p>
+<h4 id="16、Dir"><a href="#16、Dir" class="headerlink" title="16、Dir"></a><em>16、Dir</em></h4><p>显示目录中的文件和子目录列表。   </p>
+<figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br></pre></td><td class="code"><pre><code class="hljs jboss-cli">DIR [drive:][path][filename] [<span class="hljs-string">/A</span>[[:]attributes]] [<span class="hljs-string">/B</span>] [<span class="hljs-string">/C</span>] [<span class="hljs-string">/D</span>] [<span class="hljs-string">/L</span>] [<span class="hljs-string">/N</span>]<br>  [<span class="hljs-string">/O</span>[[:]sortorder]] [<span class="hljs-string">/P</span>] [<span class="hljs-string">/Q</span>] [<span class="hljs-string">/R</span>] [<span class="hljs-string">/S</span>] [<span class="hljs-string">/T</span>[[:]timefield]] [<span class="hljs-string">/W</span>] [<span class="hljs-string">/X</span>] [<span class="hljs-string">/4</span>]<br>  [drive:][path][filename]<br>              指定要列出的驱动器、目录和/或文件。<br><br><br>  <span class="hljs-string">/A</span>          显示具有指定属性的文件。<br>  属性         D  目录                R  只读文件<br>                  H  隐藏文件            A  准备存档的文件<br>                  S  系统文件            I  无内容索引文件<br>                  L  解析点             -  表示“否”的前缀<br>  <span class="hljs-string">/B</span>          使用空格式<span class="hljs-params">(没有标题信息或摘要)</span>。<br>  <span class="hljs-string">/C</span>          在文件大小中显示千位数分隔符。这是默认值。用 <span class="hljs-string">/-C</span> 来禁用分隔符显示。<br>  <span class="hljs-string">/D</span>          跟宽式相同，但文件是按栏分类列出的。<br>  <span class="hljs-string">/L</span>          用小写。<br>  <span class="hljs-string">/N</span>          新的长列表格式，其中文件名在最右边。<br>  <span class="hljs-string">/O</span>          用分类顺序列出文件。<br>  排列顺序     N  按名称<span class="hljs-params">(字母顺序)</span>     S  按大小<span class="hljs-params">(从小到大)</span><br>                   E  按扩展名<span class="hljs-params">(字母顺序)</span>   D  按日期/时间<span class="hljs-params">(从先到后)</span><br>                   G  组目录优先           -  反转顺序的前缀<br>  <span class="hljs-string">/P</span>          在每个信息屏幕后暂停。<br>  <span class="hljs-string">/Q</span>          显示文件所有者。<br>  <span class="hljs-string">/R</span>          显示文件的备用数据流。<br>  <span class="hljs-string">/S</span>          显示指定目录和所有子目录中的文件。<br>  <span class="hljs-string">/T</span>          控制显示或用来分类的时间字符域。<br>  时间段      C  创建时间<br>              A  上次访问时间<br>              W  上次写入的时间<br>  <span class="hljs-string">/W</span>          用宽列表格式。<br>  <span class="hljs-string">/X</span>          显示为非 8.3 文件名产生的短名称。格式是 <span class="hljs-string">/N</span> 的格式，<br>              短名称插在长名称前面。如果没有短名称，在其位置则<br>              显示空白。<br>  <span class="hljs-string">/4</span>          用四位数字显示年<br>可以在 DIRCMD 环境变量中预先设定开关。通过添加前缀 - <span class="hljs-params">(破折号)</span><br>来替代预先设定的开关。例如，<span class="hljs-string">/-W</span>。<br>上面是CMD命令自带的说明文件。<br>dir <span class="hljs-string">/d</span>      只显示当前目录下的文件名称<br>dir <span class="hljs-string">/od</span>     按文件修改时间排序，递增；<br>dir <span class="hljs-string">/o-d</span>    按文件修改时间排序，递减<br>dir <span class="hljs-string">/od/tc</span>   按文件创建时间排序，递增<br>dir <span class="hljs-string">/o-d/tc</span>  按文件创建时间排序，递减<br>dir/on 按文件名排序对应，递增<br>dir/o-n 按文件名排序对应，递减<br>dir/oe 按扩展名排序对应，递增<br>dir/o-e 按文件名排序对应，递减<br>dir <span class="hljs-string">/s</span> <span class="hljs-string">/b</span> &gt;a.txt 打印文件夹下的所有文件<br></code></pre></td></tr></table></figure>
+<h4 id="17、重定向符"><a href="#17、重定向符" class="headerlink" title="17、重定向符"></a><em>17、重定向符</em></h4><p>mycommand &gt;mylog.txt 2&gt;&amp;1<br>应该是最经典的用法了。<br>命令的结果可以通过“%&gt;”的形式来定向输出，%表示文件描述符：1为标准输出stdout、2为标准错误stderr。系统默认%值是1，也就是“1&gt;”，而1&gt;可以简写为&gt;，也就是默认为&gt;。<br>stdout的默认目标是终端，stderr的默认目标为也是终端。我们在批处理中执行： echo text &gt;result.txt ，我们就可以在屏幕上会看到 echo text 1&gt;result.txt ，即是这个道理。<br>其中&amp;需要直接与重定向符号结合使用。<br>应用实例：<br>1、将结果输出到result.txt<br>net stop myservices &gt;&gt;result 2&gt;&amp;1<br>2、隐藏程序输出结果<br>net stop myservices &gt;nul 2&gt;nul<br>微软关于重定向的文章：使用命令重定向操作符<br>可以使用重定向操作符将命令输入和输出数据流从默认位置重定向到其他位置。输入或输出数据流的位置称为句柄。<br>下面列出可用的句柄。<br>句柄 句柄的数字代号 描述 </p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">STDIN <span class="hljs-number">0</span> 键盘输入   <br>STDOUT <span class="hljs-number">1</span> 输出到命令提示符窗口   <br>STDERR <span class="hljs-number">2</span> 错误输出到命令提示符窗口   <br>UNDEFINED <span class="hljs-number">3</span><span class="hljs-number">-9</span> 句柄由应用程序单独定义，它们是各个工具特有的<br></code></pre></td></tr></table></figure>
+<p>数字 0 到 9 代表前 10 个句柄。可以使用命令 Cmd.exe 运行程序，并对该程序前 10 个句柄中的任何一个句柄进行重定向。要指定要用的句柄，请在重定向操作符之前键入该句柄的数字。如果未定义句柄，则默认的 &lt; 重定向输入操作符是 0，而默认的 &gt; 重定向输出操作符是 1。键入 &lt; 或 &gt; 操作符之后，必须指定数据的读写位置。可以指定文件名或其他现有的句柄。<br>要指定重定向到现有句柄，请使用与 (&amp;) 字符，后面接要重定向的句柄号（即 &amp;句柄号）。<br>例如，下面的命令可以将句柄 2（即 STDERR）重定向到句柄 1（即 STDOUT）：<br>2&gt;&amp;1<br>下表列出了可用于重定向输入和输出数据流的操作符。   </p>
+<figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs julia">重定向操作符 描述 <br>&gt; 将命令输出写入到文件或设备（如打印机），而不是命令提示符窗口或句柄。<br>&lt; 从文件而不是从键盘或句柄读入命令输入。<br>&gt;&gt; 将命令输出添加到文件末尾而不删除文件中已有的信息。<br>&gt;&amp; 将一个句柄的输出写入到另一个句柄的输入中。<br>&lt;&amp; 从一个句柄读取输入并将其写入到另一个句柄输出中。<br>| 从一个命令中读取输出并将其写入另一个命令的输入中。也称作管道。<br>默认情况下，可以从键盘将命令输入（即 <span class="hljs-literal">STDIN</span> 句柄）发送到 <span class="hljs-built_in">Cmd</span>.exe，然后由 <span class="hljs-built_in">Cmd</span>.exe 将命令输出（即 <span class="hljs-literal">STDOUT</span> 句柄）发送到命令提示符窗口。<br></code></pre></td></tr></table></figure>
+<h2 id="使用组合命令-Compound-Command"><a href="#使用组合命令-Compound-Command" class="headerlink" title="使用组合命令(Compound Command)"></a>使用组合命令(Compound Command)</h2><ul>
+<li>1.<strong>&amp;</strong><br>Usage：第一条命令 &amp; 第二条命令 [&amp; 第三条命令…]<br><strong>用这种方法可以同时执行多条命令，而不管命令是否执行成功</strong><br>Sample：   <figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">C:\\&gt;dir z: &amp; dir c:\\Ex4rch   <br>The system cannot find the path specified.   <br>Volume <span class="hljs-keyword">in</span> drive C has no label.   <br>Volume Serial Number <span class="hljs-keyword">is</span> <span class="hljs-number">0078</span><span class="hljs-number">-59</span>FB   <br><br>Directory of c:\\Ex4rc<br><span class="hljs-number">2002</span><span class="hljs-number">-05</span><span class="hljs-number">-14</span> <span class="hljs-number">23</span>:<span class="hljs-number">51</span> &lt;DIR&gt; .<br><span class="hljs-number">2002</span><span class="hljs-number">-05</span><span class="hljs-number">-14</span> <span class="hljs-number">23</span>:<span class="hljs-number">51</span> &lt;DIR&gt; ..<br><span class="hljs-number">2002</span><span class="hljs-number">-05</span><span class="hljs-number">-14</span> <span class="hljs-number">23</span>:<span class="hljs-number">51</span> <span class="hljs-number">14</span> sometips.gif<br></code></pre></td></tr></table></figure></li>
+<li>2.<strong>&amp;&amp;</strong><br>Usage：第一条命令 &amp;&amp; 第二条命令[&amp;&amp; 第三条命令…]<br><strong>用这种方法可以同时执行多条命令，当碰到执行出错的命令后将不执行后面的命令，如果一直没有出错则一直执行完所有命令；</strong>   <figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs routeros">Sample：<br>C:\\&gt;dir z: &amp;&amp; dir c:\\Ex4rch<br>The<span class="hljs-built_in"> system </span>cannot <span class="hljs-builtin-name">find</span> the path specified.<br><br>C:\\&gt;dir c:\\Ex4rch &amp;&amp; dir z:<br>Volume <span class="hljs-keyword">in</span> drive C has <span class="hljs-literal">no</span> label.<br>Volume Serial Number is 0078-59FB<br><br>Directory of c:\\Ex4rch<br><br>2002-05-14 23:55 &lt;DIR&gt; .<br>2002-05-14 23:55 &lt;DIR&gt; <span class="hljs-built_in">..</span><br>2002-05-14 23:55 14 sometips.gif<br>1 File(s) 14 bytes<br>2 Dir(s) 768,671,744 bytes free<br>The<span class="hljs-built_in"> system </span>cannot <span class="hljs-builtin-name">find</span> the path specified.<br></code></pre></td></tr></table></figure>
+在做备份的时候可能会用到这种命令会比较简单，如：<br>dir file://192.168.0.1/database/backup.mdb &amp;&amp; copy file://192.168.0.1/database/backup.mdb E:\backup<br>如果远程服务器上存在backup.mdb文件，就执行copy命令，若不存在该文件则不执行copy命令。这种用法可以替换IF exist了 ：）   </li>
+<li>3.<strong>||</strong><br>Usage：第一条命令 || 第二条命令 [|| 第三条命令…]<br><strong>用这种方法可以同时执行多条命令，当碰到执行正确的命令后将不执行后面的命令，如果没有出现正确的命令则一直执行完所有命令；</strong><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs angelscript">Sample：<br>C:\\Ex4rch&gt;dir sometips.gif || del sometips.gif<br>Volume <span class="hljs-keyword">in</span> drive C has no label.<br>Volume Serial Number <span class="hljs-keyword">is</span> <span class="hljs-number">0078</span><span class="hljs-number">-59</span>FB<br><br>Directory of C:\\Ex4rch<br><br><span class="hljs-number">2002</span><span class="hljs-number">-05</span><span class="hljs-number">-14</span> <span class="hljs-number">23</span>:<span class="hljs-number">55</span> <span class="hljs-number">14</span> sometips.gif<br><span class="hljs-number">1</span> File(s) <span class="hljs-number">14</span> bytes<br><span class="hljs-number">0</span> Dir(s) <span class="hljs-number">768</span>,<span class="hljs-number">696</span>,<span class="hljs-number">320</span> bytes free<br></code></pre></td></tr></table></figure>
+组合命令使用的例子：<br>sample：<br>@copy trojan.exe \\%1\admin$\system32 &amp;&amp; if not errorlevel 1 echoIP %1 USER %2 PASS %3 &gt;&gt;victim.txt   </li>
+<li>4.<strong>管道命令的使用</strong></li>
+<li><ol>
+<li><strong>| 命令</strong><br>Usage：第一条命令 | 第二条命令 [| 第三条命令…]<br>将第一条命令的结果作为第二条命令的参数来使用，记得在unix中这种方式很常见。<br>sample：<br>time /t&gt;&gt;D:\IP.log<br>netstat -n -p tcp|find “:3389”&gt;&gt;D:\IP.log<br>start Explore<br>看出来了么？用于终端服务允许我们为用户自定义起始的程序，来实现让用户运行下面这个bat，以获得登录用户的IP。</li>
+</ol>
+</li>
+<li><ol start="2">
+<li><strong>&gt;、&gt;&gt;输出重定向命令</strong><br>将一条命令或某个程序输出结果的重定向到特定文件中, <strong>&gt; 与 &gt;&gt;的区别在于，&gt;会清除调原有文件中的内容后写入指定文件，而&gt;&gt;只会追加内容到指定文件中，而不会改动其中的内容。</strong><br>sample1：<br>echo hello world&gt;c:\hello.txt (stupid example?)<br>sample2:<br>时下DLL木马盛行，我们知道system32是个捉迷藏的好地方，许多木马都削尖了脑袋往那里钻，DLL马也不例外，针对这一点我们可以在安装好系统和必要的应用程序后，对该目录下的EXE和DLL文件作一个记录：<br>运行CMD–转换目录到system32–dir*.exe&gt;exeback.txt &amp; dir *.dll&gt;dllback.txt,<br>这样所有的EXE和DLL文件的名称都被分别记录到exeback.txt和dllback.txt中,<br>日后如发现异常但用传统的方法查不出问题时,则要考虑是不是系统中已经潜入DLL木马了.<br>这时我们用同样的命令将system32下的EXE和DLL文件记录到另外的exeback1.txt和dllback1.txt中,然后运行:<br>CMD–fc exeback.txt exeback1.txt&gt;diff.txt &amp; fc dllback.txt dllback1.txt&gt;diff.txt.<br>(<strong>用FC命令比较前后两次的DLL和EXE文件,并将结果输入到diff.txt中</strong> ),这样我们就能发现一些多出来的DLL和EXE文件,<br>然后通过查看创建时间、版本、是否经过压缩等就能够比较容易地判断出是不是已经被DLL木马光顾了。<br>没有是最好，如果有的话也不要直接DEL掉，先用 <strong>regsvr32 /u trojan.dll</strong> 将后门DLL文件注销掉,再把它移到回收站里，若系统没有异常反映再将之彻底删除或者提交给杀毒软件公司。</li>
+</ol>
+</li>
+<li><ol start="3">
+<li><strong>&lt; 、&gt;&amp; 、&lt;&amp;</strong><br>“&lt;” 从文件中而不是从键盘中读入命令输入。<br>“&gt;&amp;” 将一个句柄的输出写入到另一个句柄的输入中。<br>“&lt;&amp;” 从一个句柄读取输入并将其写入到另一个句柄输出中。<br>这些并不常用，也就不多做介绍   <h2 id="字符串处理"><a href="#字符串处理" class="headerlink" title="字符串处理"></a>字符串处理</h2></li>
+</ol>
+</li>
+<li>1) 分割字符串，以查看时间为例<br><strong>%源字符串:~起始值,截取长度% (起始值从0开始；截取长度是可选的，如果省略逗号和截取长度，将会从起始值截取到结尾；<br>截取长度如果是负数，表示截取到倒数第几个。)</strong>   <figure class="highlight lsl"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs lsl"><span class="hljs-string">"%time%"</span> 显示如：<span class="hljs-string">"11:04:23.03"</span> (完整的时间<span class="hljs-string">"hh:mm:ss.tt"</span>)<br><span class="hljs-string">"%time:~0,5%"</span> 显示<span class="hljs-string">"hh:mm"</span>(即<span class="hljs-string">"11:04"</span>)，其中<span class="hljs-number">0</span>表示从右向左移位操作的个数，<span class="hljs-number">5</span>表示从左向右移位操作的个数<br><span class="hljs-string">"%time:~0,8%"</span> 显示标准时间格式<span class="hljs-string">"hh:mm:ss"</span>(即<span class="hljs-string">"11:04:23"</span>，前<span class="hljs-number">8</span>个字符串)<br><span class="hljs-string">"%time:~3,-3%"</span>显示<span class="hljs-string">"mm:ss"</span>(即从第<span class="hljs-number">4</span>个开始,截去最后<span class="hljs-number">3</span>个的字符串)<br><span class="hljs-string">"%time:~3%"</span> 显示<span class="hljs-string">"04:23.03"</span>(即去掉前<span class="hljs-number">4</span>个字符串)<br><span class="hljs-string">"%time:~-3%"</span> 显示<span class="hljs-string">".tt"</span>(即最后<span class="hljs-number">3</span>个字符串)<br></code></pre></td></tr></table></figure>
+上面的字串分割格式，也可以用于其它地方，如目录路径：”%cd:~0,10%”</li>
+<li>2) 替换字符串   <figure class="highlight livecodeserver"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs livecodeserver"><span class="hljs-built_in">set</span> <span class="hljs-keyword">a</span>=<span class="hljs-string">"abcd1234"</span><br>echo %<span class="hljs-keyword">a</span>% 显示：<span class="hljs-string">"abcd1234"</span><br><span class="hljs-built_in">set</span> <span class="hljs-keyword">a</span>=%<span class="hljs-keyword">a</span>:<span class="hljs-number">1</span>=kk% 替换“<span class="hljs-number">1</span>”为“kk”<br>echo %<span class="hljs-keyword">a</span>% 显示：<span class="hljs-string">"abcdkk234"</span><br></code></pre></td></tr></table></figure></li>
+<li>3) 字符串合并<br>由于没有直接的字符串合并函数，只能用笨方法了。<br>set str1=%str1%%str2% (合并 str1 和 str2)</li>
+<li>4) 计算字符串长度<br>没有现成的函数。如下程序利用 goto形成循环，不断将字符串截短1，并记录截短的次数，到字符串变成空时的次数即长度。<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs sql"><span class="hljs-keyword">set</span> testStr=This <span class="hljs-keyword">is</span> a <span class="hljs-keyword">test</span> <span class="hljs-keyword">string</span><br>:: 将 testStr 复制到<span class="hljs-keyword">str</span>，<span class="hljs-keyword">str</span> 是个临时字符串<br><span class="hljs-keyword">set</span> <span class="hljs-keyword">str</span>=%testStr%<br>:: 标签，用于<span class="hljs-keyword">goto</span>跳转<br>:next1<br>:: 判断<span class="hljs-keyword">str</span>是不是空，如果不是则执行下边的语句<br><span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> <span class="hljs-string">"%str%"</span>==<span class="hljs-string">""</span> (<br>:: 算术运算，使<span class="hljs-keyword">num</span>的值自增<span class="hljs-number">1</span>，相当于<span class="hljs-keyword">num</span>++或者++<span class="hljs-keyword">num</span>语句<br><span class="hljs-keyword">set</span> /a <span class="hljs-keyword">num</span>+=<span class="hljs-number">1</span><br>:: 截取字符串，每次截短<span class="hljs-number">1</span><br><span class="hljs-keyword">set</span> <span class="hljs-string">"str=%str:~1%"</span><br>:: 跳转到next1标签: 这里利用<span class="hljs-keyword">goto</span>和标签，构成循环结构<br><span class="hljs-keyword">goto</span> next1<br>)<br>:: 当以上循环结构执行完毕时，会执行下边的语句<br>echo testStr=%testStr%<br>echo testStr的长度为：%<span class="hljs-keyword">num</span>%<br></code></pre></td></tr></table></figure></li>
+<li>5) 截取字符串时，需要传递参数<br>直接 <code>echo %args:~%num%,-5%</code> <del>没办法想要的字符串</del>，(这里没懂)需要如下两步<br>setlocal enabledelayedexpansion<br><code>echo !args:~%num%,-5!</code>    <h2 id="Registration-Table-Command-Omit"><a href="#Registration-Table-Command-Omit" class="headerlink" title="Registration Table Command Omit"></a>Registration Table Command Omit</h2>see more detials at <a href="https://blog.csdn.net/qq_36838191/article/details/83046599">here</a>中的第六条   <h2 id="More-Tips"><a href="#More-Tips" class="headerlink" title="More Tips"></a><strong>More Tips</strong></h2></li>
+<li>“&gt;&gt;”追加， “&gt;”在文件中末尾添加   </li>
+<li>创建文件夹<br>md d:\aa<br>mkdir d:\bb   </li>
+<li>在命令末尾加上“&gt;NUL 2&gt;NUL”，表示隐蔽返回信息。   </li>
+<li>清屏<br>cls</li>
+<li>打开文件浏览器<br>start explorer.exe /e, /select,%_LOGFILE%（%_LOGFILE%指代文件路径+后缀）</li>
+<li>修改文件的后缀名<br>ren C:\test*.jpg <em>.JPG<br>for /r %%c in (</em>.jpg) do (ren %%c *.JPG) :: 修改当前目录下的所有文件的后缀名，包括子目录的   </li>
+<li>修改文件的文件名<br>rename test.jpg test2.JPG<br>rename *.jpg *.888.JPG   </li>
+<li>获取当前路径<br>cd ./<br>set CURE_PATH=%cd%   </li>
+<li>打开某网站</li>
+</ul>
+<p><em>start Chrome.exe <a href="http://www.baidu.com">www.baidu.com</a></em>   </p>
+<ul>
+<li>show the current dir’s name   （<strong>for的用法</strong>）<br>@echo off<br>for /d %%i in (???) do @echo %%i<br>pause<br>这样的话如果你当前目录下有目录名字只有1-3个字母的,就会显示出来,没有就不显示了。</li>
+<li>del<br>del /f /q “%_LOGFILE%”<br>将logfile变量对应的文件强制删掉，且无需提示<br>/f 是强制删除所有属性的文件 /q是无需确认直接删除要是再加上/s开关，就可以删除子文件加中的文件</li>
+<li>choice<br>choice 使用此命令可以让用户输入一个字符，从而运行不同的命令。使用时应该加/c:参数，c:后应写提示可输入的字符，之间无空格。它的返回码为1234<br>如: choice /c:dme defrag,mem,end<br>将显示   <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs sql">defrag,mem,<span class="hljs-keyword">end</span>[D,M,E]?<br><span class="hljs-keyword">Sample</span>：<br>Sample.bat的内容如下:<br>@echo <span class="hljs-keyword">off</span><br>choice /c:dme defrag,mem,<span class="hljs-keyword">end</span><br><span class="hljs-keyword">if</span> errorlevel <span class="hljs-number">3</span> <span class="hljs-keyword">goto</span> defrag （应先判断数值最高的错误码）<br><span class="hljs-keyword">if</span> errorlevel <span class="hljs-number">2</span> <span class="hljs-keyword">goto</span> mem<br><span class="hljs-keyword">if</span> errotlevel <span class="hljs-number">1</span> <span class="hljs-keyword">goto</span> <span class="hljs-keyword">end</span><br>:defrag<br>c:\\dos\\defrag<br><span class="hljs-keyword">goto</span> <span class="hljs-keyword">end</span><br>:mem<br>mem<br><span class="hljs-keyword">goto</span> <span class="hljs-keyword">end</span><br>:<span class="hljs-keyword">end</span><br>echo good bye<br></code></pre></td></tr></table></figure>
+此文件运行后，将显示 defrag,mem,end[D,M,E]? 用户可选择d m e ，然后if语句将作出判断，d表示执行标号为defrag的程序段，m表示执行标号为mem的程序段，e表示执行标号为end的程序段，每个程序段最后都以goto end将程序跳到end标号处，然后程序将显示good bye，文件结束。   </li>
+<li>call<br>批脚本里的 %* 指出所有的参数(如 %1 %2 %3 %4 %5 …)   </li>
+<li>set<br>显示、设置或删除 cmd.exe 环境变量。<br>SET [variable=[string]]<br>  variable  指定环境变量名。<br>  string    指定要指派给变量的一系列字符串。<br>要显示当前环境变量，键入不带参数的 SET。<br>如果命令扩展被启用，SET 会如下改变:<br>可仅用一个变量激活 SET 命令，等号或值不显示所有前缀匹配<br>SET 命令已使用的名称的所有变量的值。例如:<br>  SET P<br>会显示所有以字母 P 打头的变量<br>如果在当前环境中找不到该变量名称，SET 命令将把 ERRORLEVEL<br>设置成 1。<br>SET 命令不允许变量名含有等号。<br>在 SET 命令中添加了两个新命令行开关:<br>  SET /A expression<br>  SET /P variable=[promptString]   <h4 id="More-and-More-Details"><a href="#More-and-More-Details" class="headerlink" title="More and More Details"></a>More and More Details</h4>具体语法还需详查看<a href="https://www.cnblogs.com/micro-chen/p/5694423.html">bat</a>语法格式，<br><a href="https://www.jianshu.com/p/399e5a3c7cc5">markdown</a>语法参见此。</li>
+</ul>
+<p>另外，FOR 变量参照的替换已被增强。你现在可以使用下列<br>选项语法:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><code class="hljs shell"><span class="hljs-meta">%</span><span class="bash">~I          - 删除任何引号(<span class="hljs-string">")，扩展 %I</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~fI        - 将 %I 扩展到一个完全合格的路径名</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~dI        - 仅将 %I 扩展到一个驱动器号</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~pI        - 仅将 %I 扩展到一个路径</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~nI        - 仅将 %I 扩展到一个文件名</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~xI        - 仅将 %I 扩展到一个文件扩展名</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~sI        - 扩展的路径只含有短名</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~aI        - 将 %I 扩展到文件的文件属性</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~tI        - 将 %I 扩展到文件的日期/时间</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~zI        - 将 %I 扩展到文件的大小</span></span><br><span class="hljs-meta">%</span><span class="bash"><span class="hljs-string">~<span class="hljs-variable">$PATH</span>:I   - 查找列在路径环境变量的目录，并将 %I 扩展</span></span><br>              到找到的第一个完全合格的名称。如果环境变量名<br>              未被定义，或者没有找到文件，此组合键会扩展到<br>              空字符串<br></code></pre></td></tr></table></figure>
+<p>可以组合修饰符来得到多重结果:</p>
+<figure class="highlight mel"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs mel">%~dpI       - 仅将 %I 扩展到一个驱动器号和路径<br>%~nxI       - 仅将 %I 扩展到一个文件名和扩展名<br>%~fsI       - 仅将 %I 扩展到一个带有短名的完整路径名<br>%~dp$PATH:I - 搜索列在路径环境变量的目录，并将 %I 扩展<br>              到找到的第一个驱动器号和路径。<br>%~ftzaI     - 将 %I 扩展到类似输出线路的 DIR<br></code></pre></td></tr></table></figure>
+<p>在以上例子中，%I 和 PATH 可用其他有效数值代替。%~ 语法<br>用一个有效的 FOR 变量名终止。选取类似 %I 的大写变量名<br>比较易读，而且避免与不分大小写的组合键混淆。</p>
+
+        </div>
+        
+        <div class="level is-size-7 is-uppercase">
+            <div class="level-start">
+                <div class="level-item">
+                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
+                    <a class="has-link-grey -link" href="/tags/WindowsScript/" rel="tag">WindowsScript</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="social-share"></div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
+<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/">
+                <span class="level-item">OSG中的坐标系</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div class="notification is-danger">
+    You forgot to set the <code>app_id</code> or <code>app_key</code> for Valine. Please set it in <code>_config.yml</code>.
+</div>
+
+    </div>
+</div>
+</div>
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen  has-order-1 column-left ">
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <nav class="level">
+            <div class="level-item has-text-centered" style="flex-shrink: 1">
+                <div>
+                    
+                    <figure class="image is-128x128 has-mb-6">
+                        <img class="" src="/images/Title_image.jpg" alt="AmazingHao">
+                    </figure>
+                    
+                    <p class="is-size-4 is-block">
+                        AmazingHao
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-block">
+                        Engineer
+                    </p>
+                    
+                    
+                    <p class="is-size-6 is-flex is-flex-center has-text-grey">
+                        <i class="fas fa-map-marker-alt has-mr-7"></i>
+                        <span>China</span>
+                    </p>
+                    
+                </div>
+            </div>
+        </nav>
+        <nav class="level is-mobile">
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        文章
+                    </p>
+                    <a href="/archives">
+                        <p class="title has-text-weight-normal">
+                            6
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        分类
+                    </p>
+                    <a href="/categories">
+                        <p class="title has-text-weight-normal">
+                            1
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <div class="level-item has-text-centered is-marginless">
+                <div>
+                    <p class="heading">
+                        标签
+                    </p>
+                    <a href="/tags">
+                        <p class="title has-text-weight-normal">
+                            6
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="level">
+            <a class="level-item button is-link is-rounded" href="https://github.com/whu-lyh" target="_blank" rel="noopener">
+                关注我</a>
+        </div>
+        
+        
+        
+        <div class="level is-mobile">
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Github" href="https://github.com/whu-lyh">
+                
+                <i class="fab fa-github"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Facebook" href="https://facebook.com">
+                
+                <i class="fab fa-facebook"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Twitter" href="https://twitter.com">
+                
+                <i class="fab fa-twitter"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="Dribbble" href="https://dribbble.com">
+                
+                <i class="fab fa-dribbble"></i>
+                
+            </a>
+            
+            <a class="level-item button is-white is-marginless" target="_blank" rel="noopener"
+                title="RSS" href="/">
+                
+                <i class="fas fa-rss"></i>
+                
+            </a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+        
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            链接
+        </h3>
+        <ul class="menu-list">
+        
+            <li>
+                <a class="level is-mobile" href="https://google.com" target="_blank" rel="noopener">
+                    <span class="level-left">
+                        <span class="level-item">Google</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">google.com</span>
+                    </span>
+                </a>
+            </li>
+        
+            <li>
+                <a class="level is-mobile" href="https://baidu.com" target="_blank" rel="noopener">
+                    <span class="level-left">
+                        <span class="level-item">Baidu</span>
+                    </span>
+                    <span class="level-right">
+                        <span class="level-item tag">baidu.com</span>
+                    </span>
+                </a>
+            </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+
+    
+        
+<div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                分类
+            </h3>
+            <ul class="menu-list">
+            <li>
+        <a class="level is-marginless" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">
+            <span class="level-start">
+                <span class="level-item">实用工具</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">5</span>
+            </span>
+        </a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            标签云
+        </h3>
+        <a href="/tags/Docker/" style="font-size: 10px;">Docker</a> <a href="/tags/Hexo/" style="font-size: 10px;">Hexo</a> <a href="/tags/MarkDown/" style="font-size: 10px;">MarkDown</a> <a href="/tags/OSG/" style="font-size: 10px;">OSG</a> <a href="/tags/OpenCV-FFMPEG/" style="font-size: 10px;">OpenCV FFMPEG</a> <a href="/tags/WindowsScript/" style="font-size: 10px;">WindowsScript</a>
+    </div>
+</div>
+    
+    
+        <div class="column-right-shadow is-hidden-widescreen is-sticky">
+        
+            <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/21/WindowBat/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="WindowBat">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-21T08:21:12.000Z">2020-03-21</time></div>
+                    <a href="/2020/03/21/WindowBat/" class="title has-link-black-ter is-size-6 has-text-weight-normal">WindowBat</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="OSG中的坐标系">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-11T10:57:49.000Z">2020-03-11</time></div>
+                    <a href="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">OSG中的坐标系</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="视频加速小技巧">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-29T04:38:33.000Z">2020-02-29</time></div>
+                    <a href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="title has-link-black-ter is-size-6 has-text-weight-normal">视频加速小技巧</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/02/29/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Markdown初体验">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T16:39:56.000Z">2020-02-29</time></div>
+                    <a href="/2020/02/29/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Markdown初体验</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/02/28/Docker%E5%88%9D%E4%BD%93%E9%AA%8C/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Docker初体验">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:38:22.000Z">2020-02-28</time></div>
+                    <a href="/2020/02/28/Docker%E5%88%9D%E4%BD%93%E9%AA%8C/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Docker初体验</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/02/">
+                <span class="level-start">
+                    <span class="level-item">二月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">4</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+        
+            <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Docker/">
+                        <span class="tag">Docker</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Hexo/">
+                        <span class="tag">Hexo</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/MarkDown/">
+                        <span class="tag">MarkDown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OSG/">
+                        <span class="tag">OSG</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OpenCV-FFMPEG/">
+                        <span class="tag">OpenCV FFMPEG</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/WindowsScript/">
+                        <span class="tag">WindowsScript</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+        
+        </div>
+    
+</div>
+
+                
+
+
+
+
+<div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
+    
+        <div class="card widget">
+    <div class="card-content">
+        <h3 class="menu-label">
+            最新文章
+        </h3>
+        
+        <article class="media">
+            
+            <a href="/2020/03/21/WindowBat/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="WindowBat">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-21T08:21:12.000Z">2020-03-21</time></div>
+                    <a href="/2020/03/21/WindowBat/" class="title has-link-black-ter is-size-6 has-text-weight-normal">WindowBat</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="OSG中的坐标系">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-03-11T10:57:49.000Z">2020-03-11</time></div>
+                    <a href="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/" class="title has-link-black-ter is-size-6 has-text-weight-normal">OSG中的坐标系</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="视频加速小技巧">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-29T04:38:33.000Z">2020-02-29</time></div>
+                    <a href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/" class="title has-link-black-ter is-size-6 has-text-weight-normal">视频加速小技巧</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/02/29/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Markdown初体验">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T16:39:56.000Z">2020-02-29</time></div>
+                    <a href="/2020/02/29/Markdown%E5%88%9D%E4%BD%93%E9%AA%8C/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Markdown初体验</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2020/02/28/Docker%E5%88%9D%E4%BD%93%E9%AA%8C/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Docker初体验">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2020-02-28T15:38:22.000Z">2020-02-28</time></div>
+                    <a href="/2020/02/28/Docker%E5%88%9D%E4%BD%93%E9%AA%8C/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Docker初体验</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+        <h3 class="menu-label">
+            归档
+        </h3>
+        <ul class="menu-list">
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/03/">
+                <span class="level-start">
+                    <span class="level-item">三月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">2</span>
+                </span>
+            </a>
+        </li>
+        
+        <li>
+            <a class="level is-marginless" href="/archives/2020/02/">
+                <span class="level-start">
+                    <span class="level-item">二月 2020</span>
+                </span>
+                <span class="level-end">
+                    <span class="level-item tag">4</span>
+                </span>
+            </a>
+        </li>
+        
+        </ul>
+        </div>
+    </div>
+</div>
+    
+        <div class="card widget">
+    <div class="card-content">
+        <div class="menu">
+            <h3 class="menu-label">
+                标签
+            </h3>
+            <div class="field is-grouped is-grouped-multiline">
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Docker/">
+                        <span class="tag">Docker</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/Hexo/">
+                        <span class="tag">Hexo</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/MarkDown/">
+                        <span class="tag">MarkDown</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OSG/">
+                        <span class="tag">OSG</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/OpenCV-FFMPEG/">
+                        <span class="tag">OpenCV FFMPEG</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/WindowsScript/">
+                        <span class="tag">WindowsScript</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+    
+    
+</div>
+
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+                <a class="footer-logo is-block has-mb-6" href="/">
+                
+                    <img src="/images/logo.svg" alt="WindowBat" height="28">
+                
+                </a>
+                <p class="is-size-7">
+                &copy; 2020 AmazingHao&nbsp;
+                Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
+                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
+                
+                <br>
+                <span id="busuanzi_container_site_uv">
+                共<span id="busuanzi_value_site_uv">0</span>个访客
+                </span>
+                
+                </p>
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+			<span id="busuanzi_container_site_pv">
+				本站总访问量<span id="busuanzi_value_site_pv"></span>次
+			</span>
+			<span id="busuanzi_container_site_uv">
+				本站访客数<span id="busuanzi_value_site_uv"></span>人次
+			</span>
+			<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
+			</script>
+		</div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+
+<script>
+var IcarusThemeSettings = {
+    site: {
+        url: 'http://yoursite.com',
+        external_link: {"enable":true,"exclude":[]}
+    },
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script>
+
+
+
+
+
+<script src="/js/animation.js"></script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/js/lightgallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="/js/gallery.js" defer></script>
+
+
+
+<div id="outdated">
+    <h6>Your browser is out-of-date!</h6>
+    <p>Update your browser to view this website correctly. <a id="btnUpdateBrowser" href="http://outdatedbrowser.com/">Update
+            my browser now </a></p>
+    <p class="last"><a href="#" id="btnCloseUpdateBrowser" title="Close">&times;</a></p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.js" defer></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        outdatedBrowser({
+            bgColor: '#f25648',
+            color: '#ffffff',
+            lowerThan: 'flex'
+        });
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@2.7.5/unpacked/MathJax.js?config=TeX-MML-AM_CHTML" defer></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    MathJax.Hub.Config({
+        'HTML-CSS': {
+            matchFontHeight: false
+        },
+        SVG: {
+            matchFontHeight: false
+        },
+        CommonHTML: {
+            matchFontHeight: false
+        },
+        tex2jax: {
+            inlineMath: [
+                ['$','$'],
+                ['\\(','\\)']
+            ]
+        }
+    });
+});
+</script>
+
+
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="/js/back-to-top.js" defer></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..." />
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: '/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="/js/insight.js" defer></script>
+<link rel="stylesheet" href="/css/search.css">
+<link rel="stylesheet" href="/css/insight.css">
+    
+	<!-- 雪花特效 -->
+    <script type="text/javascript">
+      var windowWidth = $(window).width();
+      if (windowWidth > 480) {
+        document.write('<script type="text/javascript" src="/js/snow.js"><\/script>');
+      }
+    </script>
+</body>
+</html>
