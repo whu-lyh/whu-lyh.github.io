@@ -8,21 +8,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>pcl中的体素滤波 - AmazingHao&#39;s Free Space</title>
+<title>归档: 2020/7 - AmazingHao&#39;s Free Space</title>
 
 
-    <meta name="description" content="体素滤波&amp;emsp;&amp;emsp;Voxel滤波作为一种很常见的滤波方法，但是其PCL内部代码却值得学习，因此今天转载一篇关于pcl中实现的体素滤波的方法。基本上参考博客：https:&#x2F;&#x2F;blog.csdn.net&#x2F;u013630299&#x2F;article&#x2F;details&#x2F;105661194">
-<meta property="og:type" content="article">
-<meta property="og:title" content="pcl中的体素滤波">
-<meta property="og:url" content="http://yoursite.com/2020/06/11/pcl%E4%B8%AD%E7%9A%84%E4%BD%93%E7%B4%A0%E6%BB%A4%E6%B3%A2/index.html">
+    <meta name="description" content="Mainly used to record the knowledge about the world">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AmazingHao&#39;s Free Space">
+<meta property="og:url" content="http://yoursite.com/archives/2020/07/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
-<meta property="og:description" content="体素滤波&amp;emsp;&amp;emsp;Voxel滤波作为一种很常见的滤波方法，但是其PCL内部代码却值得学习，因此今天转载一篇关于pcl中实现的体素滤波的方法。基本上参考博客：https:&#x2F;&#x2F;blog.csdn.net&#x2F;u013630299&#x2F;article&#x2F;details&#x2F;105661194">
+<meta property="og:description" content="Mainly used to record the knowledge about the world">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://yoursite.com/images/og_image.png">
-<meta property="article:published_time" content="2020-06-11T11:24:21.000Z">
-<meta property="article:modified_time" content="2020-06-11T11:59:11.738Z">
 <meta property="article:author" content="AmazingHao">
-<meta property="article:tag" content="PCL">
+<meta property="article:tag" content="Fire">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
 
@@ -82,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="pcl中的体素滤波" height="28">
+                <img src="/images/logo.svg" alt="AmazingHao&#39;s Free Space" height="28">
             
             </a>
         </div>
@@ -132,105 +130,38 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
-<div class="card">
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-06-11T11:24:21.000Z">2020-06-11</time>
-                
-                <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
-                </div>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    7 分钟 读完 (大约 984 个字)
-                </span>
-                
-                
-                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
-                    <i class="far fa-eye"></i>
-                    <span id="busuanzi_value_page_pv">0</span>次访问
-                </span>
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                pcl中的体素滤波
-            
-        </h1>
-        <div class="content">
-            <h3 id="体素滤波"><a href="#体素滤波" class="headerlink" title="体素滤波"></a>体素滤波</h3><p>&emsp;&emsp;Voxel滤波作为一种很常见的滤波方法，但是其PCL内部代码却值得学习，因此今天转载一篇关于pcl中实现的体素滤波的方法。<br>基本上参考博客：<a href="https://blog.csdn.net/u013630299/article/details/105661194">https://blog.csdn.net/u013630299/article/details/105661194</a></p>
-<a id="more"></a>
-<h4 id="Voxel-grid-h"><a href="#Voxel-grid-h" class="headerlink" title="Voxel_grid.h"></a>Voxel_grid.h</h4><p>&emsp;&emsp;需要添加头文件：<code>#include &lt;pcl/filters/voxel_grid.h&gt;</code><br><img src="/.com//voxel_grid.png" alt="voxelgrid"><br><img src="https://img-blog.csdnimg.cn/20200421162454452.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM2MzAyOTk=,size_16,color_FFFFFF,t_70" style="width: 1118px;"><br>&emsp;&emsp;必须保证Dx&gt;hx，Dy&gt;hy(这两个条件是必须)，第四步的时候是计算voxel空间索引.准确降采样就是在每个voxel索引里面取中值，或者随机取一个点，然后输出的点云就是降采样后的点云.<br>也就是说，下采样后的点云还是原始点云中的点？<br><font color="red"><strong>❤</strong></font> </p>
-<h4 id="Approximate-voxel-grid-h"><a href="#Approximate-voxel-grid-h" class="headerlink" title="Approximate_voxel_grid.h"></a>Approximate_voxel_grid.h</h4><p>&emsp;&emsp;需要添加头文件：<code>#include &lt;pcl/filters/approximate_voxel_grid.h&gt;</code> 核心源码也比较短，还有待研究。<br><img src="/.com//approximate_voxel_grid.png" alt="approximatevoxelgrid"><br><img alt height="397" src="https://img-blog.csdnimg.cn/20200421163734565.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM2MzAyOTk=,size_16,color_FFFFFF,t_70" width="586"><br>&emsp;&emsp;和exact downsampling的前四步一样，先算出voxel的空间索引 ，然后通过<strong>哈希函数</strong>映射到对应的容器里面，这里假设有100个容器，按照图里面给的例子，以h%container作为hash函数映射的值，放到对应的容器里面，这样的话会出现什么情况呢，16,116对应的容器是一样的，而两个h对应的hx，hy，hz是不一样的，这就是哈希冲突。怎么处理哈希冲突呢？<br><img src="/.com//hash_conflict.png" alt="voxelgrid"><br><img alt height="173" src="https://img-blog.csdnimg.cn/20200421170651371.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTM2MzAyOTk=,size_16,color_FFFFFF,t_70" width="579"><br>&emsp;&emsp;把原来容器里面的点全都取出来，清空，随机取其中的一个点作为输出，然后把新的点放进来，继续填容器的操作。相当于是拿了100个容器，一直从一堆点里面淘点，10000个点放到100个容器里面必然会有索引的冲突，一有冲突就把之前放进去的点拿出来，随机取一个点作为输出，清空，再往里面放新的点。    </p>
-<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><code class="hljs arduino"><span class="hljs-keyword">template</span> &lt;<span class="hljs-keyword">typename</span> PointT&gt; <span class="hljs-keyword">void</span><br>pcl::ApproximateVoxelGrid&lt;PointT&gt;::applyFilter (PointCloud &amp;output)<br>&#123;<br>  <span class="hljs-keyword">int</span> centroid_size = <span class="hljs-number">4</span>;<br>  <span class="hljs-keyword">if</span> (downsample_all_data_)<br>    centroid_size = boost::mpl::<span class="hljs-built_in">size</span>&lt;FieldList&gt;::value;<br><br>  <span class="hljs-comment">// ---[ RGB special case</span><br>  <span class="hljs-built_in">std</span>::<span class="hljs-built_in">vector</span>&lt;pcl::PCLPointField&gt; fields;<br>  <span class="hljs-keyword">int</span> rgba_index = <span class="hljs-number">-1</span>;<br>  rgba_index = pcl::getFieldIndex (*input_, <span class="hljs-string">"rgb"</span>, fields);<br>  <span class="hljs-keyword">if</span> (rgba_index == <span class="hljs-number">-1</span>)<br>    rgba_index = pcl::getFieldIndex (*input_, <span class="hljs-string">"rgba"</span>, fields);<br>  <span class="hljs-keyword">if</span> (rgba_index &gt;= <span class="hljs-number">0</span>)<br>  &#123;<br>    rgba_index = fields[rgba_index].offset;<br>    centroid_size += <span class="hljs-number">3</span>;<br>  &#125;<br><br>  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">size_t</span> i = <span class="hljs-number">0</span>; i &lt; histsize_; i++) <br>  &#123;<br>    history_[i].count = <span class="hljs-number">0</span>;<br>    history_[i].centroid = Eigen::VectorXf::Zero (centroid_size);<br>  &#125;<br>  Eigen::VectorXf scratch = Eigen::VectorXf::Zero (centroid_size);<br><br>  output.points.resize (input_-&gt;points.<span class="hljs-built_in">size</span> ());   <span class="hljs-comment">// size output for worst case</span><br>  <span class="hljs-keyword">size_t</span> op = <span class="hljs-number">0</span>;    <span class="hljs-comment">// output pointer</span><br>  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">size_t</span> cp = <span class="hljs-number">0</span>; cp &lt; input_-&gt;points.<span class="hljs-built_in">size</span> (); ++cp) <br>  &#123;<br>    <span class="hljs-keyword">int</span> ix = <span class="hljs-keyword">static_cast</span>&lt;<span class="hljs-keyword">int</span>&gt; (<span class="hljs-built_in">floor</span> (input_-&gt;points[cp].x * inverse_leaf_size_[<span class="hljs-number">0</span>]));<br>    <span class="hljs-keyword">int</span> iy = <span class="hljs-keyword">static_cast</span>&lt;<span class="hljs-keyword">int</span>&gt; (<span class="hljs-built_in">floor</span> (input_-&gt;points[cp].y * inverse_leaf_size_[<span class="hljs-number">1</span>]));<br>    <span class="hljs-keyword">int</span> iz = <span class="hljs-keyword">static_cast</span>&lt;<span class="hljs-keyword">int</span>&gt; (<span class="hljs-built_in">floor</span> (input_-&gt;points[cp].z * inverse_leaf_size_[<span class="hljs-number">2</span>]));<br>    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span> hash = <span class="hljs-keyword">static_cast</span>&lt;<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">int</span>&gt; ((ix * <span class="hljs-number">7171</span> + iy * <span class="hljs-number">3079</span> + iz * <span class="hljs-number">4231</span>) &amp; (histsize_ - <span class="hljs-number">1</span>));<br>    he *hhe = &amp;history_[hash];<br>    <span class="hljs-keyword">if</span> (hhe-&gt;count &amp;&amp; ((ix != hhe-&gt;ix) || (iy != hhe-&gt;iy) || (iz != hhe-&gt;iz))) <br>    &#123;<br>      <span class="hljs-built_in">flush</span> (output, op++, hhe, rgba_index, centroid_size);<br>      hhe-&gt;count = <span class="hljs-number">0</span>;<br>      hhe-&gt;centroid.setZero ();<span class="hljs-comment">// = Eigen::VectorXf::Zero (centroid_size);</span><br>    &#125;<br>    hhe-&gt;ix = ix;<br>    hhe-&gt;iy = iy;<br>    hhe-&gt;iz = iz;<br>    hhe-&gt;count++;<br><br>    <span class="hljs-comment">// Unpack the point into scratch, then accumulate</span><br>    <span class="hljs-comment">// ---[ RGB special case</span><br>    <span class="hljs-keyword">if</span> (rgba_index &gt;= <span class="hljs-number">0</span>)<br>    &#123;<br>      <span class="hljs-comment">// fill r/g/b data</span><br>      pcl::RGB rgb;<br>      <span class="hljs-built_in">memcpy</span> (&amp;rgb, (<span class="hljs-keyword">reinterpret_cast</span>&lt;<span class="hljs-keyword">const</span> <span class="hljs-keyword">char</span> *&gt; (&amp;input_-&gt;points[cp])) + rgba_index, <span class="hljs-keyword">sizeof</span> (RGB));<br>      scratch[centroid_size<span class="hljs-number">-3</span>] = rgb.r;<br>      scratch[centroid_size<span class="hljs-number">-2</span>] = rgb.g;<br>      scratch[centroid_size<span class="hljs-number">-1</span>] = rgb.b;<br>    &#125;<br>    pcl::for_each_type &lt;FieldList&gt; (xNdCopyPointEigenFunctor &lt;PointT&gt; (input_-&gt;points[cp], scratch));<br>    hhe-&gt;centroid += scratch;<br>  &#125;<br>  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">size_t</span> i = <span class="hljs-number">0</span>; i &lt; histsize_; i++) <br>  &#123;<br>    he *hhe = &amp;history_[i];<br>    <span class="hljs-keyword">if</span> (hhe-&gt;count)<br>      <span class="hljs-built_in">flush</span> (output, op++, hhe, rgba_index, centroid_size);<br>  &#125;<br>  output.points.resize (op);<br>  output.<span class="hljs-built_in">width</span> = <span class="hljs-keyword">static_cast</span>&lt;<span class="hljs-keyword">uint32_t</span>&gt; (output.points.<span class="hljs-built_in">size</span> ());<br>  output.<span class="hljs-built_in">height</span>       = <span class="hljs-number">1</span>;                    <span class="hljs-comment">// downsampling breaks the organized structure</span><br>  output.is_dense     = <span class="hljs-literal">false</span>;                 <span class="hljs-comment">// we filter out invalid points</span><br>&#125;<br></code></pre></td></tr></table></figure>
-<p><font color="blue"><strong>❤</strong></font><br>&emsp;&emsp;为什么Dx必须&gt;hx,后面的y也一样，Dx其实就是x的进位，h的表达式类似于hx<em>1+hy</em>10+hz<em>10</em>10，如果Dx=x了那必然会出现不同范围的点指到同一个索引h里面，譬如假设Dx=10，hx可以等于10，以（hx，hy）作为坐标的话，（0,1）和（10,0）在同一个voxel里面，显然这是不对的。   </p>
-<h5 id="疑问"><a href="#疑问" class="headerlink" title="疑问"></a>疑问</h5><p>我之前得到的voxel采样之后就不是原来的点云了，这个假设是怎么来的？</p>
 
-        </div>
-        
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
-                <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/PCL/" rel="tag">PCL</a>
-                </div>
-            </div>
-        </div>
-        
-        
-        
-        <div class="social-share"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
-<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
-        
-    </div>
-</div>
-
-
-
-
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/07/11/Docker%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Docker日常使用</span>
-            </a>
-        </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/05/07/linux-command-usage/">
-                <span class="level-item">linux command usage</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
-        
-    </div>
-</div>
-
-
-
-<div class="card">
+<div class="card widget">
     <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        <h3 class="tag is-link">
+        七月 2020
+        </h3>
+        <div class="timeline">
         
-<div class="notification is-danger">
-    You forgot to set the <code>app_id</code> or <code>app_key</code> for Valine. Please set it in <code>_config.yml</code>.
-</div>
-
+            <article class="media">
+                
+                <div class="media-content">
+                    <div class="content">
+                        <time class="has-text-grey is-size-7 is-block is-uppercase" datetime="2020-07-11T08:33:49.000Z">2020-07-11</time>
+                        <a href="/2020/07/11/Docker%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8/" class="title has-link-black-ter is-size-6 has-text-weight-normal">Docker日常使用</a>
+                        <div class="level article-meta is-mobile">
+                            <div class="level-left">
+                                
+                                <div class="level-item is-size-7 is-uppercase">
+                                <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        
+        </div>
     </div>
 </div>
+
+
 </div>
                 
 
@@ -933,7 +864,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="pcl中的体素滤波" height="28">
+                    <img src="/images/logo.svg" alt="AmazingHao&#39;s Free Space" height="28">
                 
                 </a>
                 <p class="is-size-7">
