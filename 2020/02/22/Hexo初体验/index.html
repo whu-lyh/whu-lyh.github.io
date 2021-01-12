@@ -14,17 +14,17 @@
     <meta name="description" content="主要记录在使用Hexo写个人博客时候的一些小问题和小心得">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo初体验">
-<meta property="og:url" content="http://yoursite.com/2020/02/22/Hexo%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
+<meta property="og:url" content="http://whu-lyh.github.io.com/2020/02/22/Hexo%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
 <meta property="og:description" content="主要记录在使用Hexo写个人博客时候的一些小问题和小心得">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:image" content="http://whu-lyh.github.io.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-22T07:38:32.000Z">
-<meta property="article:modified_time" content="2020-03-03T14:21:40.067Z">
+<meta property="article:modified_time" content="2021-01-12T09:51:20.710Z">
 <meta property="article:author" content="AmazingHao">
 <meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:image" content="http://whu-lyh.github.io.com/images/og_image.png">
 
 
 
@@ -69,8 +69,6 @@
     
     <link rel="stylesheet" href="/css/progressbar.css">
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-    
-    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
 
 
@@ -152,11 +150,6 @@
                 </span>
                 
                 
-                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
-                    <i class="far fa-eye"></i>
-                    <span id="busuanzi_value_page_pv">0</span>次访问
-                </span>
-                
             </div>
         </div>
         
@@ -195,7 +188,7 @@
 打开对应的gitname.github.io即可查看博客啦。<h2 id="最后注意"><a href="#最后注意" class="headerlink" title="最后注意"></a>最后注意</h2></li>
 </ol>
 <ul>
-<li>Hexo每次deploy，generate之后会加换来的文档资料全部覆盖掉，因此为了便于找回之前的内容，方便进行版本管理<br>建议使用github进行文档和操作同步，即在本地博客目录下同时初始化一个git仓库，每次更新完博客之后，随手进行仓库的同步更新，这样的话，将会极大地方便后续博客管理。   </li>
+<li>Hexo每次deploy，generate之后会加原来的文档资料全部覆盖掉，因此为了便于找回之前的内容，方便进行版本管理<br>建议使用github进行文档和操作同步，即在本地博客目录下同时初始化一个git仓库，每次更新完博客之后，随手进行仓库的同步更新，这样的话，将会极大地方便后续博客管理。   </li>
 <li>当你将写好的MarkDown文章推送到Hexo的时候，会发现Hexo默认显示了全部的文档内容，这对于博客内容比较多的人来说，显然是不合适的，因此有一个解决方案是：<br>采用Html的语法，在合适的地方添加<br><code>&lt;!--more--&gt;</code>   </li>
 <li>在generate之前最好再清理一下本地缓存，以免由于缓存更新延迟造成“误会”<br><code>hexo clean</code>   <h2 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h2></li>
 </ul>
@@ -244,16 +237,7 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
-        
-<div class="notification is-danger">
-    You forgot to set the <code>app_id</code> or <code>app_key</code> for Valine. Please set it in <code>_config.yml</code>.
-</div>
-
-    </div>
-</div>
+<span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span> visits</span>
 </div>
                 
 
@@ -960,14 +944,9 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2020 AmazingHao&nbsp;
+                &copy; 2021 AmazingHao&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
-                
-                <br>
-                <span id="busuanzi_container_site_uv">
-                共<span id="busuanzi_value_site_uv">0</span>个访客
-                </span>
                 
                 </p>
             </div>
@@ -1002,11 +981,17 @@
                 </div>
             
             </div>
+			<style>
+				.copyright{line-height:24px}
+			</style>
+			<div class="copyright">
 			<span id="busuanzi_container_site_pv">
-				本站总访问量<span id="busuanzi_value_site_pv"></span>次
-			</span>
+				<span id="busuanzi_value_site_pv">
+				</span>  visits  |  
+			</span>	
 			<span id="busuanzi_container_site_uv">
-				本站访客数<span id="busuanzi_value_site_uv"></span>人次
+				<span id="busuanzi_value_site_uv">
+				</span>  visitors
 			</span>
 			<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 			</script>
@@ -1021,7 +1006,7 @@
 <script>
 var IcarusThemeSettings = {
     site: {
-        url: 'http://yoursite.com',
+        url: 'http://whu-lyh.github.io.com',
         external_link: {"enable":true,"exclude":[]}
     },
     article: {
@@ -1096,8 +1081,6 @@ document.addEventListener('DOMContentLoaded', function () {
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
-
-
 
 
 

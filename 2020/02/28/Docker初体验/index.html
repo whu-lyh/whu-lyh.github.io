@@ -14,17 +14,17 @@
     <meta name="description" content="主要记录在使用Docker时候的一些小问题和小心得">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker初体验">
-<meta property="og:url" content="http://yoursite.com/2020/02/28/Docker%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
+<meta property="og:url" content="http://whu-lyh.github.io.com/2020/02/28/Docker%E5%88%9D%E4%BD%93%E9%AA%8C/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
 <meta property="og:description" content="主要记录在使用Docker时候的一些小问题和小心得">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:image" content="http://whu-lyh.github.io.com/images/og_image.png">
 <meta property="article:published_time" content="2020-02-28T15:38:22.000Z">
-<meta property="article:modified_time" content="2020-03-03T14:15:12.625Z">
+<meta property="article:modified_time" content="2021-01-12T09:49:03.437Z">
 <meta property="article:author" content="AmazingHao">
 <meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:image" content="http://whu-lyh.github.io.com/images/og_image.png">
 
 
 
@@ -69,8 +69,6 @@
     
     <link rel="stylesheet" href="/css/progressbar.css">
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-    
-    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
 
 
@@ -148,14 +146,9 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    21 分钟 读完 (大约 3203 个字)
+                    24 分钟 读完 (大约 3550 个字)
                 </span>
                 
-                
-                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
-                    <i class="far fa-eye"></i>
-                    <span id="busuanzi_value_page_pv">0</span>次访问
-                </span>
                 
             </div>
         </div>
@@ -169,17 +162,17 @@
             <hr>
 <h3 id="Docker简介"><a href="#Docker简介" class="headerlink" title="Docker简介"></a>Docker简介</h3><p>&emsp;&emsp;Docker 是一个开源的应用容器引擎，基于Go语言 并遵从Apache2.0协议开源。<br>&emsp;&emsp;Docker 可以让开发者打包他们的应用以及依赖包到一个轻量级、可移植的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。<br>&emsp;&emsp;容器可以认为是一种虚拟环境，它完全使用沙箱机制，相互之间不会有任何接口（类似iPhone的app）,更重要的是容器性能开销极低。<br>(我认为是一种管理虚拟环境的引擎，方便快速构建任何虚拟环境，而各个环境之间不会相互影响，并且支持快速移植和部署。)</p>
 <a id="more"></a>
-<h3 id="和其他虚拟机软件之间的不同"><a href="#和其他虚拟机软件之间的不同" class="headerlink" title="和其他虚拟机软件之间的不同"></a>和其他虚拟机软件之间的不同</h3><p>&emsp;&emsp;Docker 是一个用于开发，交付和运行应用程序的开放平台。Docker 能够将应用程序与基础架构分开，从而可以快速交付软件。借助 Docker，可以与管理应用程序相同的方式来管理基础架构。通过利用Docker 的方法来快速交付，测试和部署代码，可以大大减少编写代码和在生产环境中运行代码之间的延迟。<br>与VirtualBox相比，<strong>VirtualBox虚拟化硬件，Docker虚拟化操作系统。</strong>  </p>
+<h3 id="和其他虚拟机软件之间的不同"><a href="#和其他虚拟机软件之间的不同" class="headerlink" title="和其他虚拟机软件之间的不同"></a>和其他虚拟机软件之间的不同</h3><p>&emsp;&emsp;Docker 是一个用于开发，交付和运行应用程序的开放平台。Docker 能够将应用程序与基础架构分开，从而可以快速交付软件。<br>借助 Docker，可以与管理应用程序相同的方式来管理基础架构。通过利用Docker 的方法来快速交付，测试和部署代码，可以大大减少编写代码和在生产环境中运行代码之间的延迟。<br>与VirtualBox相比，<strong>VirtualBox虚拟化硬件，Docker虚拟化操作系统。</strong>  </p>
 <ol>
-<li>VirtualBox，是创建硬件虚拟化的软件。<br>&emsp;&emsp;通常情况下，一个操作系统运行在硬件上，其中硬件和操作系统之间的通信是通过移动数据到内存地址，然后发出指令来通知可使用该数据的硬件（或者是数据在被读取时）。在VirtualBox（或其它虚拟机）设置的环境中，那些内存地址实际上是虚拟机软件自身的内存区域，并且那些指令是由虚拟机而不是直接由底层的CPU解释的。<br>实际结果是，你在VirtualBox中运行一个操作系统，对于这个操作系统来说，VirtualBox程序看起来像一台完整计算机，硬件以及所有配件都有。实际上它不知道自己是在另一个程序中运行的。   </li>
-<li>Docker，则是不进行硬件的虚拟化。<br>&emsp;&emsp;Docker 的作用是创建一个文件系统，使其看起来像一个普通的Linux文件系统，并且运行应用程序在一个所有文件和资源都在文件系统内的锁定环境中。事实上，该应用程序的容器并不模仿任何硬件，应用程序仍然在硬件上运行，它只是隔离了应用程序并允许开发人员可以运行该应用程序跟特定的并且完全不是主机操作系统的软件和第三方库合作。这意味着，在启动或停止Docker应用程序时几乎没有开销，因为它们不需要预先分配的内存和磁盘空间等等。因此Docker容器很容易设置或者拆除。<br>此外，容器在加装需要系统中各种硬件组件上运行软件的时候并不浪费任何开销，因为它是直接使用硬件的。      </li>
+<li>VirtualBox，是创建硬件虚拟化的软件。<br>&emsp;&emsp;通常情况下，一个操作系统运行在硬件上，其中硬件和操作系统之间的通信是通过移动数据到内存地址，然后发出指令来通知可使用该数据的硬件（或者是数据在被读取时）。<br>在VirtualBox（或其它虚拟机）设置的环境中，那些内存地址实际上是虚拟机软件自身的内存区域，并且那些指令是由虚拟机而不是直接由底层的CPU解释的。<br>实际结果是，你在VirtualBox中运行一个操作系统，对于这个操作系统来说，VirtualBox程序看起来像一台完整计算机，硬件以及所有配件都有。实际上它不知道自己是在另一个程序中运行的。   </li>
+<li>Docker，则是不进行硬件的虚拟化。<br>&emsp;&emsp;Docker 的作用是创建一个文件系统，使其看起来像一个普通的Linux文件系统，并且运行应用程序在一个所有文件和资源都在文件系统内的锁定环境中。<br>事实上，该应用程序的容器并不模仿任何硬件，应用程序仍然在硬件上运行，它只是隔离了应用程序并允许开发人员可以运行该应用程序跟特定的并且完全不是主机操作系统的软件和第三方库合作。<br>这意味着，在启动或停止Docker应用程序时几乎没有开销，因为它们不需要预先分配的内存和磁盘空间等等。因此Docker容器很容易设置或者拆除。<br>此外，容器在加装需要系统中各种硬件组件上运行软件的时候并不浪费任何开销，因为它是直接使用硬件的。      </li>
 </ol>
 <p>&emsp;&emsp;以上内容源于：<a href="http://dockone.io/article/258">http://dockone.io/article/258</a>  </p>
-<h3 id="Docker的一些优点"><a href="#Docker的一些优点" class="headerlink" title="Docker的一些优点"></a>Docker的一些优点</h3><h5 id="1、快速，一致地交付应用程序"><a href="#1、快速，一致地交付应用程序" class="headerlink" title="1、快速，一致地交付应用程序"></a>1、快速，一致地交付应用程序</h5><p>&emsp;&emsp;Docker 允许开发人员使用提供的应用程序或服务的本地容器在标准化环境中工作，从而简化了开发的生命周期。<br>容器非常适合持续集成和持续交付（CI / CD）工作流程，请考虑以下示例方案：<br>    &gt; 开发人员在本地编写代码，并使用 Docker 容器与同事共享他们的工作。<br>    &gt; 他们使用 Docker 将其应用程序推送到测试环境中，并执行自动或手动测试。<br>    &gt; 当开发人员发现错误时，他们可以在开发环境中对其进行修复，然后将其重新部署到测试环境中，以进行测试和验证。测试完成后，将修补程序推送给生产环境，就像将更新的镜像推送到生产环境一样简单。</p>
-<h5 id="2、响应式部署和扩展"><a href="#2、响应式部署和扩展" class="headerlink" title="2、响应式部署和扩展"></a>2、响应式部署和扩展</h5><p>&emsp;&emsp;Docker 是基于容器的平台，允许高度可移植的工作负载。Docker 容器可以在开发人员的本机上，数据中心的物理或虚拟机上，云服务上或混合环境中运行。Docker 的可移植性和轻量级的特性，还可以使开发人员轻松地完成动态管理的工作负担，并根据业务需求指示，实时扩展或拆除应用程序和服务。</p>
-<h5 id="3、在同一硬件上运行更多工作负载"><a href="#3、在同一硬件上运行更多工作负载" class="headerlink" title="3、在同一硬件上运行更多工作负载"></a>3、在同一硬件上运行更多工作负载</h5><p>&emsp;&emsp;Docker 轻巧快速。它为基于虚拟机管理程序的虚拟机提供了可行、经济、高效的替代方案，因此可以利用更多的计算能力来实现业务目标。Docker 非常适合于高密度环境以及中小型部署，而开发人员可以用更少的资源做更多的事情。</p>
+<h3 id="Docker的一些优点"><a href="#Docker的一些优点" class="headerlink" title="Docker的一些优点"></a>Docker的一些优点</h3><h5 id="1、快速，一致地交付应用程序"><a href="#1、快速，一致地交付应用程序" class="headerlink" title="1、快速，一致地交付应用程序"></a>1、快速，一致地交付应用程序</h5><p>&emsp;&emsp;Docker 允许开发人员使用提供的应用程序或服务的本地容器在标准化环境中工作，从而简化了开发的生命周期。<br>容器非常适合持续集成和持续交付（CI / CD）工作流程，请考虑以下示例方案：<br>    &gt; 开发人员在本地编写代码，并使用 Docker 容器与同事共享他们的工作。<br>    &gt; 他们使用 Docker 将其应用程序推送到测试环境中，并执行自动或手动测试。<br>    &gt; 当开发人员发现错误时，他们可以在开发环境中对其进行修复，然后将其重新部署到测试环境中，以进行测试和验证。<br>    测试完成后，将修补程序推送给生产环境，就像将更新的镜像推送到生产环境一样简单。</p>
+<h5 id="2、响应式部署和扩展"><a href="#2、响应式部署和扩展" class="headerlink" title="2、响应式部署和扩展"></a>2、响应式部署和扩展</h5><p>&emsp;&emsp;Docker 是基于容器的平台，允许高度可移植的工作负载。Docker 容器可以在开发人员的本机上，数据中心的物理或虚拟机上，云服务上或混合环境中运行。<br>Docker 的可移植性和轻量级的特性，还可以使开发人员轻松地完成动态管理的工作负担，并根据业务需求指示，实时扩展或拆除应用程序和服务。</p>
+<h5 id="3、在同一硬件上运行更多工作负载"><a href="#3、在同一硬件上运行更多工作负载" class="headerlink" title="3、在同一硬件上运行更多工作负载"></a>3、在同一硬件上运行更多工作负载</h5><p>&emsp;&emsp;Docker 轻巧快速。它为基于虚拟机管理程序的虚拟机提供了可行、经济、高效的替代方案，因此可以利用更多的计算能力来实现业务目标。<br>Docker 非常适合于高密度环境以及中小型部署，而开发人员可以用更少的资源做更多的事情。</p>
 <h3 id="Docker安装-以Win10安装为例"><a href="#Docker安装-以Win10安装为例" class="headerlink" title="Docker安装/(以Win10安装为例)"></a>Docker安装/(以Win10安装为例)</h3><p>Docker <a href="https://www.docker.com">官网</a>：<a href="https://www.docker.com">https://www.docker.com</a><br>Github Docker <a href="https://github.com/docker/docker-ce">源码</a>：<a href="https://github.com/docker/docker-ce">https://github.com/docker/docker-ce</a>   </p>
-<h4 id="1-Docker-Desktop下载"><a href="#1-Docker-Desktop下载" class="headerlink" title="1. Docker-Desktop下载"></a>1. Docker-Desktop下载</h4><p>&emsp;&emsp;打开 DockerHub 直接下载 <a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">docker-desktop</a> 安装包即可，linux同理。下载完成会得到<font color="blue"><strong>“Docker Desktop Installer.exe”</strong></font>软件，选个合适的路径，一路Next安装即可。   </p>
+<h4 id="1-Docker-Desktop下载"><a href="#1-Docker-Desktop下载" class="headerlink" title="1. Docker-Desktop下载"></a>1. Docker-Desktop下载</h4><p>&emsp;&emsp;打开 DockerHub 直接下载 <a href="https://hub.docker.com/editions/community/docker-ce-desktop-windows">docker-desktop</a> 安装包即可，linux同理。<br>下载完成会得到<font color="blue"><strong>“Docker Desktop Installer.exe”</strong></font>软件，选个合适的路径，一路Next安装即可。   </p>
 <ul>
 <li>Win7 或Win8 需要借助 <a href="http://mirrors.aliyun.com/docker-toolbox/windows/docker-toolbox/">docker toolbox</a> 完成安装。              </li>
 <li>Win10需要开启Hyper-V功能，开启位置位于：Win10左下角第一个图标右键单击-&gt;应用和功能-&gt;启用或关闭Windows功能，从中找到Hyper-V选中即可。   </li>
@@ -192,8 +185,11 @@
 <ul>
 <li>docker<br>即可列出Docker客户端的所有命令行选项，当想要查找某一命令时非常方便。</li>
 <li>docker search<br>如：<code>docker search ubuntu</code> 在Docker Hub中搜索名为ubuntu的镜像。   </li>
-<li>docker pull imageName<br>如：<code>docker pull ubuntu</code> 若本人的Docker Hub账户中没有该名称的镜像则会自动从Docker Hub公共仓库中下载并拉取到本地。<br>因此这个名字需要注意，不然很容易就下载错了或下载成别人的镜像了。<br>另外还可以指定不同标签版本的镜像：<code>docker pull ubuntu:18.04</code>, 即可拉取18.04的ubuntu。       </li>
-<li>docker run imageName<br>运行imageName这一docker镜像，并得到一个容器。<br>如：<code>docker run -it ubuntu /bin/bash</code> -i表示交互式操作，-t表示终端，ubuntu镜像，放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash。<br>若想在后台运行docker服务，则需要通过-d指定容器的运行方式。<br>如：<code>docker run -itd --name ubuntu-test ubuntu /bin/bash</code><br>另外可以通过：<code>docker run -t -i ubuntu:18.04 /bin/bash</code> 可以运行不同tag标签的镜像。    </li>
+<li><strong><code>docker pull DockerHubID/imageName</code></strong><br>如：<code>docker pull ubuntu</code> 若本人的Docker Hub账户中没有该名称的镜像则会自动从Docker Hub公共仓库中下载并拉取到本地。<br>因此这个名字需要注意，不然很容易就下载错了或下载成别人的镜像了。<br>另外还可以指定不同标签版本的镜像：<code>docker pull ubuntu:18.04</code>, 即可拉取18.04的ubuntu。       </li>
+<li>docker run imageName<br>运行imageName这一docker镜像，并得到一个容器。<br>如：<strong><code>docker run -it ubuntu /bin/bash</code></strong>    </li>
+</ul>
+<p>-i表示交互式操作，-t表示终端，ubuntu镜像，放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 /bin/bash。<br>若想在后台运行docker服务，则需要通过-d指定容器的运行方式。<br>如：<strong><code>docker run -itd --name ubuntu-test ubuntu /bin/bash</code></strong><br>另外可以通过：<br><strong><code>docker run -t -i ubuntu:18.04 /bin/bash</code></strong><br> 可以运行不同tag标签的镜像。    </p>
+<ul>
 <li>docker exec containerId<br>进入docker容器，这里指进入后台运行的容器，<strong>如果从这个容器退出，不会导致容器的停止</strong>。<br>如：<code>docker exec -it id /bin/bash</code><br>同一个镜像可以开启多个容器。<br>进入docker，docker exec -it -d –name 容器名 -p 8088:80 ubuntu -name自定义容器名，-p指定端口映射，前者为虚拟机端口，后者为容器端口,成功后返回id</li>
 <li>docker attach containerId<br>同为进入已经开启的容器中，如果从这个容器退出，会导致容器的停止。   </li>
 <li>exit<br>直接在控制台输入exit即可退出当前镜像。   </li>
@@ -207,14 +203,16 @@
 <li>docker rmi imageName<br>删除镜像，需要注意的是再删除镜像的时候需要将正在运行的容器先删除掉。</li>
 <li>docker cp<br>docker拷贝文件，使用方法很简单，ssh或者Putty从远程服务器复制拷贝文件一样<br>拷进去： docker cp 待拷贝的文件名 容器id:/容器中的路径<br>拷出来： docker cp 容器id:/容器中待拷贝的文件名 本地文件路径   </li>
 <li>docker login/logout<br>登入登出Docker Hub账号，这样就可以下载自己仓库中的镜像了。   <h3 id="Docker高级应用"><a href="#Docker高级应用" class="headerlink" title="Docker高级应用"></a>Docker高级应用</h3></li>
-<li>端口映射<br>如使用docker环境进行深度学习训练时，需要经对应的pytorch日志通过浏览器的方式打开查看，但是docker是没有图形化界面的因此可以通过端口映射的方式将docker环境中的端口映射到本地。<br>如：<code>docker run -d -p 5000:5000 training/webapp python app.py</code>， 即容器内部的 5000 端口映射到我们本地主机的 5000 端口上。<br>通过<code>docker port containerId</code> 即可查看容器端口映射情况。</li>
+<li><strong>端口映射</strong><br>如使用docker环境进行深度学习训练时，需要经对应的pytorch日志通过浏览器的方式打开查看，但是docker是没有图形化界面的因此可以通过端口映射的方式将docker环境中的端口映射到本地。<br>如：<code>docker run -d -p 5000:5000 training/webapp python app.py</code>， 即容器内部的 5000 端口映射到我们本地主机的 5000 端口上。<br>通过<code>docker port containerId</code> 即可查看容器端口映射情况。<br>当我们使用端口映射创建一个容器之后，容器就一直存在，退出后使用run退出后容器也退出。那么下次我们还想使用相同的端口进入相同的容器，则可以直接<font color="blue">start</font>该容器。<br>&emsp;&emsp;可以使用<code>docker ps -a</code> 查看正在运行的容器，可以发现之前的容器已经可以使用相同的端口进行连接了，这里使用如vnc一类的远程连接软件可以愉快开始摸鱼。   </li>
 <li>docker top containerId<br>使用docker top来查看容器内部运行的进程。   </li>
-<li>docker inspect containerId<br>使用docker inspect来查看 Docker 的底层信息。它会返回一个 JSON 文件记录着 Docker 容器的配置和状态信息。   <h3 id="镜像更新"><a href="#镜像更新" class="headerlink" title="镜像更新"></a><strong>镜像更新</strong></h3>&emsp;&emsp;这里将涉及到Docker这一灵活的容器引擎的优越之处,镜像可以理解为是一个类，镜像就是一个模板，那么在类不满足需求时可以添加不同的成员函数或者成员以丰富类的功能。Docker同样提供了这个功能，允许将当前的容器内容更新到镜像中，这样当<br>换了一个环境重新加载同一镜像时，可以获得相同的环境，以减少开发成本。<br><code>docker commit -m=&quot;has update&quot; -a=&quot;amazinghao&quot; 462f5c932e5c amazinghao/ubuntu:v2</code> -m 提交的描述信息，-a 指定镜像作者，462f5c932e5c，待提交容器id，amazinghao/ubuntu:v2: 指定要创建的目标镜像名及对应的标签。<br><code>docker run -t -i amazinghao/ubuntu:v2 /bin/bash</code><br><code>docker tag 462f5c932e5c amazinghao/centos:dev</code> ,dev即为新的标签，这样做将会创建一个新的镜像。   </li>
+<li>docker inspect containerId<br>使用docker inspect来查看 Docker 的底层信息。它会返回一个 JSON 文件记录着 Docker 容器的配置和状态信息。   </li>
+<li><strong>镜像更新</strong><br>&emsp;&emsp;这里将涉及到Docker这一灵活的容器引擎的优越之处,镜像可以理解为是一个类，镜像就是一个模板，那么在类不满足需求时可以添加不同的成员函数或者成员以丰富类的功能。<br>Docker同样提供了这个功能，允许将当前的容器内容更新到镜像中，这样当换了一个环境重新加载同一镜像时，可以获得相同的环境，以减少开发成本。<br>&emsp;&emsp;当使用一个镜像创建了一个容器时，会在该容器上配置环境，如深度学习框架和SLAM框架。为了避免换个电脑平台重新配置，可以将该容器打包成一个镜像，并推送到Docker Hub<br><font color="red"><strong>❤</strong></font><br><code>docker commit -m=&quot;has update&quot; -a=&quot;amazinghao&quot; 462f5c932e5c amazinghao/ubuntu:v2</code>    </li>
 </ul>
+<p>-m 提交的描述信息，-a 指定镜像作者，462f5c932e5c，待提交容器id，amazinghao/ubuntu:v2: 指定要创建的目标镜像名及对应的标签。<br>后续使用<br><code>docker run -t -i amazinghao/ubuntu:v2 /bin/bash</code> 即可运行。<br>这里要注意，当我们创建好新的本地镜像之后，在推送到云端时，需要和云端仓库中的镜像名字保持一致。那么我们可能就会用到<code>tag</code>命令。<br><font color="red"><strong>❤</strong></font> 例如:将462f5c932e5c重命名为amazinghao/ubuntu:dev<br><code>docker tag 462f5c932e5c amazinghao/ubuntu:dev</code> ,dev即为新的标签，这样做将会创建一个新的镜像。<br><font color="red"><strong>❤</strong></font> 也可以将<code>hdl_graph_slam:graph_slam_updated</code>重命名为<code>amazinghao/ubuntu:graph_slam_updated</code><br><code>docker tag hdl_graph_slam:graph_slam_updated amazinghao/ubuntu:graph_slam_updated</code><br>再开始推送即可。   </p>
 <ul>
-<li>还可以通过Dckerfile创建一个新的镜像，目前笔者还未尝试。   <h3 id="还有更多功能有待探索…"><a href="#还有更多功能有待探索…" class="headerlink" title="还有更多功能有待探索…"></a>还有更多功能有待探索…</h3></li>
+<li>还可以通过Dckerfile创建一个新的镜像，目前笔者还未尝试。   </li>
 </ul>
-<h3 id="环境测试"><a href="#环境测试" class="headerlink" title="环境测试"></a>环境测试</h3><p>安装git，cmake，eigen<br>安装软件时最好提前将ubuntu的软件源换为国内镜像，不然速度慢到你难以想象，这里在安装好后已经及时对软件源进行了更新。ubuntu环境中usr/apt/sources.txt中进行修改，这里你可能会用到vim这款神器，使你可以在纯控制台进行编程，体验一开始可能会比较痛苦，但是后面你会发现非常爽。</p>
+<h3 id="还有更多功能有待探索…"><a href="#还有更多功能有待探索…" class="headerlink" title="还有更多功能有待探索…"></a>还有更多功能有待探索…</h3><h3 id="环境测试"><a href="#环境测试" class="headerlink" title="环境测试"></a>环境测试</h3><p>安装git，cmake，eigen<br>安装软件时最好提前将ubuntu的软件源换为国内镜像，不然速度慢到你难以想象，这里在安装好后已经及时对软件源进行了更新。<br>ubuntu环境中<code>usr/apt/sources.txt</code>中进行修改，这里你可能会用到vim这款神器，使你可以在纯控制台进行编程，体验一开始可能会比较痛苦，但是后面你会发现非常爽。</p>
 <figure class="highlight q"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs q">apt-<span class="hljs-built_in">get</span> <span class="hljs-keyword">update</span>   <br>apt-<span class="hljs-built_in">get</span> install git,cmake,libeigen3-<span class="hljs-built_in">dev</span> vim<br></code></pre></td></tr></table></figure>
 <p>即可，编写一个简单的CMakeList.txt进行测试即可。  </p>
 <h3 id="参考教程"><a href="#参考教程" class="headerlink" title="参考教程"></a>参考教程</h3><ol>
@@ -268,16 +266,7 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
-        
-<div class="notification is-danger">
-    You forgot to set the <code>app_id</code> or <code>app_key</code> for Valine. Please set it in <code>_config.yml</code>.
-</div>
-
-    </div>
-</div>
+<span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span> visits</span>
 </div>
                 
 
@@ -984,14 +973,9 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2020 AmazingHao&nbsp;
+                &copy; 2021 AmazingHao&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
-                
-                <br>
-                <span id="busuanzi_container_site_uv">
-                共<span id="busuanzi_value_site_uv">0</span>个访客
-                </span>
                 
                 </p>
             </div>
@@ -1026,11 +1010,17 @@
                 </div>
             
             </div>
+			<style>
+				.copyright{line-height:24px}
+			</style>
+			<div class="copyright">
 			<span id="busuanzi_container_site_pv">
-				本站总访问量<span id="busuanzi_value_site_pv"></span>次
-			</span>
+				<span id="busuanzi_value_site_pv">
+				</span>  visits  |  
+			</span>	
 			<span id="busuanzi_container_site_uv">
-				本站访客数<span id="busuanzi_value_site_uv"></span>人次
+				<span id="busuanzi_value_site_uv">
+				</span>  visitors
 			</span>
 			<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 			</script>
@@ -1045,7 +1035,7 @@
 <script>
 var IcarusThemeSettings = {
     site: {
-        url: 'http://yoursite.com',
+        url: 'http://whu-lyh.github.io.com',
         external_link: {"enable":true,"exclude":[]}
     },
     article: {
@@ -1120,8 +1110,6 @@ document.addEventListener('DOMContentLoaded', function () {
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
-
-
 
 
 

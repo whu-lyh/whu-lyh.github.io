@@ -14,17 +14,17 @@
     <meta name="description" content="主要记录在使用Docker运行ros以及其他slam系统中的常用命令">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Docker日常使用">
-<meta property="og:url" content="http://yoursite.com/2020/07/11/Docker%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8/index.html">
+<meta property="og:url" content="http://whu-lyh.github.io.com/2020/07/11/Docker%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
 <meta property="og:description" content="主要记录在使用Docker运行ros以及其他slam系统中的常用命令">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://yoursite.com/images/og_image.png">
+<meta property="og:image" content="http://whu-lyh.github.io.com/images/og_image.png">
 <meta property="article:published_time" content="2020-07-11T08:33:49.000Z">
-<meta property="article:modified_time" content="2020-07-11T10:18:10.479Z">
+<meta property="article:modified_time" content="2020-07-13T03:56:41.961Z">
 <meta property="article:author" content="AmazingHao">
 <meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://yoursite.com/images/og_image.png">
+<meta name="twitter:image" content="http://whu-lyh.github.io.com/images/og_image.png">
 
 
 
@@ -69,8 +69,6 @@
     
     <link rel="stylesheet" href="/css/progressbar.css">
 <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-    
-    <script async="" src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
     
 
 
@@ -148,14 +146,9 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 589 个字)
+                    5 分钟 读完 (大约 802 个字)
                 </span>
                 
-                
-                <span class="level-item has-text-grey" id="busuanzi_container_page_pv">
-                    <i class="far fa-eye"></i>
-                    <span id="busuanzi_value_page_pv">0</span>次访问
-                </span>
                 
             </div>
         </div>
@@ -174,10 +167,11 @@
 <h5 id="调整分辨率"><a href="#调整分辨率" class="headerlink" title="调整分辨率"></a>调整分辨率</h5><p><code>docker run -it -p 5900:5900 -e RESOLUTION=1980x1200 paopaorobot/ros-vnc</code></p>
 <h5 id="通过ssh连接"><a href="#通过ssh连接" class="headerlink" title="通过ssh连接"></a>通过ssh连接</h5><p><code>docker run -it -p 2222:22 paopaorobot/ros-vnc</code><br>打开本机控制台<br><code>ssh -o &#39;UserKnownHostsFile=/dev/null&#39; root@localhost -p [port]</code> port表示端口号，保持和开启镜像时映射的端口一致。<br>也可以设置自定义的ssh密码,如asc123<br><code>docker run -it -p 2222:22 -e SSHPW=asc123 paopaorobot/ros-vnc</code><br>也可以随机选择端口号，P会系统自动给一个端口，可以避免端口冲突<br><code>docker run -it -P paopaorobot/ros-vnc</code><br>通过<code>docker port</code>查看当前开了哪些端口，然后找到想要的端口</p>
 <h5 id="同时使用ssh和可视化界面"><a href="#同时使用ssh和可视化界面" class="headerlink" title="同时使用ssh和可视化界面"></a>同时使用ssh和可视化界面</h5><p><code>docker run -it -p 5900:5900 -p 2222:22 paopaorobot/ros-vnc</code></p>
-<h4 id="制作Demo"><a href="#制作Demo" class="headerlink" title="制作Demo"></a>制作Demo</h4><p>通过-v可以将本地数据路径挂载到docker中<br><code>docker run -it -p 5900:5900 -v localdatadir:ubuntudir paopaorobot/ros-vnc</code><br>roslaunch xx xxx.launch 参数（可能是数据路径，具体看不同的接口说明）</p>
-<h4 id="Docker远程debug"><a href="#Docker远程debug" class="headerlink" title="Docker远程debug"></a>Docker远程debug</h4><h5 id="把代码挂在到容器中"><a href="#把代码挂在到容器中" class="headerlink" title="把代码挂在到容器中"></a>把代码挂在到容器中</h5><p><code>docker run -it -v localcodedir:ubuntucodedir paopaorobot/ros-vnc</code><br>e.g.用vscode远程连接到容器，Remote-Container/Remote-SSH，cd到对应目录下即可<br>要先把本地代码挂在到远程，然后远程连接到容器中，利用容器的环境进行开发，build，run<br>本地修改之后，远程容器中也会发生响应的变化。   </p>
-<h4 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h4><p>未完待续…    </p>
-<h4 id="出现问题以及解决"><a href="#出现问题以及解决" class="headerlink" title="出现问题以及解决"></a>出现问题以及解决</h4><h5 id="1-vnc首次可以连接成功，但是再次连接时失败"><a href="#1-vnc首次可以连接成功，但是再次连接时失败" class="headerlink" title="1.vnc首次可以连接成功，但是再次连接时失败"></a>1.vnc首次可以连接成功，但是再次连接时失败</h5><p>打开vnc5900时提示，connected closed unxepectedly<br><font color="red"><strong>解决方案：</strong></font> 这是需要使用start将上次的docker容器打开就可以了，连接失败的原因可能是因为端口被占用了。</p>
+<h5 id="退出之后再打开"><a href="#退出之后再打开" class="headerlink" title="退出之后再打开"></a>退出之后再打开</h5><ul>
+<li>按照前述方法用vnc或者ssh打开docker的一个镜像并生成容器之后，通过exit退出当前容器，若是后续还想再进去，此时如果通过run命令就会再次产生一个容器，而你在之前的容器中所做的操作就不会保留。   </li>
+<li>因此这时需要通过start，打开之前操作过现在状态是exit的容器，用attach建立连接，此时如果通过<code>docker ps -a</code>可以发现之前的容器又可以打开了,并且端口号是可用的。   </li>
+<li>另外如果想要在exit容器时，容器不退出，应该使用exec命令打开镜像<code>docker exec -it 24d1106f11b8 /bin/bash</code>,此时也会发现容器时可用的了。<h4 id="制作Demo"><a href="#制作Demo" class="headerlink" title="制作Demo"></a>制作Demo</h4>通过-v可以将本地数据路径挂载到docker中<br><code>docker run -it -p 5900:5900 -v localdatadir:ubuntudir paopaorobot/ros-vnc</code><br>roslaunch xx xxx.launch 参数（可能是数据路径，具体看不同的接口说明）<h4 id="Docker远程debug"><a href="#Docker远程debug" class="headerlink" title="Docker远程debug"></a>Docker远程debug</h4><h5 id="把代码挂在到容器中"><a href="#把代码挂在到容器中" class="headerlink" title="把代码挂在到容器中"></a>把代码挂在到容器中</h5><code>docker run -it -v localcodedir:ubuntucodedir paopaorobot/ros-vnc</code><br>e.g.用vscode远程连接到容器，Remote-Container/Remote-SSH，cd到对应目录下即可<br>要先把本地代码挂在到远程，然后远程连接到容器中，利用容器的环境进行开发，build，run<br>本地修改之后，远程容器中也会发生响应的变化。   <h4 id="制作镜像"><a href="#制作镜像" class="headerlink" title="制作镜像"></a>制作镜像</h4>未完待续…    <h4 id="出现问题以及解决"><a href="#出现问题以及解决" class="headerlink" title="出现问题以及解决"></a>出现问题以及解决</h4><h5 id="1-vnc首次可以连接成功，但是再次连接时失败"><a href="#1-vnc首次可以连接成功，但是再次连接时失败" class="headerlink" title="1.vnc首次可以连接成功，但是再次连接时失败"></a>1.vnc首次可以连接成功，但是再次连接时失败</h5>打开vnc5900时提示，connected closed unxepectedly<br><font color="red"><strong>解决方案：</strong></font> 这是需要使用start将上次的docker容器打开就可以了，连接失败的原因可能是因为端口被占用了。</li>
+</ul>
 
         </div>
         
@@ -219,16 +213,7 @@
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">评论</h3>
-        
-<div class="notification is-danger">
-    You forgot to set the <code>app_id</code> or <code>app_key</code> for Valine. Please set it in <code>_config.yml</code>.
-</div>
-
-    </div>
-</div>
+<span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span> visits</span>
 </div>
                 
 
@@ -935,14 +920,9 @@
                 
                 </a>
                 <p class="is-size-7">
-                &copy; 2020 AmazingHao&nbsp;
+                &copy; 2021 AmazingHao&nbsp;
                 Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> & <a
                         href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
-                
-                <br>
-                <span id="busuanzi_container_site_uv">
-                共<span id="busuanzi_value_site_uv">0</span>个访客
-                </span>
                 
                 </p>
             </div>
@@ -977,11 +957,17 @@
                 </div>
             
             </div>
+			<style>
+				.copyright{line-height:24px}
+			</style>
+			<div class="copyright">
 			<span id="busuanzi_container_site_pv">
-				本站总访问量<span id="busuanzi_value_site_pv"></span>次
-			</span>
+				<span id="busuanzi_value_site_pv">
+				</span>  visits  |  
+			</span>	
 			<span id="busuanzi_container_site_uv">
-				本站访客数<span id="busuanzi_value_site_uv"></span>人次
+				<span id="busuanzi_value_site_uv">
+				</span>  visitors
 			</span>
 			<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
 			</script>
@@ -996,7 +982,7 @@
 <script>
 var IcarusThemeSettings = {
     site: {
-        url: 'http://yoursite.com',
+        url: 'http://whu-lyh.github.io.com',
         external_link: {"enable":true,"exclude":[]}
     },
     article: {
@@ -1071,8 +1057,6 @@ document.addEventListener('DOMContentLoaded', function () {
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
-
-
 
 
 
