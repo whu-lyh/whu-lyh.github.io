@@ -8,13 +8,13 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>标签: OSG - AmazingHao&#39;s Free Space</title>
+<title>标签: 开发 - AmazingHao&#39;s Free Space</title>
 
 
     <meta name="description" content="Mainly used to record the knowledge about the world">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AmazingHao&#39;s Free Space">
-<meta property="og:url" content="http://whu-lyh.github.io.com/tags/OSG/index.html">
+<meta property="og:url" content="http://whu-lyh.github.io.com/tags/%E5%BC%80%E5%8F%91/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
 <meta property="og:description" content="Mainly used to record the knowledge about the world">
 <meta property="og:locale" content="zh_CN">
@@ -132,7 +132,7 @@
         <nav class="breadcrumb" aria-label="breadcrumbs">
         <ul>
             <li><a href="/tags">标签</a></li>
-            <li class="is-active"><a href="#" aria-current="page">OSG</a></li>
+            <li class="is-active"><a href="#" aria-current="page">开发</a></li>
         </ul>
         </nav>
     </div>
@@ -145,7 +145,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-11T10:57:49.000Z">2020-03-11</time>
+                <time class="level-item has-text-grey" datetime="2021-01-17T09:34:39.000Z">2021-01-17</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
@@ -155,7 +155,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 153 个字)
+                    4 分钟 读完 (大约 610 个字)
                 </span>
                 
                 
@@ -164,18 +164,21 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                <a class="has-link-black-ter" href="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/">OSG中的坐标系</a>
+                <a class="has-link-black-ter" href="/2021/01/17/VS%E5%BC%80%E5%8F%91Tricks/">VS开发Tricks</a>
             
         </h1>
         <div class="content">
-            <h3 id="OSG中的坐标系和OpenGL中的坐标系"><a href="#OSG中的坐标系和OpenGL中的坐标系" class="headerlink" title="OSG中的坐标系和OpenGL中的坐标系"></a>OSG中的坐标系和OpenGL中的坐标系</h3><p>OSG中采用四元数表示旋转：<code>osg::Quat(angle to rotate, rotate around axis);</code><br>///<strong>*<br>///Q quaternion * P quaternion means that first conduct a rotation P,Second conduct a rotation Q, means a fusion about two rotations with a multiplication operation<br>///*</strong><br>&emsp;&emsp;The osg coordinate definition as left-hand coordinate which is right-front-up(x-y-z) and<br>the OpenGL coordinate definition also as left-hand coordinate which is right-up-behind(x-y-z), z axis is pointer to outside the screen<br>The OSG default viewport is along down direction, so heading is rotate to be equal to the y positive direction, rotate axis is x axis </p>
+            <hr>
+<h4 id="❤"><a href="#❤" class="headerlink" title="❤"></a><font color="green">❤</font></h4><hr>
+<h4 id="用户宏"><a href="#用户宏" class="headerlink" title="用户宏"></a>用户宏</h4><p>&emsp;&emsp;由于在开发时不可避免的会遇到多个环境，在不同环境之间进行切换是一个很麻烦的事情，因此使用用户宏可以很好的帮助我们进行环境切换和别名替换，便于多人协同开发。<br>在属性管理器中选中任意配置环境中的<code>Microsoft.Cpp.x64.user</code>   ，弹出如下页面：<br><img src="/2021/01/17/VS%E5%BC%80%E5%8F%91Tricks/%E7%94%A8%E6%88%B7%E5%AE%8F.png" alt="用户宏"><br>用一个你知道的缩写来作为名字，e.g. ThirdParty，对应的本地路径作为值即可。<br>在后续其他工程使用时可以使用$(ThirdParty)来表示该本地路径。非常方便。   </p>
+<h6 id="Tips"><a href="#Tips" class="headerlink" title="Tips"></a>Tips</h6><p>也可以选择将其设置为开发环境，即在代码编译过程中会使用你定义好的路径中的环境进行链接。   </p>
         </div>
         
         
         <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                <a class="button is-size-7 is-light" href="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/#more">阅读更多</a>
+                <a class="button is-size-7 is-light" href="/2021/01/17/VS%E5%BC%80%E5%8F%91Tricks/#more">阅读更多</a>
                 </div>
             </div>
         </div>
