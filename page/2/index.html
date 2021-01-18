@@ -8,21 +8,19 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>OSG中的坐标系 - AmazingHao&#39;s Free Space</title>
+<title>AmazingHao&#39;s Free Space</title>
 
 
-    <meta name="description" content="主要记录在使用OSG进行点云漫游时候的一些小问题和小心得">
-<meta property="og:type" content="article">
-<meta property="og:title" content="OSG中的坐标系">
-<meta property="og:url" content="http://whu-lyh.github.io.com/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/index.html">
+    <meta name="description" content="Mainly used to record the knowledge about the world">
+<meta property="og:type" content="website">
+<meta property="og:title" content="AmazingHao&#39;s Free Space">
+<meta property="og:url" content="http://whu-lyh.github.io.com/page/2/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
-<meta property="og:description" content="主要记录在使用OSG进行点云漫游时候的一些小问题和小心得">
+<meta property="og:description" content="Mainly used to record the knowledge about the world">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://whu-lyh.github.io.com/images/og_image.png">
-<meta property="article:published_time" content="2020-03-11T10:57:49.000Z">
-<meta property="article:modified_time" content="2020-03-11T11:11:42.329Z">
 <meta property="article:author" content="AmazingHao">
-<meta property="article:tag" content="OSG">
+<meta property="article:tag" content="Fire">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://whu-lyh.github.io.com/images/og_image.png">
 
@@ -80,7 +78,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="OSG中的坐标系" height="28">
+                <img src="/images/logo.svg" alt="AmazingHao&#39;s Free Space" height="28">
             
             </a>
         </div>
@@ -130,13 +128,14 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
+    
 <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-11T10:57:49.000Z">2020-03-11</time>
+                <time class="level-item has-text-grey" datetime="2020-02-22T07:38:32.000Z">2020-02-22</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
@@ -146,7 +145,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 153 个字)
+                    11 分钟 读完 (大约 1630 个字)
                 </span>
                 
                 
@@ -155,34 +154,25 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                OSG中的坐标系
+                <a class="has-link-black-ter" href="/2020/02/22/Hexo%E5%88%9D%E4%BD%93%E9%AA%8C/">Hexo初体验</a>
             
         </h1>
         <div class="content">
-            <h3 id="OSG中的坐标系和OpenGL中的坐标系"><a href="#OSG中的坐标系和OpenGL中的坐标系" class="headerlink" title="OSG中的坐标系和OpenGL中的坐标系"></a>OSG中的坐标系和OpenGL中的坐标系</h3><p>OSG中采用四元数表示旋转：<code>osg::Quat(angle to rotate, rotate around axis);</code><br>///<strong>*<br>///Q quaternion * P quaternion means that first conduct a rotation P,Second conduct a rotation Q, means a fusion about two rotations with a multiplication operation<br>///*</strong><br>&emsp;&emsp;The osg coordinate definition as left-hand coordinate which is right-front-up(x-y-z) and<br>the OpenGL coordinate definition also as left-hand coordinate which is right-up-behind(x-y-z), z axis is pointer to outside the screen<br>The OSG default viewport is along down direction, so heading is rotate to be equal to the y positive direction, rotate axis is x axis </p>
-<a id="more"></a>
-<p><img src="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/osgcoordinate.jpg" alt="坐标系朝向">   </p>
-<h4 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h4><ol>
-<li><a href="https://blog.csdn.net/tmljs1988/article/details/7561887">https://blog.csdn.net/tmljs1988/article/details/7561887</a>   </li>
-</ol>
-
+            <hr>
+<h4 id="相信你看到这里的时候已经对git有了解了，因此本博客将不会介绍git实用技巧而是着重于介绍在Windows上hexo的搭建及测试过程"><a href="#相信你看到这里的时候已经对git有了解了，因此本博客将不会介绍git实用技巧而是着重于介绍在Windows上hexo的搭建及测试过程" class="headerlink" title="相信你看到这里的时候已经对git有了解了，因此本博客将不会介绍git实用技巧而是着重于介绍在Windows上hexo的搭建及测试过程"></a>相信你看到这里的时候已经对git有了解了，因此本博客将不会介绍git实用技巧而是着重于介绍在Windows上hexo的搭建及测试过程</h4><h4 id="另外如果你充满好奇心的想尝试这一强大并有一个写博客的❤，那么就请继续往下看。"><a href="#另外如果你充满好奇心的想尝试这一强大并有一个写博客的❤，那么就请继续往下看。" class="headerlink" title="另外如果你充满好奇心的想尝试这一强大并有一个写博客的❤，那么就请继续往下看。"></a>另外如果你充满好奇心的想尝试这一强大并有一个写博客的<font color="green">❤</font>，那么就请继续往下看。</h4><hr>
+<p><font color="red"><strong>Hexo</strong></font><br>本身是一个静态博客生成工具，具备编译 Markdown、拼接主题模板、生成 HTML、上传 Git 或 FTP 等基本功能。</p>
         </div>
         
-        <div class="level is-size-7 is-uppercase">
+        
+        <div class="level is-mobile">
             <div class="level-start">
                 <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/OSG/" rel="tag">OSG</a>
+                <a class="button is-size-7 is-light" href="/2020/02/22/Hexo%E5%88%9D%E4%BD%93%E9%AA%8C/#more">阅读更多</a>
                 </div>
             </div>
         </div>
         
         
-        
-        <div class="social-share"></div>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/css/share.min.css">
-<script src="https://cdn.jsdelivr.net/npm/social-share.js@1.0.16/dist/js/social-share.min.js"></script>
-        
     </div>
 </div>
 
@@ -190,30 +180,28 @@
 
 
 
+
+
+
+
+    
 <div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/21/WindowBat/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">WindowBat</span>
-            </a>
+    <nav class="pagination is-centered" role="navigation" aria-label="pagination">
+        <div class="pagination-previous">
+            <a class="is-flex-grow has-text-black-ter" href="/">上一页</a>
         </div>
-        
-        
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/">
-                <span class="level-item">视频加速小技巧</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
+        <div class="pagination-next is-invisible is-hidden-mobile">
+            <a class="is-flex-grow has-text-black-ter" href="/page/3/">下一页</a>
         </div>
-        
-    </div>
+        <ul class="pagination-list is-hidden-mobile">
+            
+            <li><a class="pagination-link has-text-black-ter" href="/">1</a></li>
+            
+            <li><a class="pagination-link is-current" href="/page/2/">2</a></li>
+            
+        </ul>
+    </nav>
 </div>
-
-
-
-<span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span> visits</span>
 </div>
                 
 
@@ -952,7 +940,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="OSG中的坐标系" height="28">
+                    <img src="/images/logo.svg" alt="AmazingHao&#39;s Free Space" height="28">
                 
                 </a>
                 <p class="is-size-7">

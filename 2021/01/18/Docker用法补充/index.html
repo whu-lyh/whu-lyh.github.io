@@ -8,21 +8,21 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-<title>OSG中的坐标系 - AmazingHao&#39;s Free Space</title>
+<title>Docker用法补充 - AmazingHao&#39;s Free Space</title>
 
 
-    <meta name="description" content="主要记录在使用OSG进行点云漫游时候的一些小问题和小心得">
+    <meta name="description" content="主要记录在使用Docker进行涉及到cuda的镜像及容器使用时的经过">
 <meta property="og:type" content="article">
-<meta property="og:title" content="OSG中的坐标系">
-<meta property="og:url" content="http://whu-lyh.github.io.com/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/index.html">
+<meta property="og:title" content="Docker用法补充">
+<meta property="og:url" content="http://whu-lyh.github.io.com/2021/01/18/Docker%E7%94%A8%E6%B3%95%E8%A1%A5%E5%85%85/index.html">
 <meta property="og:site_name" content="AmazingHao&#39;s Free Space">
-<meta property="og:description" content="主要记录在使用OSG进行点云漫游时候的一些小问题和小心得">
+<meta property="og:description" content="主要记录在使用Docker进行涉及到cuda的镜像及容器使用时的经过">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://whu-lyh.github.io.com/images/og_image.png">
-<meta property="article:published_time" content="2020-03-11T10:57:49.000Z">
-<meta property="article:modified_time" content="2020-03-11T11:11:42.329Z">
+<meta property="article:published_time" content="2021-01-18T13:27:24.000Z">
+<meta property="article:modified_time" content="2021-01-18T13:34:35.451Z">
 <meta property="article:author" content="AmazingHao">
-<meta property="article:tag" content="OSG">
+<meta property="article:tag" content="Docker">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://whu-lyh.github.io.com/images/og_image.png">
 
@@ -80,7 +80,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="OSG中的坐标系" height="28">
+                <img src="/images/logo.svg" alt="Docker用法补充" height="28">
             
             </a>
         </div>
@@ -136,7 +136,7 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-03-11T10:57:49.000Z">2020-03-11</time>
+                <time class="level-item has-text-grey" datetime="2021-01-18T13:27:24.000Z">2021-01-18</time>
                 
                 <div class="level-item">
                 <a class="has-link-grey -link" href="/categories/%E5%AE%9E%E7%94%A8%E5%B7%A5%E5%85%B7/">实用工具</a>
@@ -146,7 +146,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1 分钟 读完 (大约 153 个字)
+                    7 分钟 读完 (大约 1115 个字)
                 </span>
                 
                 
@@ -155,16 +155,91 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                OSG中的坐标系
+                Docker用法补充
             
         </h1>
         <div class="content">
-            <h3 id="OSG中的坐标系和OpenGL中的坐标系"><a href="#OSG中的坐标系和OpenGL中的坐标系" class="headerlink" title="OSG中的坐标系和OpenGL中的坐标系"></a>OSG中的坐标系和OpenGL中的坐标系</h3><p>OSG中采用四元数表示旋转：<code>osg::Quat(angle to rotate, rotate around axis);</code><br>///<strong>*<br>///Q quaternion * P quaternion means that first conduct a rotation P,Second conduct a rotation Q, means a fusion about two rotations with a multiplication operation<br>///*</strong><br>&emsp;&emsp;The osg coordinate definition as left-hand coordinate which is right-front-up(x-y-z) and<br>the OpenGL coordinate definition also as left-hand coordinate which is right-up-behind(x-y-z), z axis is pointer to outside the screen<br>The OSG default viewport is along down direction, so heading is rotate to be equal to the y positive direction, rotate axis is x axis </p>
+            <p>In this machine, the docker is built based on the <a href="https://www.runoob.com/docker/docker-hello-world.html">Nvidia-docker</a>, and the previous docker is replaced by the new docker. Thus, the installation should be careful</p>
+<p><a href="https://www.runoob.com/docker/docker-hello-world.html">Docker</a> without cuda.</p>
 <a id="more"></a>
-<p><img src="/2020/03/11/OSG%E4%B8%AD%E7%9A%84%E5%9D%90%E6%A0%87%E7%B3%BB/osgcoordinate.jpg" alt="坐标系朝向">   </p>
-<h4 id="参考博客"><a href="#参考博客" class="headerlink" title="参考博客"></a>参考博客</h4><ol>
-<li><a href="https://blog.csdn.net/tmljs1988/article/details/7561887">https://blog.csdn.net/tmljs1988/article/details/7561887</a>   </li>
-</ol>
+<h2 id="一般用法"><a href="#一般用法" class="headerlink" title="一般用法"></a>一般用法</h2><h3 id="查看镜像"><a href="#查看镜像" class="headerlink" title="查看镜像"></a>查看镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker ps -a<br></code></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">CONTAINER ID   IMAGE                                              COMMAND                  CREATED         STATUS                   PORTS                                       NAMES<br>0ac8c062fa10   pointclouddl:segmentation                          <span class="hljs-string">"/bin/sh -c 'service…"</span>   8 minutes ago   Up 8 minutes             6006/tcp, 50051/tcp, 0.0.0.0:2224-&gt;22/tcp   brave_kilby<br>cd8b9c9c5b07   stereolabs/zed:3.0-gl-devel-cuda10.0-ubuntu18.04   <span class="hljs-string">"/bin/bash"</span>              4 weeks ago     Exited (0) 5 hours ago                                               jolly_feynman<br>af07110a5157   stereolabs/kalibr                                  <span class="hljs-string">"/ros_entrypoint.sh …"</span>   4 weeks ago     Exited (0) 4 weeks ago                                               modest_leakey<br></code></pre></td></tr></table></figure>
+
+<h3 id="拷贝文件"><a href="#拷贝文件" class="headerlink" title="拷贝文件"></a>拷贝文件</h3><p>从主机复制到容器</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker cp host_path containerID:container_path<br></code></pre></td></tr></table></figure>
+
+<p>从容器复制到主机</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker cp containerID:container_path host_path<br></code></pre></td></tr></table></figure>
+
+<h3 id="将容器打包成镜像"><a href="#将容器打包成镜像" class="headerlink" title="将容器打包成镜像"></a>将容器打包成镜像</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker commit -a <span class="hljs-string">"amazinghao"</span> -m <span class="hljs-string">"for point cloud deep learning environment"</span> dc1e2f6fcf8d pointclouddl:segmentation<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>-a, auther info</li>
+<li>-m, commit message</li>
+<li>the last parameter is the new image name and its tag. The new image name should be lowercase</li>
+<li>Note that the code file and data file should not be packaged into the image and only environment should be in there</li>
+</ul>
+<h3 id="检查镜像的信息"><a href="#检查镜像的信息" class="headerlink" title="检查镜像的信息"></a>检查镜像的信息</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker image inspect pointclouddl:segmentaton<br></code></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="使用实例"><a href="#使用实例" class="headerlink" title="使用实例"></a>使用实例</h2><h3 id="New-a-container-for-SLAM"><a href="#New-a-container-for-SLAM" class="headerlink" title="New a container for SLAM"></a>New a container for SLAM</h3><p>The images for SLAM are mostly built from the <strong>paopaorobot/ros-vnc</strong>, so the visualization module is embedded into the image. Any thing related to the visualization could be set as you wish.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># open a new container using the xfce&amp;vnc for visualization, host port is 5900, host mount dir is /Data, extra setting is the resolution which is 1080P</span><br>sudo docker run -i -t -p 5900:5900 -v /Data:/data -e RESOLUTION=1920x1080 paopaorobot/ubuntu-xfce-vnc<br><span class="hljs-comment"># similar to the upper one, amazinghao/ubuntu is build based on the ros-vnc image</span><br>sudo docker run -i -t -p 5900:5900 -v /Data:/data -e RESOLUTION=1920x1080 amazinghao/ubuntu<br><span class="hljs-comment"># similar to the upper two</span><br>sudo docker run -i -t -p 5900:5900 -v /Data:/data -e RESOLUTION=1920x1080 paopaorobot/ros-vnc:latest<br></code></pre></td></tr></table></figure>
+
+<h3 id="New-a-container-for-Deep-learning-with-CUDA"><a href="#New-a-container-for-Deep-learning-with-CUDA" class="headerlink" title="New a container for Deep learning with CUDA"></a>New a container for Deep learning with CUDA</h3><p><del>sudo docker run -itd —gpus all –privileged=true -v /Data:/data-lyh -v /PointSeg:/pointcloud_seg_code -p 2222:22 -p 5900:5900 -e RESOLUTION=1920x1080 -e SSHPW=xxxx pointclouddl:segmentation</del></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># bad command:</span><br>sudo docker run -itd --gpus all --privileged=<span class="hljs-literal">true</span> -v /Data:/data-lyh -v /PointSeg:/pointcloud_seg_code -p 2222:22 -p 5900:5900 -e RESOLUTION=1920x1080 -e SSHPW=xxxx pointclouddl:segmentation<br><span class="hljs-comment"># correct command:</span><br>sudo docker run -itd --gpus all --privileged=<span class="hljs-literal">true</span> -v /home/amazinghao/Data:/data-lyh -v /home/amazinghao/PointSeg:/pointcloud_seg_code -p 2224:22 -e SSHPW=xxx pointclouddl:segmentation<br></code></pre></td></tr></table></figure>
+
+<p>Tips:</p>
+<ul>
+<li><p><strong>–gpus all</strong>  , only this the Nvidia driver could be accessed, check <a href="https://github.com/traveller59/spconv/issues/185#issuecomment-655975873">this</a></p>
+</li>
+<li><p><strong>–privileged=true</strong> , to obtain the ‘real’ permission to mount file or others. This one is very important</p>
+</li>
+<li><p><strong>-v</strong> , mount the host dir or file to the container. The dir should begin with ‘/‘ and connected by ‘:’ </p>
+</li>
+<li><p><strong>-e SSHPW</strong> , set the ssh connect password</p>
+</li>
+<li><p><strong>-p</strong> , two ports are opened for both ssh or visualize. Only if the visualization module is activated, the VNC-Viewer is available.</p>
+</li>
+</ul>
+<h3 id="After-using-run-to-new-container"><a href="#After-using-run-to-new-container" class="headerlink" title="After using run to new container"></a>After using run to new container</h3><p>Using “run” to new a new container and once you quit the container, the container will immediately be closed.</p>
+<p>The container that you new right now will stay started and STATUS will be like: <strong>Up 8 minutes</strong></p>
+<p>Only thing you should do, if you are using VNC-Viewer for visualization, is as followings:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker start 0ac8c062fa10<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><code class="hljs bash">amazinghao@xixi-ubuntu:~$ sudo docker attach 0ac8c062fa10<br>root@0ac8c062fa10:~<span class="hljs-comment"># nvidia-smi</span><br>Mon Jan 18 04:55:55 2021       <br>+-----------------------------------------------------------------------------+<br>| NVIDIA-SMI 450.80.02    Driver Version: 450.80.02    CUDA Version: 11.0     |<br>|-------------------------------+----------------------+----------------------+<br>| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |<br>| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |<br>|                               |                      |               MIG M. |<br>|===============================+======================+======================|<br>|   0  GeForce GTX 108...  Off  | 00000000:01:00.0  On |                  N/A |<br>| 24%   46C    P5    18W / 250W |    271MiB / 11175MiB |      0%      Default |<br>|                               |                      |                  N/A |<br>+-------------------------------+----------------------+----------------------+<br>                                                                               <br>+-----------------------------------------------------------------------------+<br>| Processes:                                                                  |<br>|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |<br>|        ID   ID                                                   Usage      |<br>|=============================================================================|<br>+-----------------------------------------------------------------------------+<br>root@0ac8c062fa10:~<span class="hljs-comment"># nvcc -V</span><br>nvcc: NVIDIA (R) Cuda compiler driver<br>Copyright (c) 2005-2019 NVIDIA Corporation<br>Built on Sun_Jul_28_19:07:16_PDT_2019<br>Cuda compilation tools, release 10.1, V10.1.243<br></code></pre></td></tr></table></figure>
+<p>When you exit the container, the correspond container’s STATUS will be some thing like: <strong>Exited (0) 4 seconds ago</strong></p>
+<p>But if you only close vscode (connnet by Remote Container), the container will not be closed.</p>
+<h3 id="Also-you-can-using-exec-to-new-a-container"><a href="#Also-you-can-using-exec-to-new-a-container" class="headerlink" title="Also you can using exec to new a container"></a>Also you can using exec to new a container</h3><p>使用docker exec -it 容器id /bin/bash命令进入容器即可<br>##access the previous container id again<br>#the following command should be bind strongly</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker <span class="hljs-built_in">exec</span> -it af07110a5157 /bin/bash<br>docker attach previous_container_id<br></code></pre></td></tr></table></figure>
+
+<h2 id="New-a-container-for-zed-sdk"><a href="#New-a-container-for-zed-sdk" class="headerlink" title="New a container for zed sdk"></a>New a container for zed sdk</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># Open a container for zed stereo camera. The image contains a visualization module using "X11"</span><br>sudo docker run --gpus all -it --privileged --network=host stereolabs/zed:3.0-runtime-cuda10.0-ubuntu18.04<br></code></pre></td></tr></table></figure>
+<h2 id="ZED-docker-display-support"><a href="#ZED-docker-display-support" class="headerlink" title="ZED docker display support"></a>ZED docker display support</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">xhost +si:localuser:root<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">sudo docker run --gpus all -it --privileged -e DISPLAY=<span class="hljs-variable">$DISPLAY</span> -v /tmp/.X11-unix:/tmp/.X11-unix stereolabs/zed:3.0-gl-devel-cuda10.0-ubuntu18.04<br>sudo docker attach containerID<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>The camera connection can be verified using lsusb:</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">lsusb -d 2b03: -vvv<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>in case of replug/hotplug, mount all the dev folder</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run --gpus all -it -v /dev:/dev --privileged stereolabs/zed:3.0-runtime-cuda10.0-ubuntu18.04<br></code></pre></td></tr></table></figure>
+<h4 id="problem"><a href="#problem" class="headerlink" title="problem"></a>problem</h4><ul>
+<li>the ZED_Depth_Viewer didn’t work somehow.</li>
+</ul>
+<h2 id="zed-ros-wapper-amp-cuda-for-a-ros-bag"><a href="#zed-ros-wapper-amp-cuda-for-a-ros-bag" class="headerlink" title="zed_ros_wapper &amp; cuda for a ros bag"></a>zed_ros_wapper &amp; cuda for a ros bag</h2><p>add a ros melodic to zed-sdk and build the zed_ros_wapper in it ID:cd8b9c9c5b07</p>
+<p>stereolabs/zed:3.0-gl-devel-cuda10.0-ubuntu18.04</p>
+<h2 id="New-a-container-for-kalibr"><a href="#New-a-container-for-kalibr" class="headerlink" title="New a container for kalibr"></a>New a container for kalibr</h2><p>container ID:af07110a5157 is the one which rebuild the ros_kalibr_system<br>ubuntu version:16.04<br>ros version:kinetic</p>
+<p><code>--show-extraction</code></p>
+<h2 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h2><h3 id="Visualization"><a href="#Visualization" class="headerlink" title="Visualization"></a>Visualization</h3><p>X11 apps (and GL), is the key for display inside the docker</p>
+<p>e.g.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/bash</span><br><span class="hljs-comment"># This file is covered by the LICENSE file in the root of this project.</span><br>docker build -t api --build-arg uid=$(id -g) --build-arg gid=$(id -g) .<br>docker run --privileged \<br>       -ti --rm -e DISPLAY=<span class="hljs-variable">$DISPLAY</span> \<br>       -v /tmp/.X11-unix:/tmp/.X11-unix \<br>       -v <span class="hljs-variable">$1</span>:/home/data/ \<br>       api<br></code></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">docker run --privileged -ti --rm -e DISPLAY=<span class="hljs-variable">$DISPLAY</span> -v /tmp/.X11-unix:/tmp/.X11-unix -v /home/amazinghao/Data:/home/data/ api<br></code></pre></td></tr></table></figure>
+<p><code>-e DISPLAY=$DISPLAY</code></p>
+<p>after this the gui inside the docker will show in the host machine</p>
+<p><code>--privileged</code></p>
+<p>will make all extend equippment available for the docker</p>
 
         </div>
         
@@ -172,7 +247,7 @@
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/OSG/" rel="tag">OSG</a>
+                    <a class="has-link-grey -link" href="/tags/Docker/" rel="tag">Docker</a>
                 </div>
             </div>
         </div>
@@ -193,17 +268,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/03/21/WindowBat/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">WindowBat</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2020/02/29/%E8%A7%86%E9%A2%91%E5%8A%A0%E9%80%9F%E5%B0%8F%E6%8A%80%E5%B7%A7/">
-                <span class="level-item">视频加速小技巧</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2021/01/17/VS%E5%BC%80%E5%8F%91Tricks/">
+                <span class="level-item">VS开发Tricks</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -952,7 +1020,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="OSG中的坐标系" height="28">
+                    <img src="/images/logo.svg" alt="Docker用法补充" height="28">
                 
                 </a>
                 <p class="is-size-7">
