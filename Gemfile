@@ -25,3 +25,8 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'hawkins'
 end
+
+gem "webrick", "~> 1.8"
+
+# https://github.com/tzinfo/tzinfo/wiki/Resolving-TZInfo::DataSourceNotFound-Errors
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]

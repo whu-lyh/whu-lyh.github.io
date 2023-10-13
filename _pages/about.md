@@ -28,21 +28,19 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 # 📝 Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">CVPR 2016</div><img src='images/publications/ISPRS20230921.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS J 2023</div><img src='images/publications/ISPRS20230921.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
+[MuCoGraph: A Multi-scale Constraint Enhanced Pose Graph Framework for MLS Point Cloud Inconsistency  Correction](https://authors.elsevier.com/c/1hqt73I9x1mzdd). \
 
-[Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
-
-**Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=DhtAFkwAAAAJ&citation_for_view=DhtAFkwAAAAJ:ALROH1vI_8AC) <strong><span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span></strong>
-
-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 
+**Yuhao Li**, Xianghong Zou, Tian Li, Sihan Sun, Yuan Wang, Fuxun Liang, Jianping Li, Bisheng Yang, Zhen Dong. (SCI1-TOP, IF:12.7).  \| [Youtube]() \| [Bilibili]()
 </div>
 </div>
 
-- [Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet](https://github.com), A, B, C, **CVPR 2020**
++ `JAG 2022` [Automatic registration of point cloud and panoramic images in urban scenes based on pole matching](https://www.sciencedirect.com/science/article/pii/S1569843222002710). Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, Bisheng Yang,  Chi Chen, Zhen Dong. (SCI1-TOP, IF:7.5). 
++ `ISPRS J 2022` [3D-CSTM: A 3D continuous spatio-temporal mapping method](https://www.sciencedirect.com/science/article/pii/S0924271622000399). Yangzi Cong, Chi Chen, Bisheng Yang, Jianping Li, Weitong Wu, **Yuhao Li**, Yandi Yang. (SCI1-TOP, IF:12.7). 
++ `ISPRS Archives 2020` [A marker-free calibration method for mobile laser scanning point clouds correction](https://isprs-archives.copernicus.org/articles/XLIII-B2-2020/347/2020/isprs-archives-XLIII-B2-2020-347-2020.html). Bisheng Yang, **Yuhao Li**, Xianghong Zou, Zhen Dong. (EI). 
++ `RS 2019` [Non-Rigid Vehicle-Borne LiDAR-Assisted Aerotriangulation](https://doi.org/10.3390/rs11101188). Li Zheng, **Yuhao Li**, Meng Sun, Zheng Ji, Manzhu Yu, Qingbo Shu.  (SCI2, IF:5.8).
 
 # 🎖 Honors and Awards
 - *2022*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, Second Class Prize, Rank three.
