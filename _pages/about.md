@@ -33,17 +33,56 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 [MuCoGraph: A Multi-scale Constraint Enhanced Pose Graph Framework for MLS Point Cloud Inconsistency  Correction](https://authors.elsevier.com/c/1hqt73I9x1mzdd).
 
-**Yuhao Li**, Xianghong Zou, Tian Li, Sihan Sun, Yuan Wang, Fuxun Liang, Jianping Li, Bisheng Yang, Zhen Dong. (SCI1-TOP, IF:12.7).  \| [Youtube](https://www.youtube.com/watch?v=57h50gP84mQ) \| [Bilibili](https://www.bilibili.com/video/BV1Lj411C7NV/?share_source=copy_web&vd_source=824f51136eb80b5d06dddf1729586c4a).
+**Yuhao Li**, Xianghong Zou, Tian Li, Sihan Sun, Yuan Wang, Fuxun Liang, Jianping Li, Bisheng Yang, Zhen Dong. (SCI1-TOP, IF:12.7).  \| [Wechat](https://mp.weixin.qq.com/s/9dgklKTO97EI210vnNedog) \| [Youtube](https://www.youtube.com/watch?v=57h50gP84mQ) \| [Bilibili](https://www.bilibili.com/video/BV1Lj411C7NV/?share_source=copy_web&vd_source=824f51136eb80b5d06dddf1729586c4a).
 </div>
 </div>
 
-+ ``JAG 2022`` [Automatic registration of point cloud and panoramic images in urban scenes based on pole matching](https://www.sciencedirect.com/science/article/pii/S1569843222002710). Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, Bisheng Yang,  Chi Chen, Zhen Dong. (SCI1-TOP, IF:7.5). 
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JAG 2022</div><img src='images/publications/JAG20221026.png' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+[Automatic registration of point cloud and panoramic images in urban scenes based on pole matching](https://www.sciencedirect.com/science/article/pii/S1569843222002710). 
+
+Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, Bisheng Yang,  Chi Chen, Zhen Dong. (SCI1-TOP, IF:7.5). 
+
+</div>
+</div>
+
 + ``ISPRS J 2022`` [3D-CSTM: A 3D continuous spatio-temporal mapping method](https://www.sciencedirect.com/science/article/pii/S0924271622000399). Yangzi Cong, Chi Chen, Bisheng Yang, Jianping Li, Weitong Wu, **Yuhao Li**, Yandi Yang. (SCI1-TOP, IF:12.7). 
 + ``ISPRS Archives 2020`` [A marker-free calibration method for mobile laser scanning point clouds correction](https://isprs-archives.copernicus.org/articles/XLIII-B2-2020/347/2020/isprs-archives-XLIII-B2-2020-347-2020.html). Bisheng Yang, **Yuhao Li**, Xianghong Zou, Zhen Dong. (EI). 
 + ``RS 2019`` [Non-Rigid Vehicle-Borne LiDAR-Assisted Aerotriangulation](https://doi.org/10.3390/rs11101188). Li Zheng, **Yuhao Li**, Meng Sun, Zheng Ji, Manzhu Yu, Qingbo Shu.  (SCI2, IF:5.8).
 
-# 🎖 Honors and Awards
-- *2022*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, Second Class Prize, Rank **three**.
+# 💻 Selected Projects
+
++ Point cloud pre-processing tool, *2022.12-2023.03*, \| `C++`.
+
+<div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Point2Model 2021</div><img src='images/projects/Point2Model.png' alt="sym" width="110%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+Point2Model development, *2021.07-2021.12*. \| `C++` \| `Microstation`\| [Commercial Software Page](http://www.dynspai.com/dydwswtqyyyjjfa).
+
++ **Feature**: MLS position inconsistency correction module, Cloud2Cloud distance check module.
+
+</div>
+</div>
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Powerline Simulation 2021</div><img src='images/projects/PowerlineSimulation.gif' alt="sym" width="100%"></div></div>
+<div class='paper-box-text' markdown="1">
+
+Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \| `Matlab`.
+
++ **Feature**: Automatic point cloud division of power corridor, Individual powerline coefficient estimation, Transmission line sag simulation, Point cloud and aerial image fusion, Risk detection and report print.
+
+</div>
+</div>
+
++ MLS point cloud position correction UI, *2019.07-2019.09*. \| `C++` \| `Qt`.
+
+# 🎖 Selected Honors and Awards
+- *2022.12*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, **Second** Class Prize, Rank **three**.
+- *2018.08*, The Fifth China Graduate Context on Smart-city Technology and Creative Design, **Third** Class Prize.
 
 # 📖 Educations
 - *2019.09 - (now)*, Ph.D, LIESMARS, Wuhan University, Wuhan.
