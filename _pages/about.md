@@ -86,6 +86,7 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 - *2018.08*, The Fifth China Graduate Context on Smart-city Technology and Creative Design, **Third** Class Prize.
 
 # 📖 Educations
-- *2019.09 - (now)*, Ph.D, LIESMARS, Wuhan University, Wuhan.
+- *2020.09 - (now)*, Ph.D, LIESMARS, Wuhan University, Wuhan.
+- *2019.07 - 2020.08*, Research Assistent, LIESMARS, Wuhan University, Wuhan.
 - *2017.09 - 2019.06*, M.S., School of Geodesy and Geomatics, Wuhan University, Wuhan.
-- *2013.06 - 2017.06*, B.S., Tai Yuan University of Technology, Taiyuan.
+- *2013.09 - 2017.06*, B.S., Tai Yuan University of Technology, Taiyuan.
