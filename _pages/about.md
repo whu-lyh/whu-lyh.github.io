@@ -23,9 +23,9 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 
 # 🔥 News
-- *2023.09*: 🎉 🎉🎉  One paper is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
-- *2022.12*: 🎉 🎉🎉  Science and Technology Progress Award for Geographic Information, **Second** Class Prize, awarded by CAGIS.
-- *2022.10*: 🎉 🎉 🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5).
+- *2023.09*: 🎉🎉🎉 One paper is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
+- *2022.12*: 🎉🎉🎉 Science and Technology Progress Award for Geographic Information, **Second** Class Prize, awarded by CAGIS.
+- *2022.10*: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5).
 
 # 📝 Publications 
 
@@ -38,7 +38,7 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 </div>
 </div>
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JAG 2022</div><img src='images/publications/JAG20221026.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">JAG 2022</div><img src='images/publications/JAG20221026.png' alt="sym" width="101%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 [Automatic registration of point cloud and panoramic images in urban scenes based on pole matching](https://www.sciencedirect.com/science/article/pii/S1569843222002710). 
@@ -58,7 +58,7 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, Bisheng Yang,  
 
 <div>
 </div>
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Point2Model 2021</div><img src='images/projects/Point2Model.png' alt="sym" width="100%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Point2Model 2021</div><img src='images/projects/Point2Model.mp4' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
 
