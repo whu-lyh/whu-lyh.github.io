@@ -32,7 +32,7 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS J 2023</div><img src='images/publications/ISPRS20230921.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 
-[MuCoGraph: A Multi-scale Constraint Enhanced Pose Graph Framework for MLS Point Cloud Inconsistency  Correction](https://authors.elsevier.com/c/1hqt73I9x1mzdd).
+[MuCoGraph: A Multi-scale Constraint Enhanced Pose Graph Framework for MLS Point Cloud Inconsistency  Correction](https://www.sciencedirect.com/science/article/abs/pii/S0924271623002599).
 
 **Yuhao Li**, Xianghong Zou, Tian Li, Sihan Sun, Yuan Wang, Fuxun Liang, Jianping Li, Bisheng Yang, Zhen Dong. (SCI1-TOP, IF:12.7).  \| [Wechat](https://mp.weixin.qq.com/s/9dgklKTO97EI210vnNedog) \| [Youtube](https://www.youtube.com/watch?v=57h50gP84mQ) \| [Bilibili](https://www.bilibili.com/video/BV1Lj411C7NV/?share_source=copy_web&vd_source=824f51136eb80b5d06dddf1729586c4a).
 </div>
