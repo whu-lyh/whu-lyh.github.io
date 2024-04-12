@@ -23,6 +23,7 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 
 # 🔥 News
+- *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4).
 - *2023.09*: 🎉🎉🎉 One paper is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
 - *2022.12*: 🎉🎉🎉 Science and Technology Progress Award for Geographic Information, **Second** Class Prize, awarded by CAGIS.
 - *2022.10*: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5).
@@ -31,7 +32,6 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS J 2023</div><img src='images/publications/ISPRS20230921.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
-
 [MuCoGraph: A Multi-scale Constraint Enhanced Pose Graph Framework for MLS Point Cloud Inconsistency  Correction](https://www.sciencedirect.com/science/article/abs/pii/S0924271623002599).
 
 **Yuhao Li**, Xianghong Zou, Tian Li, Sihan Sun, Yuan Wang, Fuxun Liang, Jianping Li, Bisheng Yang, Zhen Dong. (SCI1-TOP, IF:12.7).  \| [Wechat](https://mp.weixin.qq.com/s/9dgklKTO97EI210vnNedog) \| [Youtube](https://www.youtube.com/watch?v=57h50gP84mQ) \| [Bilibili](https://www.bilibili.com/video/BV1Lj411C7NV/?share_source=copy_web&vd_source=824f51136eb80b5d06dddf1729586c4a).
@@ -48,6 +48,7 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, Bisheng Yang,  
 </div>
 </div>
 
++ ``Phor 2024`` Coarse-to-fine adjustment for multi-platform point cloud fusion. Xin Zhao, Jianping Li, **Yuhao Li**, Bisheng Yang, Sihan Sun, Yongfeng Lin, Zhen Dong. (SCI3, IF:2.4).
 + ``ISPRS J 2022`` [3D-CSTM: A 3D continuous spatio-temporal mapping method](https://www.sciencedirect.com/science/article/pii/S0924271622000399). Yangzi Cong, Chi Chen, Bisheng Yang, Jianping Li, Weitong Wu, **Yuhao Li**, Yandi Yang. (SCI1-TOP, IF:12.7). 
 + ``ISPRS Archives 2020`` [A marker-free calibration method for mobile laser scanning point clouds correction](https://isprs-archives.copernicus.org/articles/XLIII-B2-2020/347/2020/isprs-archives-XLIII-B2-2020-347-2020.html). Bisheng Yang, **Yuhao Li**, Xianghong Zou, Zhen Dong. (EI). 
 + ``RS 2019`` [Non-Rigid Vehicle-Borne LiDAR-Assisted Aerotriangulation](https://doi.org/10.3390/rs11101188). Li Zheng, **Yuhao Li**, Meng Sun, Zheng Ji, Manzhu Yu, Qingbo Shu.  (SCI2, IF:5.8).
