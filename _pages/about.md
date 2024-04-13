@@ -19,16 +19,17 @@ redirect_from:
 
 I am currently working toward the Ph.D degree in the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), [Wuhan University](https://en.whu.edu.cn/), supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  Before this, I received the M.S. degree in School of Geodesy and Geomatics, Wuhan University in 2019, supervised by A. Prof. Li Zheng and A. Prof. Zheng Ji. Prior to WHU, I received the B.S. degree in Tai Yuan University of Technology in 2017. 
 
-My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion, Place Recognition, Retrieval and Localization. I have published several papers <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> at the top journals, such as ISPRS J and JAG.
+My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion, Place Recognition, Retrieval and Localization. I have published several papers <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> at the top journals, such as ISPRS J, TGRS and JAG.
 
 
 # 🔥 News
+- *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4).
 - *2023.09*: 🎉🎉🎉 One paper is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
 - *2022.12*: 🎉🎉🎉 Science and Technology Progress Award for Geographic Information, **Second** Class Prize, awarded by CAGIS.
 - *2022.10*: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5).
 
-# 📝 Publications 
+# 📝 Selected Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS J 2023</div><img src='images/publications/ISPRS20230921.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -48,6 +49,7 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, Bisheng Yang,  
 </div>
 </div>
 
++ ``TGRS 2024`` A novel method for registration of MLS and stereo reconstructed point clouds. Xiaochen Yang, Haiping Wang, Zhen Dong, Yuan Liu, **Yuhao Li**, Bisheng Yang. (SCI1-TOP, IF:  8.2).
 + ``Phor 2024`` Coarse-to-fine adjustment for multi-platform point cloud fusion. Xin Zhao, Jianping Li, **Yuhao Li**, Bisheng Yang, Sihan Sun, Yongfeng Lin, Zhen Dong. (SCI3, IF:2.4).
 + ``ISPRS J 2022`` [3D-CSTM: A 3D continuous spatio-temporal mapping method](https://www.sciencedirect.com/science/article/pii/S0924271622000399). Yangzi Cong, Chi Chen, Bisheng Yang, Jianping Li, Weitong Wu, **Yuhao Li**, Yandi Yang. (SCI1-TOP, IF:12.7). 
 + ``ISPRS Archives 2020`` [A marker-free calibration method for mobile laser scanning point clouds correction](https://isprs-archives.copernicus.org/articles/XLIII-B2-2020/347/2020/isprs-archives-XLIII-B2-2020-347-2020.html). Bisheng Yang, **Yuhao Li**, Xianghong Zou, Zhen Dong. (EI). 
