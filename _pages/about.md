@@ -17,12 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently working toward the Ph.D degree in the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), [Wuhan University](https://en.whu.edu.cn/), supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  Before this, I received the M.S. degree in School of Geodesy and Geomatics, Wuhan University in 2019, supervised by A. Prof. Li Zheng and A. Prof. Zheng Ji. Prior to WHU, I received the B.S. degree in Tai Yuan University of Technology in 2017. 
+I am currently the final-year Ph.D in the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), [Wuhan University](https://en.whu.edu.cn/), supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  I work closely with the research fellow [Dr. Jianping Li](https://kafeiyin00.github.io/) at Nanyang Technological University. Before this, I received the M.S. degree in School of Geodesy and Geomatics, Wuhan University in 2019, supervised by A. Prof. Li Zheng and A. Prof. Zheng Ji. Prior to WHU, I received the B.S. degree in Tai Yuan University of Technology in 2017. 
 
 My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion, Place Recognition, Retrieval and Localization. I have published several papers <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> at the top journals, such as ISPRS J, TGRS and JAG.
 
 
 # 🔥 News
+- *2024.05*: 🎉🎉🎉 One paper ([CoFiI2P](https://whu-usi3dv.github.io/CoFiI2P/)) is available at the [arxiv](https://arxiv.org/abs/2309.14660v2).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4).
 - *2023.09*: 🎉🎉🎉 One paper is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
