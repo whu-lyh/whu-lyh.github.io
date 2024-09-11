@@ -23,7 +23,7 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 
 # 🔥 News
-- *2024.05*: 🎉🎉🎉 One paper ([CoFiI2P](https://whu-usi3dv.github.io/CoFiI2P/)) is available at the [arxiv](https://arxiv.org/abs/2309.14660v2).
+- *2024.09*: 🎉🎉🎉 One paper ([CoFiI2P](https://whu-usi3dv.github.io/CoFiI2P/)) is accepted by RAL. (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4).
 - *2023.09*: 🎉🎉🎉 One paper is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
@@ -49,14 +49,11 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, Bisheng Yang,  
 </div>
 </div>
 
-+ ``TGRS 2024`` [A novel method for registration of MLS and stereo reconstructed point clouds](https://ieeexplore.ieee.org/abstract/document/10500860). Xiaochen Yang, Haiping Wang, Zhen Dong, Yuan Liu, **Yuhao Li**, Bisheng Yang. (SCI1-TOP, IF:  8.2). \|[code](https://github.com/WHU-USI3DV/MSReg).
-
-+ ``Phor 2024`` Coarse-to-fine adjustment for multi-platform point cloud fusion. Xin Zhao, Jianping Li, **Yuhao Li**, Bisheng Yang, Sihan Sun, Yongfeng Lin, Zhen Dong. (SCI3, IF:2.4).
-
++ ''RAL 2024'' [CoFiI2P: Coarse-to-Fine Correspondences-Based Image-to-Point Cloud Registration](https://arxiv.org/abs/2309.14660v2). Shuhao Kang, Youqi Liao, , Jianping Li, FuxunLiang, **Yuhao Li**, Xianghong Zou, Fangning Li, Xieyuanli Chen, Zhen Dong, Bisheng Yang. (SCI2-TOP, IF:  4.6). |[Arxiv](https://arxiv.org/abs/2309.14660v2) |[ProjectPage](https://whu-usi3dv.github.io/CoFiI2P/)|[Code](https://github.com/WHU-USI3DV/CoFiI2P).
++ ``TGRS 2024`` [A novel method for registration of MLS and stereo reconstructed point clouds](https://ieeexplore.ieee.org/abstract/document/10500860). Xiaochen Yang, Haiping Wang, Zhen Dong, Yuan Liu, **Yuhao Li**, Bisheng Yang. (SCI1-TOP, IF:  8.2). \|[Code](https://github.com/WHU-USI3DV/MSReg).
++ ``Phor 2024`` [Coarse-to-fine adjustment for multi-platform point cloud fusion](https://onlinelibrary.wiley.com/doi/abs/10.1111/phor.12513). Xin Zhao, Jianping Li, **Yuhao Li**, Bisheng Yang, Sihan Sun, Yongfeng Lin, Zhen Dong. (SCI3, IF:2.4).
 + ``ISPRS J 2022`` [3D-CSTM: A 3D continuous spatio-temporal mapping method](https://www.sciencedirect.com/science/article/pii/S0924271622000399). Yangzi Cong, Chi Chen, Bisheng Yang, Jianping Li, Weitong Wu, **Yuhao Li**, Yandi Yang. (SCI1-TOP, IF:12.7). 
-
 + ``ISPRS Archives 2020`` [A marker-free calibration method for mobile laser scanning point clouds correction](https://isprs-archives.copernicus.org/articles/XLIII-B2-2020/347/2020/isprs-archives-XLIII-B2-2020-347-2020.html). Bisheng Yang, **Yuhao Li**, Xianghong Zou, Zhen Dong. (EI). 
-
 + ``RS 2019`` [Non-Rigid Vehicle-Borne LiDAR-Assisted Aerotriangulation](https://doi.org/10.3390/rs11101188). Li Zheng, **Yuhao Li**, Meng Sun, Zheng Ji, Manzhu Yu, Qingbo Shu.  (SCI2, IF:5.0).
 
 # 💻 Selected Projects
