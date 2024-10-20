@@ -17,12 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently the final-year Ph.D in the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), [Wuhan University](https://en.whu.edu.cn/), supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  I work closely with the research fellow [Dr. Jianping Li](https://kafeiyin00.github.io/) at Nanyang Technological University. Before this, I received the M.S. degree in School of Geodesy and Geomatics, Wuhan University in 2019, supervised by A. Prof. Li Zheng and A. Prof. Zheng Ji. Prior to WHU, I received the B.S. degree in Tai Yuan University of Technology in 2017. 
+I am currently the final-year Ph.D in the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), [Wuhan University](https://en.whu.edu.cn/), supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  I work closely with the research fellow [Dr. Jianping Li](https://kafeiyin00.github.io/) at Nanyang Technological University. Before this, I received the M.S. degree in School of Geodesy and Geomatics, Wuhan University in 2019, supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. Prior to WHU, I received the B.S. degree in Tai Yuan University of Technology in 2017. 
 
 My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion, Place Recognition, Retrieval and Localization. I have published several papers <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> at the top journals, such as ISPRS J, TGRS and JAG.
 
 
 # 🔥 News
+- *2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5). Congratulations to Yuan.
 - *2024.09*: 🎉🎉🎉 One paper is accepted by RAL. (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2). Congratulations to Xiaochen.
 - *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4). Congratulations to Xin Zhao.
@@ -50,6 +51,7 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, Bisheng Yang,  
 </div>
 
 
++ ``JAG 2024`` Efficient Multi-modal High-precision Semantic Segmentation from MLS Point Cloud without 3D Annotation. (SCI1-TOP, IF:7.5). 
 + ``RAL 2024``  [CoFiI2P: Coarse-to-Fine Correspondences-Based Image-to-Point Cloud Registration](https://ieeexplore.ieee.org/document/10685082). Shuhao Kang, Youqi Liao, Jianping Li, FuxunLiang, **Yuhao Li**, Xianghong Zou, Fangning Li, Xieyuanli Chen, Zhen Dong, Bisheng Yang. (SCI2-TOP, IF:  4.6).  \| [Arxiv](https://arxiv.org/abs/2309.14660v2) \| [ProjectPage](https://whu-usi3dv.github.io/CoFiI2P/) \| [Code](https://github.com/WHU-USI3DV/CoFiI2P).
 + ``TGRS 2024`` [A novel method for registration of MLS and stereo reconstructed point clouds](https://ieeexplore.ieee.org/abstract/document/10500860). Xiaochen Yang, Haiping Wang, Zhen Dong, Yuan Liu, **Yuhao Li**, Bisheng Yang. (SCI1-TOP, IF:  8.2). \|[Code](https://github.com/WHU-USI3DV/MSReg).
 + ``Phor 2024`` [Coarse-to-fine adjustment for multi-platform point cloud fusion](https://onlinelibrary.wiley.com/doi/abs/10.1111/phor.12513). Xin Zhao, Jianping Li, **Yuhao Li**, Bisheng Yang, Sihan Sun, Yongfeng Lin, Zhen Dong. (SCI3, IF:2.4).
