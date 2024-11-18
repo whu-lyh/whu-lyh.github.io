@@ -46,13 +46,13 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 [Automatic registration of point cloud and panoramic images in urban scenes based on pole matching](https://www.sciencedirect.com/science/article/pii/S1569843222002710). 
 
-Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm),  Chi Chen, [Zhen Dong](https://dongzhenwhu.github.io/). (SCI1-TOP, IF:7.5). 
+Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm),  Chi Chen, [Zhen Dong](https://dongzhenwhu.github.io/). (SCI1-TOP, IF:7.6). 
 
 </div>
 </div>
 
 
-+ ``JAG 2024`` Efficient Multi-modal High-precision Semantic Segmentation from MLS Point Cloud without 3D Annotation. (SCI1-TOP, IF:7.5). 
++ ``JAG 2024`` [Efficient Multi-modal High-precision Semantic Segmentation from MLS Point Cloud without 3D Annotation](https://www.sciencedirect.com/science/article/pii/S1569843224005995). Yuan Wang, Pei Sun, Wenbo Chu, **Yuhao Li**, Yiping Chen, Hui Lin, [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), Chao He. (SCI1-TOP, IF:7.6). 
 + ``RAL 2024``  [CoFiI2P: Coarse-to-Fine Correspondences-Based Image-to-Point Cloud Registration](https://ieeexplore.ieee.org/document/10685082). [Shuhao Kang](https://kang-1-2-3.github.io/), [Youqi Liao](https://martin-liao.github.io/), [Jianping Li](https://kafeiyin00.github.io/), FuxunLiang, **Yuhao Li**, Xianghong Zou, Fangning Li, Xieyuanli Chen, [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI2-TOP, IF:  4.6).  \| [Arxiv](https://arxiv.org/abs/2309.14660v2) \| [ProjectPage](https://whu-usi3dv.github.io/CoFiI2P/) \| [Code](https://github.com/WHU-USI3DV/CoFiI2P).
 + ``TGRS 2024`` [A novel method for registration of MLS and stereo reconstructed point clouds](https://ieeexplore.ieee.org/abstract/document/10500860). Xiaochen Yang, [Haiping Wang](https://hpwang-whu.github.io/), [Zhen Dong](https://dongzhenwhu.github.io/), [Yuan Liu](https://liuyuan-pal.github.io/), **Yuhao Li**, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI1-TOP, IF:  8.2). \|[Code](https://github.com/WHU-USI3DV/MSReg).
 + ``Phor 2024`` [Coarse-to-fine adjustment for multi-platform point cloud fusion](https://onlinelibrary.wiley.com/doi/abs/10.1111/phor.12513). Xin Zhao, [Jianping Li](https://kafeiyin00.github.io/), **Yuhao Li**, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), Sihan Sun, Yongfeng Lin, [Zhen Dong](https://dongzhenwhu.github.io/). (SCI3, IF:2.4).
