@@ -23,6 +23,7 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 
 # 🔥 News
+- 2024.10: 🎉🎉🎉 I have completed my PhD thesis defense.
 - 2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5). Congratulations to Yuan.
 - *2024.09*: 🎉🎉🎉 One paper is accepted by RAL. (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2). Congratulations to Xiaochen.
