@@ -23,7 +23,7 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 
 # 🔥 News
-- 2024.10: 🎉🎉🎉 I have completed my PhD thesis defense.
+- 2024.11: 🎉🎉🎉 I have completed my PhD thesis defense.
 - 2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5). Congratulations to Yuan.
 - *2024.09*: 🎉🎉🎉 One paper is accepted by RAL. (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2). Congratulations to Xiaochen.
@@ -97,7 +97,7 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 - *2018.08*, The Fifth China Graduate Context on Smart-city Technology and Creative Design, **Third** Class Prize.
 
 # 📖 Educations
-- *2020.09 - (now)*, Ph.D, LIESMARS, Wuhan University, Wuhan.
+- *2020.09 - 2024.12*, Ph.D, LIESMARS, Wuhan University, Wuhan.
 - *2019.07 - 2020.08*, Research Assistent, LIESMARS, Wuhan University, Wuhan.
 - *2017.09 - 2019.06*, M.S., School of Geodesy and Geomatics, Wuhan University, Wuhan.
 - *2013.09 - 2017.06*, B.S., Tai Yuan University of Technology, Taiyuan.
