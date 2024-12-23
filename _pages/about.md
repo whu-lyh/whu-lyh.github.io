@@ -23,11 +23,11 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 
 # 🔥 News
-- 2024.12.23: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
+- 2024.12: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
 - 2024.11: 🎉🎉🎉 I have completed my PhD thesis defense.
 - 2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5). Congratulations to Yuan.
 - *2024.09*: 🎉🎉🎉 One paper (CofiI2P) is accepted by RAL. (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
-- *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2). Congratulations to Xiaochen.
+- *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2). Congratulations to [Xiaochen](https://xc-young.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4). Congratulations to [Xin Zhao](https://xinzhaodc.github.io/).
 - *2023.09*: 🎉🎉🎉 One paper (MuCoGraph) is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
 - *2022.12*: 🎉🎉🎉 Science and Technology Progress Award for Geographic Information, **Second** Class Prize, awarded by CAGIS.
@@ -38,9 +38,10 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2024</div><img src='images/publications/IF20241223.png' alt="sym" width="101%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SaliencyI2PLoc: saliency-guided image-point cloud localization using contrastive learning](https://arxiv.org/abs/2412.15577).
-**Yuhao Li**, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). Under Review.  \| [Code](https://github.com/whu-lyh/SaliencyI2PLoc) \| [BiliBili](https://www.bilibili.com/video/BV17xgTevE4N?vd_source=824f51136eb80b5d06dddf1729586c4a).
+**Yuhao Li**, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). Under Review.  \| [Project Page](https://whu-lyh.github.io/SaliencyI2PLoc/) \| [Code](https://github.com/whu-lyh/SaliencyI2PLoc) \| [BiliBili](https://www.bilibili.com/video/BV17xgTevE4N?vd_source=824f51136eb80b5d06dddf1729586c4a).
 </div>
 </div>
+
 
 
 
