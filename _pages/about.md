@@ -17,12 +17,13 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am currently the final-year Ph.D in the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), [Wuhan University](https://en.whu.edu.cn/), supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  I work closely with the research fellow [Dr. Jianping Li](https://kafeiyin00.github.io/) at Nanyang Technological University. Before this, I received the M.S. degree in School of Geodesy and Geomatics, Wuhan University in 2019, supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
+I obtained my Ph.D. in 2024 from the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), at [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  During my Ph.D., I also collaborated closely with [Dr. Jianping Li](https://kafeiyin00.github.io/), a research fellow at Nanyang Technological University. Prior to this, I received my M.S. degree in 2019 from the School of Geodesy and Geomatics, Wuhan University, where I was supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
 
-My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion, Place Recognition, Retrieval and Localization, Gaussian Splatting. I have published several papers <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a> at the top journals, such as ISPRS J, TGRS and JAG.
+My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D reconstruction. I have published several papers in top-tier journals , including ISPRS Journal, Information Fusion, TGRS, and JAG. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
+- 2025.02: 🎉🎉🎉 SaliencyI2PLoc is accepted by Information Fusion. (SCI1-TOP, IF: 14.7).
 - 2024.12: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
 - 2024.11: 🎉🎉🎉 I have completed my PhD thesis defense.
 - 2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5). Congratulations to Yuan.
@@ -35,12 +36,13 @@ My research interests include Mobile Laser Scanning Point Cloud, LiDAR SLAM, Mul
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">Arxiv 2024</div><img src='images/publications/IF20241223.png' alt="sym" width="101%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">InF</div><img src='images/publications/IF20241223.png' alt="sym" width="101%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SaliencyI2PLoc: saliency-guided image-point cloud localization using contrastive learning](https://arxiv.org/abs/2412.15577).
-**Yuhao Li**, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). Under Review.  \| [Project Page](https://whu-lyh.github.io/SaliencyI2PLoc/) \| [Code](https://github.com/whu-lyh/SaliencyI2PLoc) \| [BiliBili](https://www.bilibili.com/video/BV17xgTevE4N?vd_source=824f51136eb80b5d06dddf1729586c4a).
+**Yuhao Li**, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). Under Review.  \| [Project Page](https://whu-lyh.github.io/SaliencyI2PLoc/) \| [Code](https://github.com/whu-lyh/SaliencyI2PLoc) \| [Arxiv](https://arxiv.org/abs/2412.15577) \| [BiliBili](https://www.bilibili.com/video/BV17xgTevE4N?vd_source=824f51136eb80b5d06dddf1729586c4a).
 </div>
 </div>
+
 
 
 
