@@ -27,7 +27,7 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 - 2024.12: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
 - 2024.11: 🎉🎉🎉 I have completed my PhD thesis defense.
 - 2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5). Congratulations to Yuan.
-- *2024.09*: 🎉🎉🎉 One paper (CofiI2P) is accepted by RAL. (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
+- *2024.09*: 🎉🎉🎉 One paper (CofiI2P) is accepted by RAL (Also by ICRA 2025). (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2). Congratulations to [Xiaochen](https://xc-young.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4). Congratulations to [Xin Zhao](https://xinzhaodc.github.io/).
 - *2023.09*: 🎉🎉🎉 One paper (MuCoGraph) is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
@@ -71,7 +71,7 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, [Bisheng Yang](
 
 
 + ``JAG 2024`` [Efficient Multi-modal High-precision Semantic Segmentation from MLS Point Cloud without 3D Annotation](https://www.sciencedirect.com/science/article/pii/S1569843224005995). Yuan Wang, Pei Sun, Wenbo Chu, **Yuhao Li**, Yiping Chen, Hui Lin, [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), Chao He. (SCI1-TOP, IF:7.6). 
-+ ``RAL 2024``  [CoFiI2P: Coarse-to-Fine Correspondences-Based Image-to-Point Cloud Registration](https://ieeexplore.ieee.org/document/10685082). [Shuhao Kang](https://kang-1-2-3.github.io/), [Youqi Liao](https://martin-liao.github.io/), [Jianping Li](https://kafeiyin00.github.io/), [FuxunLiang](https://liangfxwhu.github.io/), **Yuhao Li**, Xianghong Zou, Fangning Li, Xieyuanli Chen, [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI2-TOP, IF:  4.6).  \| [Arxiv](https://arxiv.org/abs/2309.14660v2) \| [ProjectPage](https://whu-usi3dv.github.io/CoFiI2P/) \| [Code](https://github.com/WHU-USI3DV/CoFiI2P).
++ ``RAL 2024 & ICRA 2025``  [CoFiI2P: Coarse-to-Fine Correspondences-Based Image-to-Point Cloud Registration](https://ieeexplore.ieee.org/document/10685082). [Shuhao Kang](https://kang-1-2-3.github.io/), [Youqi Liao](https://martin-liao.github.io/), [Jianping Li](https://kafeiyin00.github.io/), [FuxunLiang](https://liangfxwhu.github.io/), **Yuhao Li**, Xianghong Zou, Fangning Li, Xieyuanli Chen, [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI2-TOP, IF:  4.6).  \| [Arxiv](https://arxiv.org/abs/2309.14660v2) \| [ProjectPage](https://whu-usi3dv.github.io/CoFiI2P/) \| [Code](https://github.com/WHU-USI3DV/CoFiI2P).
 + ``TGRS 2024`` [A novel method for registration of MLS and stereo reconstructed point clouds](https://ieeexplore.ieee.org/abstract/document/10500860). [Xiaochen Yang](https://xc-young.github.io/), [Haiping Wang](https://hpwang-whu.github.io/), [Zhen Dong](https://dongzhenwhu.github.io/), [Yuan Liu](https://liuyuan-pal.github.io/), **Yuhao Li**, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI1-TOP, IF:  7.5). \|[Code](https://github.com/WHU-USI3DV/MSReg).
 + ``Phor 2024`` [Coarse-to-fine adjustment for multi-platform point cloud fusion](https://onlinelibrary.wiley.com/doi/abs/10.1111/phor.12513). [Xin Zhao](https://xinzhaodc.github.io/), [Jianping Li](https://kafeiyin00.github.io/), **Yuhao Li**, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), Sihan Sun, Yongfeng Lin, [Zhen Dong](https://dongzhenwhu.github.io/). (SCI3, IF:2.1).
 + ``ISPRS J 2022`` [3D-CSTM: A 3D continuous spatio-temporal mapping method](https://www.sciencedirect.com/science/article/pii/S0924271622000399). Yangzi Cong, Chi Chen, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Jianping Li](https://kafeiyin00.github.io/), Weitong Wu, **Yuhao Li**, Yandi Yang. (SCI1-TOP, IF:10.6). 
@@ -107,7 +107,7 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 </div>
 
 + MLS point cloud position correction UI, *2019.07-2019.09*. \| `C++` \| `Qt`.
-+ Open-Set Face Recognition, *2018.05-2018.08.* | `C++` | `Python`.
++ Open-Set Face Recognition, *2018.05-2018.08.* \| `C++` \| `Python`.
 
 # 🎖 Selected Honors and Awards
 - *2022.12*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, **Second** Class Prize, Rank **three**.
