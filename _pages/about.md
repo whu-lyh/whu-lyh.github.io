@@ -19,7 +19,7 @@ redirect_from:
 
 I obtained my Ph.D. in 2024 from the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), at [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  During my Ph.D., I also collaborated closely with [Dr. Jianping Li](https://kafeiyin00.github.io/), a research fellow at Nanyang Technological University. Prior to this, I received my M.S. degree in 2019 from the School of Geodesy and Geomatics, Wuhan University, where I was supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
 
-My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D reconstruction. I have published several papers in top-tier journals , including ISPRS Journal, Information Fusion, TGRS, and JAG. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D Reconstruction. I have published several papers in top-tier journals and conferences, including ISPRS Journal, Information Fusion, TGRS, and JAG. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
@@ -36,12 +36,13 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 
 # 📝 Selected Publications 
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">InF</div><img src='images/publications/IF20241223.png' alt="sym" width="101%"></div></div>
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">InF 2025</div><img src='images/publications/IF20241223.png' alt="sym" width="101%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SaliencyI2PLoc: saliency-guided image-point cloud localization using contrastive learning](https://arxiv.org/abs/2412.15577).
-**Yuhao Li**, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). Under Review.  \| [Project Page](https://whu-lyh.github.io/SaliencyI2PLoc/) \| [Code](https://github.com/whu-lyh/SaliencyI2PLoc) \| [Arxiv](https://arxiv.org/abs/2412.15577) \| [BiliBili](https://www.bilibili.com/video/BV17xgTevE4N?vd_source=824f51136eb80b5d06dddf1729586c4a).
+**Yuhao Li**, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (SCI1-TOP, IF: 14.7). \| [Project Page](https://whu-lyh.github.io/SaliencyI2PLoc/) \| [Code](https://github.com/whu-lyh/SaliencyI2PLoc) \| [Arxiv](https://arxiv.org/abs/2412.15577) \| [BiliBili](https://www.bilibili.com/video/BV17xgTevE4N?vd_source=824f51136eb80b5d06dddf1729586c4a).
 </div>
 </div>
+
 
 
 
@@ -106,6 +107,7 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 </div>
 
 + MLS point cloud position correction UI, *2019.07-2019.09*. \| `C++` \| `Qt`.
++ Open-Set Face Recognition, *2018.05-2018.08.* | `C++` | `Python`.
 
 # 🎖 Selected Honors and Awards
 - *2022.12*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, **Second** Class Prize, Rank **three**.
