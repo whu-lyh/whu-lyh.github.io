@@ -19,29 +19,30 @@ redirect_from:
 
 I obtained my Ph.D. in 2024 from the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), at [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  During my Ph.D., I also collaborated closely with [Dr. Jianping Li](https://kafeiyin00.github.io/), a research fellow at Nanyang Technological University. Prior to this, I received my M.S. degree in 2019 from the School of Geodesy and Geomatics, Wuhan University, where I was supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
 
-My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D Reconstruction. I have published several papers in top-tier journals and conferences, including ISPRS Journal, Information Fusion, TGRS, and JAG. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D Reconstruction. I have published several papers in top-tier journals and conferences, including ISPRS Journal, Information Fusion, IEEE TGRS, and JAG. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
-- 2025.02: 🎉🎉🎉 SaliencyI2PLoc is accepted by Information Fusion. (SCI1-TOP, IF: 14.7).
+- 2025.02: 🎉🎉🎉 SaliencyI2PLoc is accepted by Information Fusion. (SCI1-TOP, IF: 14.8).
 - 2024.12: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
 - 2024.11: 🎉🎉🎉 I have completed my PhD thesis defense.
-- 2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5). Congratulations to Yuan.
+- 2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.6). Congratulations to Yuan.
 - *2024.09*: 🎉🎉🎉 One paper (CofiI2P) is accepted by RAL (Also by ICRA 2025). (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
-- *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  8.2). Congratulations to [Xiaochen](https://xc-young.github.io/).
+- *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  7.5). Congratulations to [Xiaochen](https://xc-young.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4). Congratulations to [Xin Zhao](https://xinzhaodc.github.io/).
 - *2023.09*: 🎉🎉🎉 One paper (MuCoGraph) is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
 - *2022.12*: 🎉🎉🎉 Science and Technology Progress Award for Geographic Information, **Second** Class Prize, awarded by CAGIS.
-- *2022.10*: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.5).
+- *2022.10*: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.6).
 
 # 📝 Selected Publications 
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">InF 2025</div><img src='images/publications/IF20241223.png' alt="sym" width="101%"></div></div>
 <div class='paper-box-text' markdown="1">
 [SaliencyI2PLoc: saliency-guided image-point cloud localization using contrastive learning](https://arxiv.org/abs/2412.15577).
-**Yuhao Li**, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (SCI1-TOP, IF: 14.7). \| [Project Page](https://whu-lyh.github.io/SaliencyI2PLoc/) \| [Code](https://github.com/whu-lyh/SaliencyI2PLoc) \| [Arxiv](https://arxiv.org/abs/2412.15577) \| [BiliBili](https://www.bilibili.com/video/BV17xgTevE4N?vd_source=824f51136eb80b5d06dddf1729586c4a).
+**Yuhao Li**, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (SCI1-TOP, IF: 14.8). \| [Project Page](https://whu-lyh.github.io/SaliencyI2PLoc/) \| [Code](https://github.com/whu-lyh/SaliencyI2PLoc) \| [Arxiv](https://arxiv.org/abs/2412.15577) \| [BiliBili](https://www.bilibili.com/video/BV17xgTevE4N?vd_source=824f51136eb80b5d06dddf1729586c4a).
 </div>
 </div>
+
 
 
 
@@ -53,9 +54,10 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">ISPRS J 2023</div><img src='images/publications/ISPRS20230921.png' alt="sym" width="100%"></div></div>
 <div class='paper-box-text' markdown="1">
 [MuCoGraph: A Multi-scale Constraint Enhanced Pose Graph Framework for MLS Point Cloud Inconsistency  Correction](https://www.sciencedirect.com/science/article/abs/pii/S0924271623002599).
-**Yuhao Li**, Xianghong Zou, Tian Li, Sihan Sun, Yuan Wang, [Fuxun Liang](https://liangfxwhu.github.io/), [Jianping Li](https://kafeiyin00.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (SCI1-TOP, IF:10.6).  \| [Wechat](https://mp.weixin.qq.com/s/9dgklKTO97EI210vnNedog) \| [Youtube](https://www.youtube.com/watch?v=57h50gP84mQ) \| [BiliBili](https://www.bilibili.com/video/BV1Lj411C7NV/?share_source=copy_web&vd_source=824f51136eb80b5d06dddf1729586c4a).
+**Yuhao Li**, Xianghong Zou, Tian Li, Sihan Sun, Yuan Wang, [Fuxun Liang](https://liangfxwhu.github.io/), [Jianping Li](https://kafeiyin00.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (SCI1-TOP, IF:12.7).  \| [Wechat](https://mp.weixin.qq.com/s/9dgklKTO97EI210vnNedog) \| [Youtube](https://www.youtube.com/watch?v=57h50gP84mQ) \| [BiliBili](https://www.bilibili.com/video/BV1Lj411C7NV/?share_source=copy_web&vd_source=824f51136eb80b5d06dddf1729586c4a).
 </div>
 </div>
+
 
 
 
@@ -74,7 +76,7 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, [Bisheng Yang](
 + ``RAL 2024 & ICRA 2025``  [CoFiI2P: Coarse-to-Fine Correspondences-Based Image-to-Point Cloud Registration](https://ieeexplore.ieee.org/document/10685082). [Shuhao Kang](https://kang-1-2-3.github.io/), [Youqi Liao](https://martin-liao.github.io/), [Jianping Li](https://kafeiyin00.github.io/), [FuxunLiang](https://liangfxwhu.github.io/), **Yuhao Li**, Xianghong Zou, Fangning Li, Xieyuanli Chen, [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI2-TOP, IF:  4.6).  \| [Arxiv](https://arxiv.org/abs/2309.14660v2) \| [ProjectPage](https://whu-usi3dv.github.io/CoFiI2P/) \| [Code](https://github.com/WHU-USI3DV/CoFiI2P).
 + ``TGRS 2024`` [A novel method for registration of MLS and stereo reconstructed point clouds](https://ieeexplore.ieee.org/abstract/document/10500860). [Xiaochen Yang](https://xc-young.github.io/), [Haiping Wang](https://hpwang-whu.github.io/), [Zhen Dong](https://dongzhenwhu.github.io/), [Yuan Liu](https://liuyuan-pal.github.io/), **Yuhao Li**, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI1-TOP, IF:  7.5). \|[Code](https://github.com/WHU-USI3DV/MSReg).
 + ``Phor 2024`` [Coarse-to-fine adjustment for multi-platform point cloud fusion](https://onlinelibrary.wiley.com/doi/abs/10.1111/phor.12513). [Xin Zhao](https://xinzhaodc.github.io/), [Jianping Li](https://kafeiyin00.github.io/), **Yuhao Li**, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), Sihan Sun, Yongfeng Lin, [Zhen Dong](https://dongzhenwhu.github.io/). (SCI3, IF:2.1).
-+ ``ISPRS J 2022`` [3D-CSTM: A 3D continuous spatio-temporal mapping method](https://www.sciencedirect.com/science/article/pii/S0924271622000399). Yangzi Cong, Chi Chen, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Jianping Li](https://kafeiyin00.github.io/), Weitong Wu, **Yuhao Li**, Yandi Yang. (SCI1-TOP, IF:10.6). 
++ ``ISPRS J 2022`` [3D-CSTM: A 3D continuous spatio-temporal mapping method](https://www.sciencedirect.com/science/article/pii/S0924271622000399). Yangzi Cong, Chi Chen, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Jianping Li](https://kafeiyin00.github.io/), Weitong Wu, **Yuhao Li**, Yandi Yang. (SCI1-TOP, IF:11.7). 
 + ``ISPRS Archives 2020`` [A marker-free calibration method for mobile laser scanning point clouds correction](https://isprs-archives.copernicus.org/articles/XLIII-B2-2020/347/2020/isprs-archives-XLIII-B2-2020-347-2020.html). [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), **Yuhao Li**, Xianghong Zou, [Zhen Dong](https://dongzhenwhu.github.io/). (EI). 
 + ``RS 2019`` [Non-Rigid Vehicle-Borne LiDAR-Assisted Aerotriangulation](https://doi.org/10.3390/rs11101188). [Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm), **Yuhao Li**, Meng Sun, Zheng Ji, Manzhu Yu, Qingbo Shu.  (SCI2, IF:4.2).
 
