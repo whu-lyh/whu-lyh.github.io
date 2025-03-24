@@ -23,6 +23,7 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 
 
 # 🔥 News
+- 2025.03: 🎉🎉🎉 One paper (CVT Space Warping based Multi-scale Neural Implicit Surface Reconstruction for Outdoor Scenes) is accepted by Acta Geodaetica et Cartographica sinica (测绘学报). (EI, CSCD). Congratulations to Lu.
 - 2025.02: 🎉🎉🎉 SaliencyI2PLoc is accepted by Information Fusion. (SCI1-TOP, IF: 14.8).
 - 2024.12: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
 - 2024.11: 🎉🎉🎉 I have completed my PhD thesis defense.
