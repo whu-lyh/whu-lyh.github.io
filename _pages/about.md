@@ -23,6 +23,7 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 
 
 # 🔥 News
+- 2025.05: 🎉🎉🎉 One paper (OneStep-GSPE) is accepted by The 13th International Conference on Mobile Mapping Technology (MMT2025) and will be published on ISPRS Annels. (EI, Oral).
 - 2025.03: 🎉🎉🎉 One paper (CVT Space Warping based Multi-scale Neural Implicit Surface Reconstruction for Outdoor Scenes) is accepted by Acta Geodaetica et Cartographica sinica (测绘学报). (EI, CSCD). Congratulations to Lu.
 - 2025.02: 🎉🎉🎉 SaliencyI2PLoc is accepted by Information Fusion. (SCI1-TOP, IF: 14.8).
 - 2024.12: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
@@ -36,6 +37,17 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 - *2022.10*: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.6).
 
 # 📝 Selected Publications 
+
+<div class='paper-box'><div class='paper-box-image'><div><div class="badge">MMT 2025</div><img src='images/publications/MMT2025.png' alt="sym" width="101%"></div></div>
+<div class='paper-box-text' markdown="1">
+[OneStep-GSPE: an Efficient 3D Gaussian Splatting Based Image Pose Estimation]().
+**Yuhao Li**, [Yipeng Lu](), [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (EI, Oral). \| [Project Page](https://whu-lyh.github.io/OneStep-GSPE/) \|  [Code](https://github.com/whu-lyh/OneStep-GSPE) \| [Arxiv]().
+</div>
+</div>
+
+
+
+
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">InF 2025</div><img src='images/publications/IF20241223.png' alt="sym" width="101%"></div></div>
 <div class='paper-box-text' markdown="1">
@@ -112,6 +124,10 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 
 + MLS point cloud position correction UI, *2019.07-2019.09*. \| `C++` \| `Qt`.
 + Open-Set Face Recognition, *2018.05-2018.08.* \| `C++` \| `Python`.
+
+# ✍️ Services
+
+Reviewer for Conferences: MMT2025
 
 # 🎖 Selected Honors and Awards
 - *2022.12*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, **Second** Class Prize, Rank **three**.
