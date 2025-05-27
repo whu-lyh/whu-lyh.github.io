@@ -24,7 +24,7 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 
 # 🔥 News
 - 2025.05: 🎉🎉🎉 One paper (OneStep-GSPE) is accepted by The 13th International Conference on Mobile Mapping Technology (MMT2025) and will be published on ISPRS Annels. (EI, Oral).
-- 2025.03: 🎉🎉🎉 One paper (CVT Space Warping based Multi-scale Neural Implicit Surface Reconstruction for Outdoor Scenes) is accepted by Acta Geodaetica et Cartographica sinica (测绘学报). (EI, CSCD). Congratulations to Lu.
+- 2025.04: 🎉🎉🎉 One paper (CVT Space Warping based Multi-scale Neural Implicit Surface Reconstruction for Outdoor Scenes) is accepted by Acta Geodaetica et Cartographica sinica (测绘学报). (EI, CSCD). Congratulations to Lu.
 - 2025.02: 🎉🎉🎉 SaliencyI2PLoc is accepted by Information Fusion. (SCI1-TOP, IF: 14.8).
 - 2024.12: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
 - 2024.11: 🎉🎉🎉 I have completed my PhD thesis defense.
@@ -41,9 +41,10 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MMT 2025</div><img src='images/publications/MMT2025.png' alt="sym" width="101%"></div></div>
 <div class='paper-box-text' markdown="1">
 [OneStep-GSPE: an Efficient 3D Gaussian Splatting Based Image Pose Estimation]().
-**Yuhao Li**, [Yipeng Lu](), [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (EI, Oral). \| [Project Page](https://whu-lyh.github.io/OneStep-GSPE/) \|  [Code](https://github.com/whu-lyh/OneStep-GSPE) \| [Arxiv]().
+**Yuhao Li**, Yipeng Lu, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (EI, Oral). \| [Project Page](https://whu-lyh.github.io/OneStep-GSPE/).
 </div>
 </div>
+
 
 
 
@@ -86,6 +87,7 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, [Bisheng Yang](
 </div>
 
 
++ ``测绘学报 2025`` [CVT Space Warping based Multi-scale Neural Implicit Surface Reconstruction for Outdoor Scenes](https://ersp.lib.whu.edu.cn/s/net/cnki/kns/G.https/kcms2/article/abstract?v=qQX4xeHgc6uqJ-SECq-DW4Je7MgDUsuGPQx0qjFi-Hb5FfFMKjFJBOYtq4ueTyT3rCWHhrP8UU_dCB6zAprfWSRAbSzoCqBmqx0Mq0mDf-pV1dckzNO5lwKak4lAcp6Um1MZh-huEdx64S-wH1qIuheHyuoRVXdQEGGp1StFSXz3-cCY60cNJw==&uniplatform=NZKPT&language=CHS). Yipeng Lu, **Yuhao Li**, [Haiping Wang](https://hpwang-whu.github.io/), [Yuan Liu](https://liuyuan-pal.github.io/), [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (EI, CSCD)
 + ``JAG 2024`` [Efficient Multi-modal High-precision Semantic Segmentation from MLS Point Cloud without 3D Annotation](https://www.sciencedirect.com/science/article/pii/S1569843224005995). Yuan Wang, Pei Sun, Wenbo Chu, **Yuhao Li**, Yiping Chen, Hui Lin, [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), Chao He. (SCI1-TOP, IF:7.6). 
 + ``RAL 2024 & ICRA 2025``  [CoFiI2P: Coarse-to-Fine Correspondences-Based Image-to-Point Cloud Registration](https://ieeexplore.ieee.org/document/10685082). [Shuhao Kang](https://kang-1-2-3.github.io/), [Youqi Liao](https://martin-liao.github.io/), [Jianping Li](https://kafeiyin00.github.io/), [FuxunLiang](https://liangfxwhu.github.io/), **Yuhao Li**, Xianghong Zou, Fangning Li, Xieyuanli Chen, [Zhen Dong](https://dongzhenwhu.github.io/), [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI2-TOP, IF:  4.6).  \| [Arxiv](https://arxiv.org/abs/2309.14660v2) \| [ProjectPage](https://whu-usi3dv.github.io/CoFiI2P/) \| [Code](https://github.com/WHU-USI3DV/CoFiI2P).
 + ``TGRS 2024`` [A novel method for registration of MLS and stereo reconstructed point clouds](https://ieeexplore.ieee.org/abstract/document/10500860). [Xiaochen Yang](https://xc-young.github.io/), [Haiping Wang](https://hpwang-whu.github.io/), [Zhen Dong](https://dongzhenwhu.github.io/), [Yuan Liu](https://liuyuan-pal.github.io/), **Yuhao Li**, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm). (SCI1-TOP, IF:  7.5). \|[Code](https://github.com/WHU-USI3DV/MSReg).
