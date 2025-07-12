@@ -131,6 +131,8 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 
 Reviewer for Conferences: MMT2025
 
+Review for Journals: IEEE TASE
+
 # 🎖 Selected Honors and Awards
 - *2022.12*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, **Second** Class Prize, Rank **three**.
 - 2019.06, Outstanding Graduate Student, Wuhan University.
