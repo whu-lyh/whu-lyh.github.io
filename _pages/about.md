@@ -133,7 +133,7 @@ Reviewer for Conferences: MMT2025
 
 Review for Journals: IEEE TASE, IEEE IoT-J
 
-# 🏫 Teaching
+# 🏫 Teachings
 
 Modern Sensors and Detection Technology 2025
 

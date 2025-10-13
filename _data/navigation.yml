@@ -7,13 +7,19 @@ main:
     url: "/#-news"
 
   - title: "Publications"
-    url: "/#-publications"
+    url: "/#-selected-publications"
 
   - title: "Blogs"
     url: "/blogs"
 
   - title: "Selected Projects"
     url: "/#-selected-projects"
+
+  - title: "Services"
+    url: "/#-services"
+
+  - title: "Teachings"
+    url: "/#-teachings"
 
   - title: "Selected Honors and Awards"
     url: "/#-selected-honors-and-awards"
