@@ -17,9 +17,9 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I will be joining the Department of Intelligent Vehicle Engineering, [School of Mechanical Engineering](https://impe2014.ctbu.edu.cn/), [Chongqing Technology and Business University](https://www.ctbu.edu.cn/), as a lecturer. I obtained my Ph.D. in 2024 from the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), at [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  During my Ph.D., I collaborated closely with [Dr. Jianping Li](https://kafeiyin00.github.io/), a research fellow at [Nanyang Technological University](https://www.ntu.edu.sg/) and [Dr. Yuan Wang](https://dlxy.jxnu.edu.cn/2024/0402/c7440a259126/page.htm), a lecturer at [Jiangxi Normal University](https://www.jxnu.edu.cn/). Prior to this, I received my M.S. degree in 2019 from the [School of Geodesy and Geomatics](https://www.sgg.whu.edu.cn/), [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
+I am a lecturer in the Department of Intelligent Vehicle Engineering, [School of Mechanical Engineering](https://impe2014.ctbu.edu.cn/), [Chongqing Technology and Business University](https://www.ctbu.edu.cn/). I obtained my Ph.D. in 2024 from the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), at [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  During my Ph.D., I collaborated closely with [Dr. Jianping Li](https://kafeiyin00.github.io/), a research fellow at [Nanyang Technological University](https://www.ntu.edu.sg/) and [Dr. Yuan Wang](https://dlxy.jxnu.edu.cn/2024/0402/c7440a259126/page.htm), a lecturer at [Jiangxi Normal University](https://www.jxnu.edu.cn/). Prior to this, I received my M.S. degree in 2019 from the [School of Geodesy and Geomatics](https://www.sgg.whu.edu.cn/), [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
 
-My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D Reconstruction. I have published several papers in top-tier journals and conferences, including ISPRS Journal, Information Fusion, JAG, IEEE TGRS, and 测绘学报. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+My research interests span Mobile Laser Scanning Point Clouds processing, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D Reconstruction. I have published several papers in top-tier journals and conferences, including ISPRS Journal, Information Fusion, JAG, IEEE TGRS, and 测绘学报. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
@@ -29,7 +29,7 @@ My research interests span Mobile Laser Scanning Point Cloud, LiDAR SLAM, Multi-
 - 2024.12: 🎉🎉🎉 One paper (SaliencyI2PLoc) is available at [Arxiv](https://arxiv.org/abs/2412.15577).
 - 2024.11: 🎉🎉🎉 I have completed my PhD thesis defense.
 - 2024.10: 🎉🎉🎉 One paper is accepted by JAG. (SCI1-TOP, IF:  7.6). Congratulations to Yuan.
-- *2024.09*: 🎉🎉🎉 One paper (CofiI2P) is accepted by IEEE RAL (Also by ICRA 2025). (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
+- *2024.09*: 🎉🎉🎉 One paper (CofiI2P) is accepted by IEEE RAL. (SCI2-TOP, IF:  4.6). Congratulations to [Shuhao](https://kang-1-2-3.github.io/) and [Youqi](https://martin-liao.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by TGRS. (SCI1-TOP, IF:  7.5). Congratulations to [Xiaochen](https://xc-young.github.io/).
 - *2024.04*: 🎉🎉🎉 One paper is accepted by PHOTOGRAMMETRIC RECORD. (SCI3, IF:  2.4). Congratulations to [Xin Zhao](https://xinzhaodc.github.io/).
 - *2023.09*: 🎉🎉🎉 One paper (MuCoGraph) is accepted by ISPRS J. (SCI1-TOP, IF:  12.7).
@@ -132,6 +132,10 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 Reviewer for Conferences: MMT2025
 
 Review for Journals: IEEE TASE, IEEE IoT-J
+
+# 🏫 Teaching
+
+Modern Sensors and Detection Technology 2025
 
 # 🎖 Selected Honors and Awards
 - *2022.12*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, **Second** Class Prize, Rank **three**.
