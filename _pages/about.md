@@ -40,10 +40,11 @@ My research interests span Mobile Laser Scanning Point Clouds processing, Multi-
 
 <div class='paper-box'><div class='paper-box-image'><div><div class="badge">MMT 2025</div><img src='images/publications/MMT2025.png' alt="sym" width="101%"></div></div>
 <div class='paper-box-text' markdown="1">
-[OneStep-GSPE: an Efficient 3D Gaussian Splatting Based Image Pose Estimation]().
+[OneStep-GSPE: an Efficient 3D Gaussian Splatting Based Image Pose Estimation](https://isprs-archives.copernicus.org/articles/XLVIII-1-W5-2025/53/2025/isprs-archives-XLVIII-1-W5-2025-53-2025.html).
 **Yuhao Li**, Yipeng Lu, [Jianping Li](https://kafeiyin00.github.io/), Yuan Wang, [Bisheng Yang](https://3s.whu.edu.cn/ybs/index.htm), [Zhen Dong](https://dongzhenwhu.github.io/). (EI, Oral). \| [Project Page](https://whu-lyh.github.io/OneStep-GSPE/).
 </div>
 </div>
+
 
 
 
@@ -126,6 +127,7 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 
 + MLS point cloud position correction UI, *2019.07-2019.09*. \| `C++` \| `Qt`.
 + Open-Set Face Recognition, *2018.05-2018.08.* \| `C++` \| `Python`.
+
 
 # ✍️ Services
 
