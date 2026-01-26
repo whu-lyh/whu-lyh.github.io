@@ -133,7 +133,7 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 
 Reviewer for Conferences: MMT2025
 
-Review for Journals: IEEE TASE, IEEE IoT-J
+Review for Journals: IEEE TASE, IEEE IoT-J, IEEE TAI, RS
 
 # 🏫 Teachings
 
