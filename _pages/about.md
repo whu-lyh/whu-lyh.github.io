@@ -17,7 +17,7 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a lecturer in the Department of Intelligent Vehicle Engineering, [School of Mechanical Engineering](https://impe2014.ctbu.edu.cn/), [Chongqing Technology and Business University](https://www.ctbu.edu.cn/). I obtained my Ph.D. in 2024 from the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), at [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  During my Ph.D., I collaborated closely with [Dr. Jianping Li](https://kafeiyin00.github.io/), a research fellow at [Nanyang Technological University](https://www.ntu.edu.sg/) and [Dr. Yuan Wang](https://dlxy.jxnu.edu.cn/2024/0402/c7440a259126/page.htm), a lecturer at [Jiangxi Normal University](https://www.jxnu.edu.cn/). Prior to this, I received my M.S. degree in 2019 from the [School of Geodesy and Geomatics](https://www.sgg.whu.edu.cn/), [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
+I am a lecturer in the Department of Intelligent Vehicle Engineering, [School of Mechanical Engineering](https://impe2014.ctbu.edu.cn/), [Chongqing Technology and Business University](https://www.ctbu.edu.cn/). I obtained my Ph.D. in 2024.12 from the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), at [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  During my Ph.D., I collaborated closely with [Dr. Jianping Li](https://kafeiyin00.github.io/), a research fellow at [Nanyang Technological University](https://www.ntu.edu.sg/) and [Dr. Yuan Wang](https://dlxy.jxnu.edu.cn/2024/0402/c7440a259126/page.htm), a lecturer at [Jiangxi Normal University](https://www.jxnu.edu.cn/). Prior to this, I received my M.S. degree in 2019 from the [School of Geodesy and Geomatics](https://www.sgg.whu.edu.cn/), [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
 
 My research interests span Mobile Laser Scanning Point Clouds processing, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D Reconstruction. I have published several papers in top-tier journals and conferences, including ISPRS Journal, Information Fusion, JAG, IEEE TGRS, and 测绘学报. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
@@ -101,7 +101,7 @@ Yuan Wang, **Yuhao Li**, Yiping Chen,  Mingjun Peng, Haiting Li, [Bisheng Yang](
 
 # 💻 Selected Projects
 
-+ Point cloud pre-processing tool, *2022.12-2023.03*, \| `C++`.
++ Point cloud pre-processing tool development, *2022.12-2023.03*, \| `C++`.
 
 <div>
 </div>
@@ -127,7 +127,7 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 </div>
 </div>
 
-+ MLS point cloud position correction UI, *2019.07-2019.09*. \| `C++` \| `Qt`.
++ MLS point cloud position correction UI development, *2019.07-2019.09*. \| `C++` \| `Qt`.
 + Open-Set Face Recognition, *2018.05-2018.08.* \| `C++` \| `Python`.
 
 
@@ -135,11 +135,17 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 
 Reviewer for Conferences: MMT2025
 
-Review for Journals: IEEE TASE, IEEE IoT-J, IEEE TAI, RS
+Review for Journals: ISPRS Journal, IEEE TASE, IEEE IoT-J, IEEE TAI, RS
 
 # 🏫 Teachings
 
-Modern Sensors and Detection Technology 2025
++ Graduate student
+
+Modern Sensors and Detection Technology (2025Fall, 2026Fall).
+
++ Graduate student
+
+ADAS Applications (2025Spring), STM32 Development (2026Fall), Technical Drawing (2026Fall).
 
 # 🎖 Selected Honors and Awards
 - *2022.12*, China Association for Geographic Information Society (CAGIS), Science and Technology Progress Award for Geographic Information, **Second** Class Prize, Rank **three**.
