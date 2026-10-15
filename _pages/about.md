@@ -19,7 +19,7 @@ redirect_from:
 
 I am a lecturer in the Department of Intelligent Vehicle Engineering, [School of Mechanical Engineering](https://impe2014.ctbu.edu.cn/), [Chongqing Technology and Business University](https://www.ctbu.edu.cn/). I obtained my Ph.D. in 2024.12 from the State Key Laboratory of Information Engineering in Surveying, Mapping and Remote Sensing ([LIESMARS](http://www.lmars.whu.edu.cn/en/)), at [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [Prof. BiSheng Yang](https://3s.whu.edu.cn/ybs/index.htm) and [Prof. Zhen Dong](https://dongzhenwhu.github.io/).  During my Ph.D., I collaborated closely with [Dr. Jianping Li](https://kafeiyin00.github.io/), a research fellow at [Nanyang Technological University](https://www.ntu.edu.sg/) and [Dr. Yuan Wang](https://dlxy.jxnu.edu.cn/2024/0402/c7440a259126/page.htm), a lecturer at [Jiangxi Normal University](https://www.jxnu.edu.cn/). Prior to this, I received my M.S. degree in 2019 from the [School of Geodesy and Geomatics](https://www.sgg.whu.edu.cn/), [Wuhan University](https://en.whu.edu.cn/), where I was supervised by [A. Prof. Li Zheng](https://www.sgg.whu.edu.cn/info/1392/1208.htm) and A. Prof. Zheng Ji. 
 
-My research interests span Mobile Laser Scanning Point Clouds processing, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D Reconstruction. I have published several papers in top-tier journals and conferences, including ISPRS Journal, Information Fusion, JAG, IEEE TGRS, and 测绘学报. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
+My research interests span Mobile Laser Scanning Point Clouds processing, Multi-modality Fusion and Localization, and Gaussian Splatting related 3D Reconstruction. I have published several papers in top-tier journals and conferences, including ISPRS Journal, Information Fusion, JAG, IEEE RAL, IEEE TGRS, and 测绘学报. You can explore my publications and citations on my [Google Scholar profile](https://scholar.google.com/citations?user=rB0h2ocAAAAJ) <a href='https://scholar.google.com/citations?user=rB0h2ocAAAAJ'><img src="https://img.shields.io/endpoint?url={{ url | url_encode }}&logo=Google%20Scholar&labelColor=f6f6f6&color=9cf&style=flat&label=citations"></a>.
 
 
 # 🔥 News
@@ -135,7 +135,7 @@ Powerline inspection software development, *2021.03-2021.06*, \| `C++` \| `Qt` \
 
 Reviewer for Conferences: MMT2025
 
-Review for Journals: ISPRS Journal, IEEE TASE, IEEE IoT-J, IEEE TAI, RS
+Review for Journals: ISPRS Journal, IEEE TASE, IEEE IoT-J, IEEE TAI, IEEE RAL, RS
 
 # 🏫 Teachings
 
@@ -154,6 +154,6 @@ ADAS Applications (2025Spring), STM32 Development (2026Fall), Technical Drawing 
 
 # 📖 Educations
 - *2020.09 - 2024.12*, Ph.D, LIESMARS, Wuhan University, Wuhan.
-- *2019.07 - 2020.08*, Research Assistent, LIESMARS, Wuhan University, Wuhan.
+- *2019.07 - 2020.08*, Research Assistant, LIESMARS, Wuhan University, Wuhan.
 - *2017.09 - 2019.06*, M.S., School of Geodesy and Geomatics, Wuhan University, Wuhan.
 - *2013.09 - 2017.06*, B.S., Tai Yuan University of Technology, Taiyuan.
